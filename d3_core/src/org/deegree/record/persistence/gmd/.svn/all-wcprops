@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/deegree/!svn/ver/21570/deegree3/core/trunk/src/org/deegree/record/persistence/gmd
+END
+gmd_metadata.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/deegree/!svn/ver/21570/deegree3/core/trunk/src/org/deegree/record/persistence/gmd/gmd_metadata.xsd
+END

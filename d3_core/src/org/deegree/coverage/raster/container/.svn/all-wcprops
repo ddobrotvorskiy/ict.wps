@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/deegree/!svn/ver/21769/deegree3/core/trunk/src/org/deegree/coverage/raster/container
+END
+TileContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/deegree/!svn/ver/20445/deegree3/core/trunk/src/org/deegree/coverage/raster/container/TileContainer.java
+END
+GriddedBlobTileContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/deegree/!svn/ver/21326/deegree3/core/trunk/src/org/deegree/coverage/raster/container/GriddedBlobTileContainer.java
+END
+GriddedTileContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/deegree/!svn/ver/21769/deegree3/core/trunk/src/org/deegree/coverage/raster/container/GriddedTileContainer.java
+END
+MemoryTileContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/deegree/!svn/ver/20731/deegree3/core/trunk/src/org/deegree/coverage/raster/container/MemoryTileContainer.java
+END
+IndexedMemoryTileContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/deegree/!svn/ver/20445/deegree3/core/trunk/src/org/deegree/coverage/raster/container/IndexedMemoryTileContainer.java
+END
+GriddedMemoryTileContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/deegree/!svn/ver/20445/deegree3/core/trunk/src/org/deegree/coverage/raster/container/GriddedMemoryTileContainer.java
+END

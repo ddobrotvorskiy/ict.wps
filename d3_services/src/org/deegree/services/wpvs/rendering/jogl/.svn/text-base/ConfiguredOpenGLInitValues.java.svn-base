@@ -1,0 +1,173 @@
+//$HeadURL$
+/*----------------------------------------------------------------------------
+ This file is part of deegree, http://deegree.org/
+ Copyright (C) 2001-2009 by:
+ Department of Geography, University of Bonn
+ and
+ lat/lon GmbH
+
+ This library is free software; you can redistribute it and/or modify it under
+ the terms of the GNU Lesser General Public License as published by the Free
+ Software Foundation; either version 2.1 of the License, or (at your option)
+ any later version.
+ This library is distributed in the hope that it will be useful, but WITHOUT
+ ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more
+ details.
+ You should have received a copy of the GNU Lesser General Public License
+ along with this library; if not, write to the Free Software Foundation, Inc.,
+ 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+
+ Contact information:
+
+ lat/lon GmbH
+ Aennchenstr. 19, 53177 Bonn
+ Germany
+ http://lat-lon.de/
+
+ Department of Geography, University of Bonn
+ Prof. Dr. Klaus Greve
+ Postfach 1147, 53001 Bonn
+ Germany
+ http://www.geographie.uni-bonn.de/deegree/
+
+ e-mail: info@deegree.org
+ ----------------------------------------------------------------------------*/
+
+package org.deegree.services.wpvs.rendering.jogl;
+
+import javax.media.opengl.GL;
+import javax.media.opengl.GLAutoDrawable;
+import javax.media.opengl.GLEventListener;
+
+import org.deegree.rendering.r3d.opengl.rendering.dem.CompositingShader;
+
+/**
+ * The <code>ConfiguredOpenGLInitValues</code> class initializes a GL context with some configured values.
+ * 
+ * @author <a href="mailto:bezema@lat-lon.de">Rutger Bezema</a>
+ * @author last edited by: $Author$
+ * @version $Revision$, $Date$
+ * 
+ */
+public class ConfiguredOpenGLInitValues implements GLEventListener {
+
+    private final static org.slf4j.Logger LOG = org.slf4j.LoggerFactory.getLogger( ConfiguredOpenGLInitValues.class );
+
+    private final int numberOfTextureUnits;
+
+    private final int[] shaderProgramIds;
+
+    /**
+     * @param numberOfTexturesUnits
+     */
+    public ConfiguredOpenGLInitValues( int numberOfTexturesUnits ) {
+        this.numberOfTextureUnits = numberOfTexturesUnits;
+        this.shaderProgramIds = new int[numberOfTexturesUnits];
+    }
+
+    @Override
+    public void display( GLAutoDrawable drawable ) {
+        // no rendering
+    }
+
+    @Override
+    public void displayChanged( GLAutoDrawable drawable, boolean modeChanged, boolean deviceChanged ) {
+        // no rendering
+    }
+
+    @Override
+    public void init( GLAutoDrawable drawable ) {
+
+        GL gl = drawable.getGL();
+
+        // gl.glEnable( GL.GL_CULL_FACE );
+        // gl.glCullFace( GL.GL_BACK );
+        gl.glShadeModel( GL.GL_SMOOTH );
+        gl.glPolygonMode( GL.GL_FRONT_AND_BACK, GL.GL_FILL );
+
+        gl.glLightModelf( GL.GL_LIGHT_MODEL_LOCAL_VIEWER, GL.GL_TRUE );
+
+        gl.glEnable( GL.GL_LIGHTING );
+        gl.glEnable( GL.GL_LIGHT0 );
+
+        gl.glDepthFunc( GL.GL_LEQUAL );
+        gl.glEnable( GL.GL_DEPTH_TEST );
+
+        // enable vertex arrays
+        gl.glEnableClientState( GL.GL_VERTEX_ARRAY );
+        gl.glEnableClientState( GL.GL_NORMAL_ARRAY );
+
+        createShaderPrograms( gl );
+    }
+
+    /**
+     * Create the dem shader programs for the given context
+     * 
+     * @param drawableContext
+     * @return the ids of the programs.
+     */
+    public int[] createShaderPrograms( GL drawableContext ) {
+        LOG.trace( "init( GLAutoDrawable ) called" );
+
+        GL gl = drawableContext;
+
+        LOG.info( "building " + numberOfTextureUnits + " shader programs" );
+        for ( int i = 1; i <= numberOfTextureUnits; i++ ) {
+            LOG.info( "Building fragment shader for compositing " + i + " textures." );
+
+            // generate and compile shader
+            int shaderId = gl.glCreateShader( GL.GL_FRAGMENT_SHADER );
+            gl.glShaderSource( shaderId, 1, new String[] { CompositingShader.getGLSLCode( i ) }, (int[]) null, 0 );
+            gl.glCompileShader( shaderId );
+
+            // create program and attach shader
+            int shaderProgramId = gl.glCreateProgram();
+            gl.glAttachShader( shaderProgramId, shaderId );
+
+            // link program
+            gl.glLinkProgram( shaderProgramId );
+            int[] linkStatus = new int[1];
+            gl.glGetProgramiv( shaderProgramId, GL.GL_LINK_STATUS, linkStatus, 0 );
+            if ( linkStatus[0] == GL.GL_FALSE ) {
+                int[] length = new int[1];
+                gl.glGetProgramiv( shaderProgramId, GL.GL_INFO_LOG_LENGTH, length, 0 );
+                byte[] infoLog = new byte[length[0]];
+                gl.glGetProgramInfoLog( shaderProgramId, length[0], length, 0, infoLog, 0 );
+                String msg = new String( infoLog );
+                LOG.error( "shader source: " + CompositingShader.getGLSLCode( i ) );
+                LOG.error( msg );
+                throw new RuntimeException( msg );
+            }
+
+            // validate program
+            gl.glValidateProgram( shaderProgramId );
+            int[] validateStatus = new int[1];
+            gl.glGetProgramiv( shaderProgramId, GL.GL_VALIDATE_STATUS, validateStatus, 0 );
+            if ( validateStatus[0] == GL.GL_FALSE ) {
+                int[] length = new int[1];
+                gl.glGetProgramiv( shaderProgramId, GL.GL_INFO_LOG_LENGTH, length, 0 );
+                byte[] infoLog = new byte[length[0]];
+                gl.glGetProgramInfoLog( shaderProgramId, length[0], length, 0, infoLog, 0 );
+                String msg = new String( infoLog );
+                LOG.error( msg );
+                // throw new RuntimeException( msg );
+            }
+            shaderProgramIds[i - 1] = shaderProgramId;
+        }
+        return shaderProgramIds;
+    }
+
+    @Override
+    public void reshape( GLAutoDrawable drawable, int x, int y, int width, int height ) {
+        // no rendering
+    }
+
+    /**
+     * @return the shaderProgramIds
+     */
+    public final int[] getShaderProgramIds() {
+        return shaderProgramIds;
+    }
+
+}

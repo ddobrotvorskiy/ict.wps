@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/deegree/!svn/ver/20300/deegree3/services/trunk/src/org/deegree/services/controller/ows
+END
+OWSException.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/deegree/!svn/ver/20300/deegree3/services/trunk/src/org/deegree/services/controller/ows/OWSException.java
+END
+OGCExceptionXMLAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/deegree/!svn/ver/18582/deegree3/services/trunk/src/org/deegree/services/controller/ows/OGCExceptionXMLAdapter.java
+END
+OWSException100XMLAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/deegree/!svn/ver/20096/deegree3/services/trunk/src/org/deegree/services/controller/ows/OWSException100XMLAdapter.java
+END
+OWSException110XMLAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/deegree/!svn/ver/20096/deegree3/services/trunk/src/org/deegree/services/controller/ows/OWSException110XMLAdapter.java
+END
+NamespacelessOWSExceptionXMLAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/deegree/!svn/ver/18171/deegree3/services/trunk/src/org/deegree/services/controller/ows/NamespacelessOWSExceptionXMLAdapter.java
+END

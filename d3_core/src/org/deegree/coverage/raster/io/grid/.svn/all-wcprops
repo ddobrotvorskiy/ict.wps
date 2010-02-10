@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/deegree/!svn/ver/21813/deegree3/core/trunk/src/org/deegree/coverage/raster/io/grid
+END
+GridWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/deegree/!svn/ver/21813/deegree3/core/trunk/src/org/deegree/coverage/raster/io/grid/GridWriter.java
+END
+TileOffsetReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/deegree/!svn/ver/21777/deegree3/core/trunk/src/org/deegree/coverage/raster/io/grid/TileOffsetReader.java
+END
+GridFileReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/deegree/!svn/ver/21775/deegree3/core/trunk/src/org/deegree/coverage/raster/io/grid/GridFileReader.java
+END
+GridMetaInfoFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/deegree/!svn/ver/21776/deegree3/core/trunk/src/org/deegree/coverage/raster/io/grid/GridMetaInfoFile.java
+END
+GridReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/deegree/!svn/ver/21777/deegree3/core/trunk/src/org/deegree/coverage/raster/io/grid/GridReader.java
+END
+GridRasterIOProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/deegree/!svn/ver/21326/deegree3/core/trunk/src/org/deegree/coverage/raster/io/grid/GridRasterIOProvider.java
+END
+SplittedBlobReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/deegree/!svn/ver/21779/deegree3/core/trunk/src/org/deegree/coverage/raster/io/grid/SplittedBlobReader.java
+END

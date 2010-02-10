@@ -1,0 +1,79 @@
+10
+
+dir
+21853
+http://wald.intevation.org/svn/deegree/deegree3/services/trunk/src/org/deegree/services/controller/wcs
+http://wald.intevation.org/svn/deegree
+
+
+
+2009-10-12T17:54:15.586895Z
+20096
+mschneider
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+20a5a20e-76a8-4a5e-adb6-8db71fc8bde4
+
+WCSController.java
+file
+
+
+
+
+2009-11-08T13:41:13.000000Z
+e390537bf86de6e1e9bffda748d693ec
+2009-10-06T15:37:55.755488Z
+20008
+mschneider
+has-props
+
+ServiceException120XMLAdapter.java
+file
+
+
+
+
+2009-11-08T13:41:13.000000Z
+9ec6b067a6324f79a6a1129e6262a750
+2009-06-17T14:00:07.522388Z
+18171
+mschneider
+has-props
+
+configuration
+dir
+
+WCSRequest100XMLAdapter.java
+file
+
+
+
+
+2009-11-08T13:41:13.000000Z
+de6fde1cb33fac6068dbbe0f99a82c1c
+2009-08-27T10:51:45.367432Z
+19365
+rbezema
+has-props
+
+capabilities
+dir
+
+getcoverage
+dir
+
+describecoverage
+dir
+

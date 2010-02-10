@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/deegree/!svn/ver/20009/deegree3/services/trunk/resources/example/conf/wps/processes
+END
+ParameterDemoProcess.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/deegree/!svn/ver/20009/deegree3/services/trunk/resources/example/conf/wps/processes/ParameterDemoProcess.xml
+END
+BufferProcess.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/deegree/!svn/ver/20009/deegree3/services/trunk/resources/example/conf/wps/processes/BufferProcess.xml
+END
+ParameterDemoProcess.wsdl
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/deegree/!svn/ver/19007/deegree3/services/trunk/resources/example/conf/wps/processes/ParameterDemoProcess.wsdl
+END

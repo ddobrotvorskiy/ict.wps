@@ -1,0 +1,156 @@
+10
+
+dir
+21853
+http://wald.intevation.org/svn/deegree/deegree3/core/trunk/src/org/deegree/crs
+http://wald.intevation.org/svn/deegree
+
+
+
+2009-10-29T10:39:06.681298Z
+20445
+rbezema
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+20a5a20e-76a8-4a5e-adb6-8db71fc8bde4
+
+coordinatesystems
+dir
+
+i18n
+dir
+
+exceptions
+dir
+
+Transformer.java
+file
+
+
+
+
+2009-11-08T13:38:31.000000Z
+c894bffd03dd07fb391410ffa59d71f1
+2009-06-17T14:00:07.522388Z
+18171
+mschneider
+has-props
+
+components
+dir
+
+transformations
+dir
+
+CoordinateTransformer.java
+file
+
+
+
+
+2009-11-08T13:38:31.000000Z
+99415be3f893c884f30ac272757c5139
+2009-10-14T15:04:57.212229Z
+20127
+mschneider
+has-props
+
+package.html
+file
+
+
+
+
+2009-11-08T13:38:31.000000Z
+3648996a78ff796ba5e6ec752a055605
+2009-04-08T15:14:30.775570Z
+17229
+rbezema
+has-props
+
+projections
+dir
+
+CRSRegistry.java
+file
+
+
+
+
+2009-11-08T13:38:31.000000Z
+af4247940cce9f1ed135e7e8f33ff68f
+2009-08-12T12:22:36.210319Z
+19064
+rbezema
+has-props
+
+CRSCodeType.java
+file
+
+
+
+
+2009-11-08T13:38:31.000000Z
+8df6fe7a2cc106ae791e123aaa2f226b
+2009-08-05T15:40:28.212259Z
+18936
+aionita
+has-props
+
+CRS.java
+file
+
+
+
+
+2009-11-08T13:38:31.000000Z
+5720e150085f4849d0c353df17328e19
+2009-10-27T14:24:10.372280Z
+20387
+mschneider
+has-props
+
+CRSIdentifiable.java
+file
+
+
+
+
+2009-11-08T13:38:31.000000Z
+9bea857ef79c25fb5a8f9bfaf8a0b3ab
+2009-10-27T14:24:10.372280Z
+20387
+mschneider
+has-props
+
+configuration
+dir
+
+EPSGCode.java
+file
+
+
+
+
+2009-11-08T13:38:31.000000Z
+75f99401e1e64359d3fdc2671d71553d
+2009-07-29T12:07:52.838191Z
+18793
+rbezema
+has-props
+
+utilities
+dir
+

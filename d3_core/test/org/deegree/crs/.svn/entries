@@ -1,0 +1,55 @@
+10
+
+dir
+21853
+http://wald.intevation.org/svn/deegree/deegree3/core/trunk/test/org/deegree/crs
+http://wald.intevation.org/svn/deegree
+
+
+
+2009-08-05T20:35:40.599490Z
+18947
+aionita
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+20a5a20e-76a8-4a5e-adb6-8db71fc8bde4
+
+coordinatesystems
+dir
+
+projections
+dir
+
+CRSCodeTypeTest.java
+file
+
+
+
+
+2009-11-08T13:14:27.000000Z
+e951d668627545935746f7821cb370ab
+2009-08-05T15:51:53.903507Z
+18940
+aionita
+
+components
+dir
+
+configuration
+dir
+
+transformations
+dir
+

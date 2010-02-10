@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/deegree/!svn/ver/20008/deegree3/services/trunk/src/org/deegree/services/wps/processdefinition
+END
+ComplexInputDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/deegree/!svn/ver/20008/deegree3/services/trunk/src/org/deegree/services/wps/processdefinition/ComplexInputDefinition.java
+END
+ComplexOutputDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/deegree/!svn/ver/20008/deegree3/services/trunk/src/org/deegree/services/wps/processdefinition/ComplexOutputDefinition.java
+END
+AllowedValues.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/deegree/!svn/ver/20008/deegree3/services/trunk/src/org/deegree/services/wps/processdefinition/AllowedValues.java
+END
+BoundingBoxInputDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/deegree/!svn/ver/20008/deegree3/services/trunk/src/org/deegree/services/wps/processdefinition/BoundingBoxInputDefinition.java
+END
+BoundingBoxOutputDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/deegree/!svn/ver/20008/deegree3/services/trunk/src/org/deegree/services/wps/processdefinition/BoundingBoxOutputDefinition.java
+END
+ValidValueReference.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/deegree/!svn/ver/20008/deegree3/services/trunk/src/org/deegree/services/wps/processdefinition/ValidValueReference.java
+END
+CodeType.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/deegree/!svn/ver/20008/deegree3/services/trunk/src/org/deegree/services/wps/processdefinition/CodeType.java
+END
+LanguageStringType.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/deegree/!svn/ver/20008/deegree3/services/trunk/src/org/deegree/services/wps/processdefinition/LanguageStringType.java
+END
+ProcessletInputDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/deegree/!svn/ver/20008/deegree3/services/trunk/src/org/deegree/services/wps/processdefinition/ProcessletInputDefinition.java
+END
+ProcessletOutputDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/deegree/!svn/ver/20008/deegree3/services/trunk/src/org/deegree/services/wps/processdefinition/ProcessletOutputDefinition.java
+END
+ComplexFormatType.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/deegree/!svn/ver/20008/deegree3/services/trunk/src/org/deegree/services/wps/processdefinition/ComplexFormatType.java
+END
+package-info.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/deegree/!svn/ver/20008/deegree3/services/trunk/src/org/deegree/services/wps/processdefinition/package-info.java
+END
+LiteralInputDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/deegree/!svn/ver/20008/deegree3/services/trunk/src/org/deegree/services/wps/processdefinition/LiteralInputDefinition.java
+END
+LiteralOutputDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/deegree/!svn/ver/20008/deegree3/services/trunk/src/org/deegree/services/wps/processdefinition/LiteralOutputDefinition.java
+END
+ProcessDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/deegree/!svn/ver/20008/deegree3/services/trunk/src/org/deegree/services/wps/processdefinition/ProcessDefinition.java
+END
+Range.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/deegree/!svn/ver/20008/deegree3/services/trunk/src/org/deegree/services/wps/processdefinition/Range.java
+END
+ObjectFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/deegree/!svn/ver/20008/deegree3/services/trunk/src/org/deegree/services/wps/processdefinition/ObjectFactory.java
+END

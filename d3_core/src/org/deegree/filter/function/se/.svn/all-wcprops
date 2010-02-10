@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/deegree/!svn/ver/21660/deegree3/core/trunk/src/org/deegree/filter/function/se
+END
+Substring.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/deegree/!svn/ver/20558/deegree3/core/trunk/src/org/deegree/filter/function/se/Substring.java
+END
+ChangeCase.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/deegree/!svn/ver/20558/deegree3/core/trunk/src/org/deegree/filter/function/se/ChangeCase.java
+END
+FormatNumber.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/deegree/!svn/ver/20558/deegree3/core/trunk/src/org/deegree/filter/function/se/FormatNumber.java
+END
+Recode.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/deegree/!svn/ver/21531/deegree3/core/trunk/src/org/deegree/filter/function/se/Recode.java
+END
+Concatenate.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/deegree/!svn/ver/20558/deegree3/core/trunk/src/org/deegree/filter/function/se/Concatenate.java
+END
+FormatDate.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/deegree/!svn/ver/20558/deegree3/core/trunk/src/org/deegree/filter/function/se/FormatDate.java
+END
+Interpolate.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/deegree/!svn/ver/20794/deegree3/core/trunk/src/org/deegree/filter/function/se/Interpolate.java
+END
+StringLength.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/deegree/!svn/ver/20558/deegree3/core/trunk/src/org/deegree/filter/function/se/StringLength.java
+END
+StringPosition.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/deegree/!svn/ver/20558/deegree3/core/trunk/src/org/deegree/filter/function/se/StringPosition.java
+END
+Trim.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/deegree/!svn/ver/20558/deegree3/core/trunk/src/org/deegree/filter/function/se/Trim.java
+END
+Categorize.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/deegree/!svn/ver/21660/deegree3/core/trunk/src/org/deegree/filter/function/se/Categorize.java
+END

@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/deegree/!svn/ver/21836/deegree3/core/trunk/src/org/deegree/commons/utils
+END
+Triple.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/commons/utils/Triple.java
+END
+ArrayUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/commons/utils/ArrayUtils.java
+END
+TempFileManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/deegree/!svn/ver/21335/deegree3/core/trunk/src/org/deegree/commons/utils/TempFileManager.java
+END
+FileUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/deegree/!svn/ver/21382/deegree3/core/trunk/src/org/deegree/commons/utils/FileUtils.java
+END
+HttpUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/commons/utils/HttpUtils.java
+END
+GraphvizDot.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/commons/utils/GraphvizDot.java
+END
+ProxyUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/commons/utils/ProxyUtils.java
+END
+JavaUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/deegree/!svn/ver/21654/deegree3/core/trunk/src/org/deegree/commons/utils/JavaUtils.java
+END
+LogUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/commons/utils/LogUtils.java
+END
+CloseableIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/deegree/!svn/ver/20580/deegree3/core/trunk/src/org/deegree/commons/utils/CloseableIterator.java
+END
+DeegreeAALogoUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/deegree/!svn/ver/19266/deegree3/core/trunk/src/org/deegree/commons/utils/DeegreeAALogoUtils.java
+END
+CollectionUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/deegree/!svn/ver/21302/deegree3/core/trunk/src/org/deegree/commons/utils/CollectionUtils.java
+END
+GeometryUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/deegree/!svn/ver/21223/deegree3/core/trunk/src/org/deegree/commons/utils/GeometryUtils.java
+END
+JOGLUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/commons/utils/JOGLUtils.java
+END
+deegree_aa_logo.txt
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/deegree/!svn/ver/19133/deegree3/core/trunk/src/org/deegree/commons/utils/deegree_aa_logo.txt
+END
+SunInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/commons/utils/SunInfo.java
+END
+StringPair.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/commons/utils/StringPair.java
+END
+JDBCUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/deegree/!svn/ver/19823/deegree3/core/trunk/src/org/deegree/commons/utils/JDBCUtils.java
+END
+EncodingGuesser.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/commons/utils/EncodingGuesser.java
+END
+ByteUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/deegree/!svn/ver/19730/deegree3/core/trunk/src/org/deegree/commons/utils/ByteUtils.java
+END
+DoublePair.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/commons/utils/DoublePair.java
+END
+StringUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/commons/utils/StringUtils.java
+END
+Pair.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/commons/utils/Pair.java
+END
+MapUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/deegree/!svn/ver/19845/deegree3/core/trunk/src/org/deegree/commons/utils/MapUtils.java
+END

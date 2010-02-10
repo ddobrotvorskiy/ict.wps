@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/deegree/!svn/ver/20445/deegree3/core/trunk/src/org/deegree/crs/coordinatesystems
+END
+GeographicCRS.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/deegree/!svn/ver/18793/deegree3/core/trunk/src/org/deegree/crs/coordinatesystems/GeographicCRS.java
+END
+VerticalCRS.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/deegree/!svn/ver/18793/deegree3/core/trunk/src/org/deegree/crs/coordinatesystems/VerticalCRS.java
+END
+ProjectedCRS.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/deegree/!svn/ver/18793/deegree3/core/trunk/src/org/deegree/crs/coordinatesystems/ProjectedCRS.java
+END
+GeocentricCRS.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/deegree/!svn/ver/18793/deegree3/core/trunk/src/org/deegree/crs/coordinatesystems/GeocentricCRS.java
+END
+CompoundCRS.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/crs/coordinatesystems/CompoundCRS.java
+END
+CoordinateSystem.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/deegree/!svn/ver/20445/deegree3/core/trunk/src/org/deegree/crs/coordinatesystems/CoordinateSystem.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/crs/coordinatesystems/package.html
+END

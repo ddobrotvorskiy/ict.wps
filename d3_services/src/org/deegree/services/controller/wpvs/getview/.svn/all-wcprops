@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/deegree/!svn/ver/18356/deegree3/services/trunk/src/org/deegree/services/controller/wpvs/getview
+END
+GetView.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/deegree/!svn/ver/18171/deegree3/services/trunk/src/org/deegree/services/controller/wpvs/getview/GetView.java
+END
+GetViewKVPAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/deegree/!svn/ver/18356/deegree3/services/trunk/src/org/deegree/services/controller/wpvs/getview/GetViewKVPAdapter.java
+END
+GetViewSceneParameters.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/deegree/!svn/ver/18171/deegree3/services/trunk/src/org/deegree/services/controller/wpvs/getview/GetViewSceneParameters.java
+END
+GetViewResponseParameters.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/deegree/!svn/ver/18171/deegree3/services/trunk/src/org/deegree/services/controller/wpvs/getview/GetViewResponseParameters.java
+END

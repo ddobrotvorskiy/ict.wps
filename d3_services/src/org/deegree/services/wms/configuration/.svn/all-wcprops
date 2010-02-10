@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/deegree/!svn/ver/21822/deegree3/services/trunk/src/org/deegree/services/wms/configuration
+END
+DynamicLayer.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/deegree/!svn/ver/21822/deegree3/services/trunk/src/org/deegree/services/wms/configuration/DynamicLayer.java
+END
+AbstractLayerType.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/deegree/!svn/ver/21822/deegree3/services/trunk/src/org/deegree/services/wms/configuration/AbstractLayerType.java
+END
+package-info.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/deegree/!svn/ver/21822/deegree3/services/trunk/src/org/deegree/services/wms/configuration/package-info.java
+END
+SLDStyleType.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/deegree/!svn/ver/21822/deegree3/services/trunk/src/org/deegree/services/wms/configuration/SLDStyleType.java
+END
+SupportedFeaturesType.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/deegree/!svn/ver/21822/deegree3/services/trunk/src/org/deegree/services/wms/configuration/SupportedFeaturesType.java
+END
+DimensionType.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/deegree/!svn/ver/21822/deegree3/services/trunk/src/org/deegree/services/wms/configuration/DimensionType.java
+END
+LogicalLayer.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/deegree/!svn/ver/21822/deegree3/services/trunk/src/org/deegree/services/wms/configuration/LogicalLayer.java
+END
+ServiceConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/deegree/!svn/ver/21822/deegree3/services/trunk/src/org/deegree/services/wms/configuration/ServiceConfiguration.java
+END
+RequestableLayer.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/deegree/!svn/ver/21822/deegree3/services/trunk/src/org/deegree/services/wms/configuration/RequestableLayer.java
+END
+UnrequestableLayer.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/deegree/!svn/ver/21822/deegree3/services/trunk/src/org/deegree/services/wms/configuration/UnrequestableLayer.java
+END
+BaseAbstractLayerType.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/deegree/!svn/ver/21822/deegree3/services/trunk/src/org/deegree/services/wms/configuration/BaseAbstractLayerType.java
+END
+DirectStyleType.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/deegree/!svn/ver/21822/deegree3/services/trunk/src/org/deegree/services/wms/configuration/DirectStyleType.java
+END
+ObjectFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/deegree/!svn/ver/21822/deegree3/services/trunk/src/org/deegree/services/wms/configuration/ObjectFactory.java
+END

@@ -1,0 +1,43 @@
+10
+
+dir
+21853
+http://wald.intevation.org/svn/deegree/deegree3/core/trunk/src/org/deegree/protocol/wcs
+http://wald.intevation.org/svn/deegree
+
+
+
+2009-10-12T17:54:15.586895Z
+20096
+mschneider
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+20a5a20e-76a8-4a5e-adb6-8db71fc8bde4
+
+capabilities
+dir
+
+WCSConstants.java
+file
+
+
+
+
+2009-11-08T13:37:43.000000Z
+ef120ada6ce0067d8f017fd1b17705e6
+2009-08-13T10:30:29.576301Z
+19084
+rbezema
+

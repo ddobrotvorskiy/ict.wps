@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/deegree/!svn/ver/19533/deegree3/core/trunk/src/org/deegree/coverage/raster/interpolation
+END
+InterpolationFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/deegree/!svn/ver/19533/deegree3/core/trunk/src/org/deegree/coverage/raster/interpolation/InterpolationFactory.java
+END
+BiLinearByteInterpolation.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/deegree/!svn/ver/19533/deegree3/core/trunk/src/org/deegree/coverage/raster/interpolation/BiLinearByteInterpolation.java
+END
+BiLinearFloatInterpolation.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/deegree/!svn/ver/19533/deegree3/core/trunk/src/org/deegree/coverage/raster/interpolation/BiLinearFloatInterpolation.java
+END
+Interpolation.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/coverage/raster/interpolation/Interpolation.java
+END
+NearestNeighborInterpolation.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/deegree/!svn/ver/19533/deegree3/core/trunk/src/org/deegree/coverage/raster/interpolation/NearestNeighborInterpolation.java
+END
+InterpolationType.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/deegree/!svn/ver/19082/deegree3/core/trunk/src/org/deegree/coverage/raster/interpolation/InterpolationType.java
+END
+BiLinearShortInterpolation.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/deegree/!svn/ver/19533/deegree3/core/trunk/src/org/deegree/coverage/raster/interpolation/BiLinearShortInterpolation.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/coverage/raster/interpolation/package.html
+END

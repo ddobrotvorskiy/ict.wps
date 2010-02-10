@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/deegree/!svn/ver/18171/deegree3/services/trunk/src-api/org/deegree/services/wps/input
+END
+ProcessletInput.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/deegree/!svn/ver/18171/deegree3/services/trunk/src-api/org/deegree/services/wps/input/ProcessletInput.java
+END
+ComplexInput.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/deegree/!svn/ver/18171/deegree3/services/trunk/src-api/org/deegree/services/wps/input/ComplexInput.java
+END
+LiteralInput.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/deegree/!svn/ver/18171/deegree3/services/trunk/src-api/org/deegree/services/wps/input/LiteralInput.java
+END
+BoundingBoxInput.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/deegree/!svn/ver/18171/deegree3/services/trunk/src-api/org/deegree/services/wps/input/BoundingBoxInput.java
+END

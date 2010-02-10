@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/deegree/!svn/ver/21498/deegree3/core/trunk/src/org/deegree/feature/persistence/memory
+END
+MemoryFeatureStore.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/deegree/!svn/ver/21498/deegree3/core/trunk/src/org/deegree/feature/persistence/memory/MemoryFeatureStore.java
+END
+MemoryFeatureStoreTransaction.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/deegree/!svn/ver/21399/deegree3/core/trunk/src/org/deegree/feature/persistence/memory/MemoryFeatureStoreTransaction.java
+END

@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/deegree/!svn/ver/21328/deegree3/core/trunk/test/org/deegree/coverage/raster/integration
+END
+CenterOuterTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/deegree/!svn/ver/21328/deegree3/core/trunk/test/org/deegree/coverage/raster/integration/CenterOuterTest.java
+END
+CompareValues.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/deegree/!svn/ver/20447/deegree3/core/trunk/test/org/deegree/coverage/raster/integration/CompareValues.java
+END
+overview.png
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/deegree/!svn/ver/20447/deegree3/core/trunk/test/org/deegree/coverage/raster/integration/overview.png
+END
+SimpleRasterTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/deegree/!svn/ver/20768/deegree3/core/trunk/test/org/deegree/coverage/raster/integration/SimpleRasterTest.java
+END
+00.png
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/deegree/!svn/ver/20447/deegree3/core/trunk/test/org/deegree/coverage/raster/integration/00.png
+END
+TiledRasterTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/deegree/!svn/ver/20768/deegree3/core/trunk/test/org/deegree/coverage/raster/integration/TiledRasterTest.java
+END
+10.png
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/deegree/!svn/ver/20447/deegree3/core/trunk/test/org/deegree/coverage/raster/integration/10.png
+END
+01.png
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/deegree/!svn/ver/20447/deegree3/core/trunk/test/org/deegree/coverage/raster/integration/01.png
+END
+GriddedTileContainerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/deegree/!svn/ver/20775/deegree3/core/trunk/test/org/deegree/coverage/raster/integration/GriddedTileContainerTest.java
+END
+20.png
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/deegree/!svn/ver/20447/deegree3/core/trunk/test/org/deegree/coverage/raster/integration/20.png
+END
+11.png
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/deegree/!svn/ver/20447/deegree3/core/trunk/test/org/deegree/coverage/raster/integration/11.png
+END
+02.png
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/deegree/!svn/ver/20447/deegree3/core/trunk/test/org/deegree/coverage/raster/integration/02.png
+END
+00.wld
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/deegree/!svn/ver/20447/deegree3/core/trunk/test/org/deegree/coverage/raster/integration/00.wld
+END
+blob_0.bin
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/deegree/!svn/ver/20768/deegree3/core/trunk/test/org/deegree/coverage/raster/integration/blob_0.bin
+END
+21.png
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/deegree/!svn/ver/20447/deegree3/core/trunk/test/org/deegree/coverage/raster/integration/21.png
+END
+12.png
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/deegree/!svn/ver/20447/deegree3/core/trunk/test/org/deegree/coverage/raster/integration/12.png
+END
+10.wld
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/deegree/!svn/ver/20447/deegree3/core/trunk/test/org/deegree/coverage/raster/integration/10.wld
+END
+01.wld
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/deegree/!svn/ver/20447/deegree3/core/trunk/test/org/deegree/coverage/raster/integration/01.wld
+END
+11.wld
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/deegree/!svn/ver/20447/deegree3/core/trunk/test/org/deegree/coverage/raster/integration/11.wld
+END
+20.wld
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/deegree/!svn/ver/20447/deegree3/core/trunk/test/org/deegree/coverage/raster/integration/20.wld
+END
+02.wld
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/deegree/!svn/ver/20447/deegree3/core/trunk/test/org/deegree/coverage/raster/integration/02.wld
+END
+22.png
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/deegree/!svn/ver/20447/deegree3/core/trunk/test/org/deegree/coverage/raster/integration/22.png
+END
+21.wld
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/deegree/!svn/ver/20447/deegree3/core/trunk/test/org/deegree/coverage/raster/integration/21.wld
+END
+12.wld
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/deegree/!svn/ver/20447/deegree3/core/trunk/test/org/deegree/coverage/raster/integration/12.wld
+END
+22.wld
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/deegree/!svn/ver/20447/deegree3/core/trunk/test/org/deegree/coverage/raster/integration/22.wld
+END
+gridded_raster.info
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/deegree/!svn/ver/20768/deegree3/core/trunk/test/org/deegree/coverage/raster/integration/gridded_raster.info
+END

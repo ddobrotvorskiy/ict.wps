@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/deegree/!svn/ver/19064/deegree3/core/trunk/src/org/deegree/crs/exceptions
+END
+TransformationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/crs/exceptions/TransformationException.java
+END
+CRSException.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/crs/exceptions/CRSException.java
+END
+CRSExportingException.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/deegree/!svn/ver/18793/deegree3/core/trunk/src/org/deegree/crs/exceptions/CRSExportingException.java
+END
+UnknownCRSException.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/deegree/!svn/ver/19064/deegree3/core/trunk/src/org/deegree/crs/exceptions/UnknownCRSException.java
+END
+WKTParsingException.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/deegree/!svn/ver/18793/deegree3/core/trunk/src/org/deegree/crs/exceptions/WKTParsingException.java
+END
+ProjectionException.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/crs/exceptions/ProjectionException.java
+END
+CRSConfigurationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/crs/exceptions/CRSConfigurationException.java
+END
+UnknownUnitException.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/deegree/!svn/ver/18793/deegree3/core/trunk/src/org/deegree/crs/exceptions/UnknownUnitException.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/crs/exceptions/package.html
+END

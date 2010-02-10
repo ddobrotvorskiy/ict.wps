@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/deegree/!svn/ver/20009/deegree3/services/trunk/resources/example/conf/wms
+END
+demo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/deegree/!svn/ver/15328/deegree3/services/trunk/resources/example/conf/wms/demo.xml
+END
+wms_configuration.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/deegree/!svn/ver/20009/deegree3/services/trunk/resources/example/conf/wms/wms_configuration.xml
+END

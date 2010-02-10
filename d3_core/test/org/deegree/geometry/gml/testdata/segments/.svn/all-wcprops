@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/segments
+END
+LineStringSegment.gml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/segments/LineStringSegment.gml
+END
+Circle.gml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/segments/Circle.gml
+END
+Clothoid.gml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/segments/Clothoid.gml
+END
+Arc.gml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/segments/Arc.gml
+END
+ArcStringByBulge.gml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/segments/ArcStringByBulge.gml
+END
+CircleByCenterPoint.gml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/segments/CircleByCenterPoint.gml
+END
+GeodesicString.gml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/segments/GeodesicString.gml
+END
+ArcByCenterPoint.gml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/segments/ArcByCenterPoint.gml
+END
+ArcByBulge.gml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/segments/ArcByBulge.gml
+END
+Bezier.gml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/segments/Bezier.gml
+END
+Geodesic.gml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/segments/Geodesic.gml
+END
+OffsetCurve.gml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/segments/OffsetCurve.gml
+END
+BSpline.gml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/segments/BSpline.gml
+END
+ArcString.gml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/segments/ArcString.gml
+END
+CubicSpline.gml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/segments/CubicSpline.gml
+END

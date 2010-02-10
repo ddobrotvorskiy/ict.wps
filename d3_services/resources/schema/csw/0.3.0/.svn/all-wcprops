@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/deegree/!svn/ver/21434/deegree3/services/trunk/resources/schema/csw/0.3.0
+END
+csw_configuration.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/deegree/!svn/ver/20511/deegree3/services/trunk/resources/schema/csw/0.3.0/csw_configuration.xsd
+END
+csw_service_configuration.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/deegree/!svn/ver/20682/deegree3/services/trunk/resources/schema/csw/0.3.0/csw_service_configuration.xsd
+END
+csw_published_information.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/deegree/!svn/ver/20682/deegree3/services/trunk/resources/schema/csw/0.3.0/csw_published_information.xsd
+END

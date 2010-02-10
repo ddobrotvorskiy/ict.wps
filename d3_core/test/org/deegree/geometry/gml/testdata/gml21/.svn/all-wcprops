@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/deegree/!svn/ver/21106/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/gml21
+END
+MultiPolygon.gml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/deegree/!svn/ver/20846/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/gml21/MultiPolygon.gml
+END
+MultiPoint.gml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/deegree/!svn/ver/20846/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/gml21/MultiPoint.gml
+END
+MultiGeometry.gml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/deegree/!svn/ver/20846/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/gml21/MultiGeometry.gml
+END
+Polygon.gml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/deegree/!svn/ver/20846/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/gml21/Polygon.gml
+END
+Box.gml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/deegree/!svn/ver/20846/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/gml21/Box.gml
+END
+MultiLineString.gml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/deegree/!svn/ver/20846/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/gml21/MultiLineString.gml
+END
+Point.gml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/deegree/!svn/ver/20846/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/gml21/Point.gml
+END
+Point2.gml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/deegree/!svn/ver/21106/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/gml21/Point2.gml
+END
+LineString.gml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/deegree/!svn/ver/20846/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/gml21/LineString.gml
+END

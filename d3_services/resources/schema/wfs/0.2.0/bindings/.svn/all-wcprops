@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/deegree/!svn/ver/19768/deegree3/services/trunk/resources/schema/wfs/0.2.0/bindings
+END
+wfs_published_bindings.xjb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/deegree/!svn/ver/19768/deegree3/services/trunk/resources/schema/wfs/0.2.0/bindings/wfs_published_bindings.xjb
+END
+wfs_service_bindings.xjb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/deegree/!svn/ver/19768/deegree3/services/trunk/resources/schema/wfs/0.2.0/bindings/wfs_service_bindings.xjb
+END

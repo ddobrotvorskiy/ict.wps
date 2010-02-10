@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/deegree/!svn/ver/21645/deegree3/core/trunk/resources/schema/datasource/0.3.0
+END
+constrained_datasource.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/deegree/!svn/ver/20006/deegree3/core/trunk/resources/schema/datasource/0.3.0/constrained_datasource.xsd
+END
+all_datasources.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/deegree/!svn/ver/20669/deegree3/core/trunk/resources/schema/datasource/0.3.0/all_datasources.xsd
+END
+record_datastores.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/deegree/!svn/ver/20681/deegree3/core/trunk/resources/schema/datasource/0.3.0/record_datastores.xsd
+END
+datasource.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/deegree/!svn/ver/20045/deegree3/core/trunk/resources/schema/datasource/0.3.0/datasource.xsd
+END
+raster_datasource.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/deegree/!svn/ver/20006/deegree3/core/trunk/resources/schema/datasource/0.3.0/raster_datasource.xsd
+END
+featurestores.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/deegree/!svn/ver/21645/deegree3/core/trunk/resources/schema/datasource/0.3.0/featurestores.xsd
+END
+db_datasource.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/deegree/!svn/ver/20006/deegree3/core/trunk/resources/schema/datasource/0.3.0/db_datasource.xsd
+END
+wms_datasource.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/deegree/!svn/ver/20006/deegree3/core/trunk/resources/schema/datasource/0.3.0/wms_datasource.xsd
+END
+dgm_datasource.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/deegree/!svn/ver/20006/deegree3/core/trunk/resources/schema/datasource/0.3.0/dgm_datasource.xsd
+END

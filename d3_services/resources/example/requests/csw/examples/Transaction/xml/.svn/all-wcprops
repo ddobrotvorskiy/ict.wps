@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/deegree/!svn/ver/21849/deegree3/services/trunk/resources/example/requests/csw/examples/Transaction/xml
+END
+delete_1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/deegree/!svn/ver/21658/deegree3/services/trunk/resources/example/requests/csw/examples/Transaction/xml/delete_1.xml
+END
+insert_1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/deegree/!svn/ver/21849/deegree3/services/trunk/resources/example/requests/csw/examples/Transaction/xml/insert_1.xml
+END
+insert_delete_1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/deegree/!svn/ver/21663/deegree3/services/trunk/resources/example/requests/csw/examples/Transaction/xml/insert_delete_1.xml
+END

@@ -1,0 +1,15 @@
+K 10
+svn:ignore
+V 75
+.classpath
+.project
+.settings
+classes
+dist
+docs
+webapp
+bin
+build
+derby.log
+
+END

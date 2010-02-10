@@ -1,0 +1,59 @@
+10
+
+dir
+21853
+http://wald.intevation.org/svn/deegree/deegree3/core/trunk/src/org/deegree/protocol/wps
+http://wald.intevation.org/svn/deegree
+
+
+
+2009-10-12T17:54:15.586895Z
+20096
+mschneider
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+20a5a20e-76a8-4a5e-adb6-8db71fc8bde4
+
+describeprocess
+dir
+
+WPSRequest.java
+file
+
+
+
+
+2009-11-08T13:37:42.000000Z
+d882ba2932d34d964916e7b8488777a5
+2009-07-15T13:36:43.071102Z
+18471
+rbezema
+has-props
+
+WPSConstants.java
+file
+
+
+
+
+2009-11-08T13:37:42.000000Z
+215ff4f345de7393c64857cc0f5b2d4a
+2009-07-15T13:36:43.071102Z
+18471
+rbezema
+
+capabilities
+dir
+

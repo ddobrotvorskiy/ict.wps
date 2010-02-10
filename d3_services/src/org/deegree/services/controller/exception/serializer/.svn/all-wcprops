@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/deegree/!svn/ver/18799/deegree3/services/trunk/src/org/deegree/services/controller/exception/serializer
+END
+ExceptionSerializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/deegree/!svn/ver/18171/deegree3/services/trunk/src/org/deegree/services/controller/exception/serializer/ExceptionSerializer.java
+END
+XMLExceptionSerializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/deegree/!svn/ver/18799/deegree3/services/trunk/src/org/deegree/services/controller/exception/serializer/XMLExceptionSerializer.java
+END
+SOAPExceptionSerializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/deegree/!svn/ver/18171/deegree3/services/trunk/src/org/deegree/services/controller/exception/serializer/SOAPExceptionSerializer.java
+END

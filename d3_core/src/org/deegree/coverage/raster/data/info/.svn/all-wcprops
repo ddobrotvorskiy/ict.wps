@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/deegree/!svn/ver/21748/deegree3/core/trunk/src/org/deegree/coverage/raster/data/info
+END
+InterleaveType.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/deegree/!svn/ver/19533/deegree3/core/trunk/src/org/deegree/coverage/raster/data/info/InterleaveType.java
+END
+BandType.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/deegree/!svn/ver/19533/deegree3/core/trunk/src/org/deegree/coverage/raster/data/info/BandType.java
+END
+RasterDataInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/deegree/!svn/ver/21748/deegree3/core/trunk/src/org/deegree/coverage/raster/data/info/RasterDataInfo.java
+END
+DataType.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/deegree/!svn/ver/19533/deegree3/core/trunk/src/org/deegree/coverage/raster/data/info/DataType.java
+END

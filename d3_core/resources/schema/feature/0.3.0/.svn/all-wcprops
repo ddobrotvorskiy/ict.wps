@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/deegree/!svn/ver/21655/deegree3/core/trunk/resources/schema/feature/0.3.0
+END
+postgis_appschema.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/deegree/!svn/ver/20772/deegree3/core/trunk/resources/schema/feature/0.3.0/postgis_appschema.xsd
+END
+appschema.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/deegree/!svn/ver/21655/deegree3/core/trunk/resources/schema/feature/0.3.0/appschema.xsd
+END

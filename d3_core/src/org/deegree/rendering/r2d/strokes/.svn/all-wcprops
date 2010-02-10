@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/deegree/!svn/ver/21443/deegree3/core/trunk/src/org/deegree/rendering/r2d/strokes
+END
+WobbleStroke.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/rendering/r2d/strokes/WobbleStroke.java
+END
+ZigzagStroke.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/rendering/r2d/strokes/ZigzagStroke.java
+END
+ShapeStroke.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/deegree/!svn/ver/21375/deegree3/core/trunk/src/org/deegree/rendering/r2d/strokes/ShapeStroke.java
+END
+CompositeStroke.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/rendering/r2d/strokes/CompositeStroke.java
+END
+CompoundStroke.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/rendering/r2d/strokes/CompoundStroke.java
+END
+TextStroke.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/deegree/!svn/ver/21095/deegree3/core/trunk/src/org/deegree/rendering/r2d/strokes/TextStroke.java
+END
+OffsetStroke.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/deegree/!svn/ver/21443/deegree3/core/trunk/src/org/deegree/rendering/r2d/strokes/OffsetStroke.java
+END

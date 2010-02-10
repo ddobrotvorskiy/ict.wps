@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/deegree/!svn/ver/20612/deegree3/core/trunk/src/org/deegree/protocol/wfs/transaction
+END
+Delete.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/deegree/!svn/ver/19043/deegree3/core/trunk/src/org/deegree/protocol/wfs/transaction/Delete.java
+END
+Update.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/deegree/!svn/ver/20202/deegree3/core/trunk/src/org/deegree/protocol/wfs/transaction/Update.java
+END
+Insert.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/deegree/!svn/ver/20612/deegree3/core/trunk/src/org/deegree/protocol/wfs/transaction/Insert.java
+END
+PropertyReplacement.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/deegree/!svn/ver/20540/deegree3/core/trunk/src/org/deegree/protocol/wfs/transaction/PropertyReplacement.java
+END
+Transaction.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/deegree/!svn/ver/19069/deegree3/core/trunk/src/org/deegree/protocol/wfs/transaction/Transaction.java
+END
+Native.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/deegree/!svn/ver/20493/deegree3/core/trunk/src/org/deegree/protocol/wfs/transaction/Native.java
+END
+TransactionOperation.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/deegree/!svn/ver/19043/deegree3/core/trunk/src/org/deegree/protocol/wfs/transaction/TransactionOperation.java
+END
+TransactionKVPAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/deegree/!svn/ver/19043/deegree3/core/trunk/src/org/deegree/protocol/wfs/transaction/TransactionKVPAdapter.java
+END
+TransactionXMLAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/deegree/!svn/ver/20612/deegree3/core/trunk/src/org/deegree/protocol/wfs/transaction/TransactionXMLAdapter.java
+END
+LazyOperationsIterable.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/deegree/!svn/ver/20493/deegree3/core/trunk/src/org/deegree/protocol/wfs/transaction/LazyOperationsIterable.java
+END

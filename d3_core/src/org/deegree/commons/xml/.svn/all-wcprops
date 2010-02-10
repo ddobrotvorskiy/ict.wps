@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/deegree/!svn/ver/21398/deegree3/core/trunk/src/org/deegree/commons/xml
+END
+XMLErrorPosition.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/deegree/!svn/ver/19076/deegree3/core/trunk/src/org/deegree/commons/xml/XMLErrorPosition.java
+END
+NamespaceContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/deegree/!svn/ver/21077/deegree3/core/trunk/src/org/deegree/commons/xml/NamespaceContext.java
+END
+XMLAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/deegree/!svn/ver/20763/deegree3/core/trunk/src/org/deegree/commons/xml/XMLAdapter.java
+END
+XMLParsingException.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/deegree/!svn/ver/19076/deegree3/core/trunk/src/org/deegree/commons/xml/XMLParsingException.java
+END
+XPath.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/commons/xml/XPath.java
+END
+SimpleLink.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/commons/xml/SimpleLink.java
+END
+CommonNamespaces.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/deegree/!svn/ver/19189/deegree3/core/trunk/src/org/deegree/commons/xml/CommonNamespaces.java
+END
+XMLProcessingException.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/commons/xml/XMLProcessingException.java
+END
+FixedChildIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/commons/xml/FixedChildIterator.java
+END

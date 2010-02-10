@@ -1,0 +1,5 @@
+out/
+d3_core/build/
+d3_services/build/
+.idea/
+

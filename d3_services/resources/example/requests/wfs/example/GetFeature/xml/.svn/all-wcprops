@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/deegree/!svn/ver/19296/deegree3/services/trunk/resources/example/requests/wfs/example/GetFeature/xml
+END
+Beyond.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/deegree/!svn/ver/19296/deegree3/services/trunk/resources/example/requests/wfs/example/GetFeature/xml/Beyond.xml
+END
+Country_TransformedBBOX.xml
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/deegree/!svn/ver/18088/deegree3/services/trunk/resources/example/requests/wfs/example/GetFeature/xml/Country_TransformedBBOX.xml
+END
+Disjoint.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/deegree/!svn/ver/18088/deegree3/services/trunk/resources/example/requests/wfs/example/GetFeature/xml/Disjoint.xml
+END
+Philosopher_All.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/deegree/!svn/ver/18088/deegree3/services/trunk/resources/example/requests/wfs/example/GetFeature/xml/Philosopher_All.xml
+END
+PropertyIsLike.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/deegree/!svn/ver/18088/deegree3/services/trunk/resources/example/requests/wfs/example/GetFeature/xml/PropertyIsLike.xml
+END
+Philosopher_All_Sorted_by_birth.xml
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/deegree/!svn/ver/18088/deegree3/services/trunk/resources/example/requests/wfs/example/GetFeature/xml/Philosopher_All_Sorted_by_birth.xml
+END
+BBOX.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/deegree/!svn/ver/18088/deegree3/services/trunk/resources/example/requests/wfs/example/GetFeature/xml/BBOX.xml
+END
+Country_All.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/deegree/!svn/ver/18088/deegree3/services/trunk/resources/example/requests/wfs/example/GetFeature/xml/Country_All.xml
+END
+Id.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/deegree/!svn/ver/18088/deegree3/services/trunk/resources/example/requests/wfs/example/GetFeature/xml/Id.xml
+END
+ComplexFilter2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/deegree/!svn/ver/18088/deegree3/services/trunk/resources/example/requests/wfs/example/GetFeature/xml/ComplexFilter2.xml
+END
+Country_Intersects.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/deegree/!svn/ver/18088/deegree3/services/trunk/resources/example/requests/wfs/example/GetFeature/xml/Country_Intersects.xml
+END
+DWithin.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/deegree/!svn/ver/19296/deegree3/services/trunk/resources/example/requests/wfs/example/GetFeature/xml/DWithin.xml
+END
+Country_BBOXTransform.xml
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/deegree/!svn/ver/18088/deegree3/services/trunk/resources/example/requests/wfs/example/GetFeature/xml/Country_BBOXTransform.xml
+END
+PropertyIsEqualTo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/deegree/!svn/ver/18088/deegree3/services/trunk/resources/example/requests/wfs/example/GetFeature/xml/PropertyIsEqualTo.xml
+END
+ComplexFilter.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/deegree/!svn/ver/18088/deegree3/services/trunk/resources/example/requests/wfs/example/GetFeature/xml/ComplexFilter.xml
+END
+Country_BBOX.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/deegree/!svn/ver/18088/deegree3/services/trunk/resources/example/requests/wfs/example/GetFeature/xml/Country_BBOX.xml
+END

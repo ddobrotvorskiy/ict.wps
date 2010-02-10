@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/deegree/!svn/ver/21655/deegree3/core/trunk/test/org/deegree/gml/feature
+END
+GMLFeatureWriterTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/deegree/!svn/ver/21539/deegree3/core/trunk/test/org/deegree/gml/feature/GMLFeatureWriterTest.java
+END
+GMLFeatureReaderTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/deegree/!svn/ver/21539/deegree3/core/trunk/test/org/deegree/gml/feature/GMLFeatureReaderTest.java
+END

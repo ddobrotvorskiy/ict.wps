@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/deegree/!svn/ver/19303/deegree3/services/trunk/scripts/wcs
+END
+wms2wcs_proxy.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/deegree/!svn/ver/19303/deegree3/services/trunk/scripts/wcs/wms2wcs_proxy.py
+END
+wms_capabilities.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/deegree/!svn/ver/19303/deegree3/services/trunk/scripts/wcs/wms_capabilities.xml
+END

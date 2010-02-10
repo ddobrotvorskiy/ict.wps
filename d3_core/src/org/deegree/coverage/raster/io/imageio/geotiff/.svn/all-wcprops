@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/deegree/!svn/ver/19567/deegree3/core/trunk/src/org/deegree/coverage/raster/io/imageio/geotiff
+END
+GeoTiffTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/deegree/!svn/ver/19567/deegree3/core/trunk/src/org/deegree/coverage/raster/io/imageio/geotiff/GeoTiffTag.java
+END
+GeoTiffWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/deegree/!svn/ver/19567/deegree3/core/trunk/src/org/deegree/coverage/raster/io/imageio/geotiff/GeoTiffWriter.java
+END
+GeoTiffException.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/deegree/!svn/ver/19567/deegree3/core/trunk/src/org/deegree/coverage/raster/io/imageio/geotiff/GeoTiffException.java
+END
+GeoTiffReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/deegree/!svn/ver/19567/deegree3/core/trunk/src/org/deegree/coverage/raster/io/imageio/geotiff/GeoTiffReader.java
+END
+Geographic_CS_Codes.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/deegree/!svn/ver/19567/deegree3/core/trunk/src/org/deegree/coverage/raster/io/imageio/geotiff/Geographic_CS_Codes.java
+END
+GeoTiffKey.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/deegree/!svn/ver/19567/deegree3/core/trunk/src/org/deegree/coverage/raster/io/imageio/geotiff/GeoTiffKey.java
+END

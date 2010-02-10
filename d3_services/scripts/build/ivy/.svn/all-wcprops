@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/deegree/!svn/ver/19772/deegree3/services/trunk/scripts/build/ivy
+END
+ivy.properties
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/deegree/!svn/ver/19313/deegree3/services/trunk/scripts/build/ivy/ivy.properties
+END
+ivy-build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/deegree/!svn/ver/19772/deegree3/services/trunk/scripts/build/ivy/ivy-build.xml
+END
+ivy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/deegree/!svn/ver/19303/deegree3/services/trunk/scripts/build/ivy/ivy.xml
+END
+ivy-build-aggregate.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/deegree/!svn/ver/19303/deegree3/services/trunk/scripts/build/ivy/ivy-build-aggregate.xml
+END
+ivysettings.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/deegree/!svn/ver/19303/deegree3/services/trunk/scripts/build/ivy/ivysettings.xml
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/deegree/!svn/ver/21534/deegree3/core/trunk/src/org/deegree/coverage/raster/data/container
+END
+CachedRasterDataContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/deegree/!svn/ver/21126/deegree3/core/trunk/src/org/deegree/coverage/raster/data/container/CachedRasterDataContainer.java
+END
+RasterDataContainerFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/deegree/!svn/ver/19533/deegree3/core/trunk/src/org/deegree/coverage/raster/data/container/RasterDataContainerFactory.java
+END
+MemoryRasterDataContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/deegree/!svn/ver/21326/deegree3/core/trunk/src/org/deegree/coverage/raster/data/container/MemoryRasterDataContainer.java
+END
+RasterDataContainerProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/coverage/raster/data/container/RasterDataContainerProvider.java
+END
+BufferResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/deegree/!svn/ver/21326/deegree3/core/trunk/src/org/deegree/coverage/raster/data/container/BufferResult.java
+END
+LazyRasterDataContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/deegree/!svn/ver/19533/deegree3/core/trunk/src/org/deegree/coverage/raster/data/container/LazyRasterDataContainer.java
+END
+RasterDataContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/deegree/!svn/ver/20732/deegree3/core/trunk/src/org/deegree/coverage/raster/data/container/RasterDataContainer.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/coverage/raster/data/container/package.html
+END

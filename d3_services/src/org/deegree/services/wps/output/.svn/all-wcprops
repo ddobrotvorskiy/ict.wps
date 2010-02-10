@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/deegree/!svn/ver/20629/deegree3/services/trunk/src/org/deegree/services/wps/output
+END
+LiteralOutputImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/deegree/!svn/ver/20629/deegree3/services/trunk/src/org/deegree/services/wps/output/LiteralOutputImpl.java
+END
+BoundingBoxOutputImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/deegree/!svn/ver/18356/deegree3/services/trunk/src/org/deegree/services/wps/output/BoundingBoxOutputImpl.java
+END
+ProcessletOutputImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/deegree/!svn/ver/18171/deegree3/services/trunk/src/org/deegree/services/wps/output/ProcessletOutputImpl.java
+END
+ComplexOutputImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/deegree/!svn/ver/20628/deegree3/services/trunk/src/org/deegree/services/wps/output/ComplexOutputImpl.java
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/deegree/!svn/ver/18997/deegree3/core/trunk/src/org/deegree/geometry/standard/surfacepatches
+END
+DefaultGriddedSurfacePatch.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/deegree/!svn/ver/18997/deegree3/core/trunk/src/org/deegree/geometry/standard/surfacepatches/DefaultGriddedSurfacePatch.java
+END
+DefaultCone.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/deegree/!svn/ver/18997/deegree3/core/trunk/src/org/deegree/geometry/standard/surfacepatches/DefaultCone.java
+END
+DefaultRectangle.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/deegree/!svn/ver/18997/deegree3/core/trunk/src/org/deegree/geometry/standard/surfacepatches/DefaultRectangle.java
+END
+DefaultTriangle.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/deegree/!svn/ver/18997/deegree3/core/trunk/src/org/deegree/geometry/standard/surfacepatches/DefaultTriangle.java
+END
+DefaultSphere.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/deegree/!svn/ver/18997/deegree3/core/trunk/src/org/deegree/geometry/standard/surfacepatches/DefaultSphere.java
+END
+DefaultPolygonPatch.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/deegree/!svn/ver/18997/deegree3/core/trunk/src/org/deegree/geometry/standard/surfacepatches/DefaultPolygonPatch.java
+END
+DefaultCylinder.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/deegree/!svn/ver/18997/deegree3/core/trunk/src/org/deegree/geometry/standard/surfacepatches/DefaultCylinder.java
+END

@@ -1,0 +1,89 @@
+10
+
+dir
+21853
+http://wald.intevation.org/svn/deegree/deegree3/services/trunk/src/org/deegree/services/wcs
+http://wald.intevation.org/svn/deegree
+
+
+
+2009-10-06T15:37:55.755488Z
+20008
+mschneider
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+20a5a20e-76a8-4a5e-adb6-8db71fc8bde4
+
+model
+dir
+
+WCServiceBuilder.java
+file
+
+
+
+
+2009-11-08T13:41:41.000000Z
+e6994a2a110f19934ca3b40154f4dca3
+2009-09-10T10:29:28.917296Z
+19575
+rbezema
+has-props
+
+configuration
+dir
+
+WCServiceException.java
+file
+
+
+
+
+2009-11-08T13:41:41.000000Z
+9404da627b8cfad927321f291172ef60
+2009-06-17T14:00:07.522388Z
+18171
+mschneider
+has-props
+
+ServiceConfigurationXMLAdapter.java
+file
+
+
+
+
+2009-11-08T13:41:41.000000Z
+e2b54f6e2199698f8e20a0f3285859a4
+2009-06-17T14:00:07.522388Z
+18171
+mschneider
+has-props
+
+WCService.java
+file
+
+
+
+
+2009-11-08T13:41:41.000000Z
+8b5cb4f8b3643b6a69ab7ba204164a1f
+2009-08-27T10:51:45.367432Z
+19365
+rbezema
+has-props
+
+coverages
+dir
+

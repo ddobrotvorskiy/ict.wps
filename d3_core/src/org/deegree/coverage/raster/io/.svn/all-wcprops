@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/deegree/!svn/ver/21813/deegree3/core/trunk/src/org/deegree/coverage/raster/io
+END
+RasterIOProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/deegree/!svn/ver/19082/deegree3/core/trunk/src/org/deegree/coverage/raster/io/RasterIOProvider.java
+END
+RasterReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/deegree/!svn/ver/21740/deegree3/core/trunk/src/org/deegree/coverage/raster/io/RasterReader.java
+END
+RasterIOOptions.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/deegree/!svn/ver/21739/deegree3/core/trunk/src/org/deegree/coverage/raster/io/RasterIOOptions.java
+END
+WorldFileAccess.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/deegree/!svn/ver/21491/deegree3/core/trunk/src/org/deegree/coverage/raster/io/WorldFileAccess.java
+END
+RasterDataReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/deegree/!svn/ver/19533/deegree3/core/trunk/src/org/deegree/coverage/raster/io/RasterDataReader.java
+END
+RasterWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/deegree/!svn/ver/19082/deegree3/core/trunk/src/org/deegree/coverage/raster/io/RasterWriter.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/coverage/raster/io/package.html
+END

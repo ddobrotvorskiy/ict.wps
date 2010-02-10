@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/deegree/!svn/ver/21847/deegree3/services/trunk/src
+END
+services_moduleinfo.properties
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/deegree/!svn/ver/19773/deegree3/services/trunk/src/services_moduleinfo.properties
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/deegree/!svn/ver/19577/deegree3/services/trunk/src/log4j.properties
+END

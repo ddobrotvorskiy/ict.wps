@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/deegree/!svn/ver/21539/deegree3/services/trunk/src/org/deegree/services/controller/wfs
+END
+GetFeatureAnalyzer.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/deegree/!svn/ver/21353/deegree3/services/trunk/src/org/deegree/services/controller/wfs/GetFeatureAnalyzer.java
+END
+LockFeatureHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/deegree/!svn/ver/21353/deegree3/services/trunk/src/org/deegree/services/controller/wfs/LockFeatureHandler.java
+END
+TransactionHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/deegree/!svn/ver/21539/deegree3/services/trunk/src/org/deegree/services/controller/wfs/TransactionHandler.java
+END
+WFSController.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/deegree/!svn/ver/21353/deegree3/services/trunk/src/org/deegree/services/controller/wfs/WFSController.java
+END
+GetGmlObjectHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/deegree/!svn/ver/21539/deegree3/services/trunk/src/org/deegree/services/controller/wfs/GetGmlObjectHandler.java
+END
+GetFeatureHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/deegree/!svn/ver/21538/deegree3/services/trunk/src/org/deegree/services/controller/wfs/GetFeatureHandler.java
+END
+DescribeFeatureTypeHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/deegree/!svn/ver/21214/deegree3/services/trunk/src/org/deegree/services/controller/wfs/DescribeFeatureTypeHandler.java
+END
+GetFeatureWithLockHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/deegree/!svn/ver/21338/deegree3/services/trunk/src/org/deegree/services/controller/wfs/GetFeatureWithLockHandler.java
+END

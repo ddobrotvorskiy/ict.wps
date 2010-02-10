@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/deegree/!svn/ver/21367/deegree3/core/trunk/src/org/deegree/commons/jdbc
+END
+ResultSetIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/deegree/!svn/ver/20580/deegree3/core/trunk/src/org/deegree/commons/jdbc/ResultSetIterator.java
+END
+ConnectionPool.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/deegree/!svn/ver/20860/deegree3/core/trunk/src/org/deegree/commons/jdbc/ConnectionPool.java
+END
+ConnectionManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/deegree/!svn/ver/21367/deegree3/core/trunk/src/org/deegree/commons/jdbc/ConnectionManager.java
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/deegree/!svn/ver/20250/deegree3/services/trunk/scripts/build
+END
+build-sos-demo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/deegree/!svn/ver/19392/deegree3/services/trunk/scripts/build/build-sos-demo.xml
+END
+webapp-targets.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/deegree/!svn/ver/20250/deegree3/services/trunk/scripts/build/webapp-targets.xml
+END
+bind-config-targets.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/deegree/!svn/ver/20249/deegree3/services/trunk/scripts/build/bind-config-targets.xml
+END

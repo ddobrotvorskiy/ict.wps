@@ -1,0 +1,105 @@
+10
+
+dir
+21853
+http://wald.intevation.org/svn/deegree/deegree3/services/trunk/src/org/deegree/services/sos
+http://wald.intevation.org/svn/deegree
+
+
+
+2009-10-16T14:42:04.164135Z
+20182
+mschneider
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+20a5a20e-76a8-4a5e-adb6-8db71fc8bde4
+
+offering
+dir
+
+model
+dir
+
+SOService.java
+file
+
+
+
+
+2009-11-08T13:41:24.000000Z
+021bcfdff4d945582d4adfa86b11217f
+2009-07-15T11:42:59.480309Z
+18469
+aschmitz
+has-props
+
+storage
+dir
+
+configuration
+dir
+
+ServiceConfigurationXMLAdapter.java
+file
+
+
+
+
+2009-11-08T13:41:24.000000Z
+5d019e425da70b2d1d8dd2315b8327e7
+2009-06-17T14:00:07.522388Z
+18171
+mschneider
+has-props
+
+SOSBuilder.java
+file
+
+
+
+
+2009-11-08T13:41:24.000000Z
+b7214fe6986a7c8d8a78b014e3b66d84
+2009-08-28T15:13:38.604055Z
+19390
+aionita
+has-props
+
+SOSConfigurationException.java
+file
+
+
+
+
+2009-11-08T13:41:24.000000Z
+5826a9b0d562fcbd04d4579dda5c558b
+2009-06-17T14:00:07.522388Z
+18171
+mschneider
+has-props
+
+SOServiceExeption.java
+file
+
+
+
+
+2009-11-08T13:41:24.000000Z
+0345e8a8be16ef22845b98c1e221225e
+2009-06-17T14:00:07.522388Z
+18171
+mschneider
+has-props
+

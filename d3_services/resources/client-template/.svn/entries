@@ -1,0 +1,62 @@
+10
+
+dir
+21853
+http://wald.intevation.org/svn/deegree/deegree3/services/trunk/resources/client-template
+http://wald.intevation.org/svn/deegree
+
+
+
+2009-12-10T18:23:27.269638Z
+21395
+mschneider
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+20a5a20e-76a8-4a5e-adb6-8db71fc8bde4
+
+wfs
+dir
+
+index.jsp
+file
+
+
+
+
+2009-11-08T13:41:53.000000Z
+3b249542d164c65ab9ad008dc0706fa2
+2009-08-19T22:02:05.838185Z
+19267
+mschneider
+has-props
+
+wps
+dir
+
+styles.css
+file
+
+
+
+
+2009-11-08T13:41:53.000000Z
+66e5eb446462cbcbfcd6d6ada4948c1b
+2009-08-19T17:59:09.178740Z
+19262
+mschneider
+
+client
+dir
+

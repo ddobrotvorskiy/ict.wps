@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/deegree/!svn/ver/21507/deegree3/core/trunk/src/org/deegree/geometry/validation
+END
+GeometryValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/deegree/!svn/ver/19018/deegree3/core/trunk/src/org/deegree/geometry/validation/GeometryValidator.java
+END
+GeometryValidationEventHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/deegree/!svn/ver/18997/deegree3/core/trunk/src/org/deegree/geometry/validation/GeometryValidationEventHandler.java
+END
+GeometryFixer.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/deegree/!svn/ver/21507/deegree3/core/trunk/src/org/deegree/geometry/validation/GeometryFixer.java
+END
+ValidationEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/deegree/!svn/ver/21081/deegree3/core/trunk/src/org/deegree/geometry/validation/ValidationEvent.java
+END

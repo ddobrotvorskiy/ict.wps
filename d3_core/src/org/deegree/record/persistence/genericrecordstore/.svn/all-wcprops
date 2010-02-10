@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/deegree/!svn/ver/21842/deegree3/core/trunk/src/org/deegree/record/persistence/genericrecordstore
+END
+ISOQPParsing.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/deegree/!svn/ver/21842/deegree3/core/trunk/src/org/deegree/record/persistence/genericrecordstore/ISOQPParsing.java
+END
+ReturnableProperties.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/deegree/!svn/ver/21828/deegree3/core/trunk/src/org/deegree/record/persistence/genericrecordstore/ReturnableProperties.java
+END
+dc.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/deegree/!svn/ver/21722/deegree3/core/trunk/src/org/deegree/record/persistence/genericrecordstore/dc.xsd
+END
+Keyword.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/deegree/!svn/ver/21840/deegree3/core/trunk/src/org/deegree/record/persistence/genericrecordstore/Keyword.java
+END
+gmd_metadata.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/deegree/!svn/ver/21570/deegree3/core/trunk/src/org/deegree/record/persistence/genericrecordstore/gmd_metadata.xsd
+END
+QueryableProperties.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/deegree/!svn/ver/21828/deegree3/core/trunk/src/org/deegree/record/persistence/genericrecordstore/QueryableProperties.java
+END
+CRS.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/deegree/!svn/ver/21840/deegree3/core/trunk/src/org/deegree/record/persistence/genericrecordstore/CRS.java
+END
+Format.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/deegree/!svn/ver/21840/deegree3/core/trunk/src/org/deegree/record/persistence/genericrecordstore/Format.java
+END
+GenericRecordStore.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/deegree/!svn/ver/21842/deegree3/core/trunk/src/org/deegree/record/persistence/genericrecordstore/GenericRecordStore.java
+END
+BoundingBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/deegree/!svn/ver/21840/deegree3/core/trunk/src/org/deegree/record/persistence/genericrecordstore/BoundingBox.java
+END

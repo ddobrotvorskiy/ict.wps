@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/deegree/!svn/ver/21218/deegree3/core/trunk/test/org/deegree/gml/feature/testdata/schema/cite
+END
+complexFeatures.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/deegree/!svn/ver/21218/deegree3/core/trunk/test/org/deegree/gml/feature/testdata/schema/cite/complexFeatures.xsd
+END
+all.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/deegree/!svn/ver/21218/deegree3/core/trunk/test/org/deegree/gml/feature/testdata/schema/cite/all.xsd
+END
+dataFeatures.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/deegree/!svn/ver/21218/deegree3/core/trunk/test/org/deegree/gml/feature/testdata/schema/cite/dataFeatures.xsd
+END
+cite-gmlsf0.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/deegree/!svn/ver/21218/deegree3/core/trunk/test/org/deegree/gml/feature/testdata/schema/cite/cite-gmlsf0.xsd
+END
+geometryFeatures.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/deegree/!svn/ver/21218/deegree3/core/trunk/test/org/deegree/gml/feature/testdata/schema/cite/geometryFeatures.xsd
+END
+cite-gmlsf1.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/deegree/!svn/ver/21218/deegree3/core/trunk/test/org/deegree/gml/feature/testdata/schema/cite/cite-gmlsf1.xsd
+END
+cite-gmlsf2.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/deegree/!svn/ver/21218/deegree3/core/trunk/test/org/deegree/gml/feature/testdata/schema/cite/cite-gmlsf2.xsd
+END

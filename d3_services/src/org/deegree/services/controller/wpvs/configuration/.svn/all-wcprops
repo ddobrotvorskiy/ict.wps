@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/deegree/!svn/ver/20008/deegree3/services/trunk/src/org/deegree/services/controller/wpvs/configuration
+END
+package-info.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/deegree/!svn/ver/20008/deegree3/services/trunk/src/org/deegree/services/controller/wpvs/configuration/package-info.java
+END
+PublishedInformation.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/deegree/!svn/ver/20008/deegree3/services/trunk/src/org/deegree/services/controller/wpvs/configuration/PublishedInformation.java
+END
+Empty.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/deegree/!svn/ver/20008/deegree3/services/trunk/src/org/deegree/services/controller/wpvs/configuration/Empty.java
+END
+ObjectFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/deegree/!svn/ver/20008/deegree3/services/trunk/src/org/deegree/services/controller/wpvs/configuration/ObjectFactory.java
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/deegree/!svn/ver/21757/deegree3/core/trunk/src/org/deegree/gml/feature/schema
+END
+ApplicationSchemaXSDEncoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/deegree/!svn/ver/21655/deegree3/core/trunk/src/org/deegree/gml/feature/schema/ApplicationSchemaXSDEncoder.java
+END
+ApplicationSchemaXSDDecoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/deegree/!svn/ver/21757/deegree3/core/trunk/src/org/deegree/gml/feature/schema/ApplicationSchemaXSDDecoder.java
+END
+DefaultGMLTypes.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/deegree/!svn/ver/21435/deegree3/core/trunk/src/org/deegree/gml/feature/schema/DefaultGMLTypes.java
+END

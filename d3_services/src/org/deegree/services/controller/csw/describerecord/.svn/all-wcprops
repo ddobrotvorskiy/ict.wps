@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/deegree/!svn/ver/20747/deegree3/services/trunk/src/org/deegree/services/controller/csw/describerecord
+END
+DescribeRecord.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/deegree/!svn/ver/20462/deegree3/services/trunk/src/org/deegree/services/controller/csw/describerecord/DescribeRecord.java
+END
+DescribeRecordKVPAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/deegree/!svn/ver/20536/deegree3/services/trunk/src/org/deegree/services/controller/csw/describerecord/DescribeRecordKVPAdapter.java
+END
+DescribeRecordXMLAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/deegree/!svn/ver/20747/deegree3/services/trunk/src/org/deegree/services/controller/csw/describerecord/DescribeRecordXMLAdapter.java
+END

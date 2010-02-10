@@ -1,0 +1,190 @@
+//$HeadURL: http://wald.intevation.org/svn/deegree/deegree3/services/trunk/src/org/deegree/services/wpvs/config/DemDatasetWrapper.java $
+/*----------------------------------------------------------------------------
+ This file is part of deegree, http://deegree.org/
+ Copyright (C) 2001-2009 by:
+   Department of Geography, University of Bonn
+ and
+   lat/lon GmbH
+
+ This library is free software; you can redistribute it and/or modify it under
+ the terms of the GNU Lesser General Public License as published by the Free
+ Software Foundation; either version 2.1 of the License, or (at your option)
+ any later version.
+ This library is distributed in the hope that it will be useful, but WITHOUT
+ ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more
+ details.
+ You should have received a copy of the GNU Lesser General Public License
+ along with this library; if not, write to the Free Software Foundation, Inc.,
+ 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+
+ Contact information:
+
+ lat/lon GmbH
+ Aennchenstr. 19, 53177 Bonn
+ Germany
+ http://lat-lon.de/
+
+ Department of Geography, University of Bonn
+ Prof. Dr. Klaus Greve
+ Postfach 1147, 53001 Bonn
+ Germany
+ http://www.geographie.uni-bonn.de/deegree/
+
+ e-mail: info@deegree.org
+----------------------------------------------------------------------------*/
+
+package org.deegree.services.wpvs.config;
+
+import java.io.File;
+import java.io.IOException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.xml.bind.JAXBElement;
+
+import org.deegree.commons.configuration.BoundingBoxType;
+import org.deegree.commons.configuration.ScaleDenominatorsType;
+import org.deegree.commons.datasource.configuration.ElevationModelDataSource;
+import org.deegree.commons.datasource.configuration.FileType;
+import org.deegree.commons.xml.XMLAdapter;
+import org.deegree.crs.CRS;
+import org.deegree.rendering.r3d.multiresolution.MultiresolutionMesh;
+import org.deegree.rendering.r3d.opengl.rendering.dem.manager.RenderFragmentManager;
+import org.deegree.rendering.r3d.opengl.rendering.dem.manager.TerrainRenderingManager;
+import org.deegree.services.wpvs.configuration.DatasetDefinitions;
+import org.deegree.services.wpvs.configuration.ElevationDataset;
+
+/**
+ * The <code>DemDatasetWrapper</code> class TODO add class documentation here.
+ *
+ * @author <a href="mailto:bezema@lat-lon.de">Rutger Bezema</a>
+ * @author last edited by: $Author: mschneider $
+ * @version $Revision: 18171 $, $Date: 2009-06-17 21:00:07 +0700 (Срд, 17 Июн 2009) $
+ *
+ */
+public class DemDatasetWrapper extends DatasetWrapper<TerrainRenderingManager> {
+
+    private final static org.slf4j.Logger LOG = org.slf4j.LoggerFactory.getLogger( DemDatasetWrapper.class );
+
+    private final int numberOfDEMFragmentsCached;
+
+    /**
+     * @param defaultCRS
+     * @param translationToLocalCRS
+     * @param configAdapter
+     * @param dsd
+     *            containing the dataset definitions.
+     * @param numberOfDEMFragmentsCached
+     *            defines the number of dem fragments to be cached on the gpu.
+     */
+    public DemDatasetWrapper( CRS defaultCRS, double[] translationToLocalCRS, XMLAdapter configAdapter,
+                              DatasetDefinitions dsd, int numberOfDEMFragmentsCached ) {
+        super( defaultCRS, translationToLocalCRS, configAdapter );
+        this.numberOfDEMFragmentsCached = numberOfDEMFragmentsCached;
+        fillDEMFromDatasetDefinitions( dsd );
+    }
+
+    /**
+     * Analyzes the {@link ElevationDataset} from the {@link DatasetDefinitions}, fills the renderers with data from
+     * the defined modelbackends and builds up a the constraint vectors for retrieval of the appropriate renderers.
+     *
+     * @param dsd
+     */
+    private void fillDEMFromDatasetDefinitions( DatasetDefinitions dsd ) {
+        List<ElevationDataset> demDatsets = new ArrayList<ElevationDataset>();
+        ElevationDataset ed = dsd.getElevationDataset();
+        demDatsets.add( ed );
+        if ( !demDatsets.isEmpty() ) {
+            analyseAndExtractConstraints( demDatsets, dsd.getBoundingBox(), dsd.getScaleDenominators(),
+                                          dsd.getMaxPixelError() );
+        } else {
+            LOG.info( "No elevation model dataset has been configured, no buildings, trees and prototypes will be available." );
+        }
+    }
+
+    private void analyseAndExtractConstraints( List<ElevationDataset> demDatsets, BoundingBoxType parentBBox,
+                                               ScaleDenominatorsType parentScale, Double parentMaxPixelError ) {
+        if ( demDatsets != null && !demDatsets.isEmpty() ) {
+            for ( ElevationDataset eds : demDatsets ) {
+                if ( eds != null ) {
+                    if ( isUnAmbiguous( eds.getName() ) ) {
+                        LOG.info( "The feature dataset with name: " + eds.getName() + " and title: " + eds.getTitle()
+                                  + " had multiple definitions in your service configuration." );
+                    } else {
+                        clarifyInheritance( eds, parentBBox, parentScale, parentMaxPixelError );
+                        try {
+                            handleElevationDataset( eds );
+                        } catch ( IOException e ) {
+                            LOG.error( "Failed to initialize configured demTexture dataset: " + eds.getName() + ": "
+                                       + eds.getTitle() + " because: " + e.getLocalizedMessage(), e );
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /**
+     * @param mds
+     * @throws IOException
+     */
+    private void handleElevationDataset( ElevationDataset elevationDataset )
+                            throws IOException {
+
+        if ( elevationDataset != null ) {
+            ElevationModelDataSource elevationModelDataSource = elevationDataset.getElevationModelDataSource();
+            if ( elevationModelDataSource != null ) {
+                List<JAXBElement<? extends FileType>> abstractFiles = elevationModelDataSource.getAbstractFile();
+                if ( !abstractFiles.isEmpty() ) {
+                    MultiresolutionMesh mrModel = null;
+                    int i = 0;
+                    while ( mrModel == null && i < abstractFiles.size() ) {
+                        JAXBElement<? extends FileType> abstractFile = abstractFiles.get( i );
+                        if ( abstractFile != null ) {
+                            FileType value = abstractFile.getValue();
+                            if ( value != null ) {
+                                String unresolvedDEMURL = value.getValue();
+                                URL demURL = resolve( unresolvedDEMURL );
+                                if ( demURL != null ) {
+                                    LOG.info( "Using configured file: " + i + " for the dem file location: "
+                                              + demURL.getFile() );
+                                    mrModel = new MultiresolutionMesh( new File( demURL.getFile() ) );
+                                }
+                            }
+                        }
+                        i++;
+                    }
+                    if ( mrModel != null ) {
+                        RenderFragmentManager fragmentManager = new RenderFragmentManager( mrModel,
+                                                                                           numberOfDEMFragmentsCached );
+
+                        TerrainRenderingManager result = new TerrainRenderingManager(
+                                                                                      fragmentManager,
+                                                                                      elevationDataset.getMaxPixelError(),
+                                                                                      1 );
+                        // adding the constraint to the wrapper.
+                        addConstraint( elevationDataset.getName(), result, elevationDataset.getBoundingBox(),
+                                       elevationDataset.getScaleDenominators() );
+                    } else {
+                        LOG.warn( "Enable to instantiate elevation model: " + elevationDataset.getName() + ": "
+                                  + elevationDataset.getTitle()
+                                  + " because no files (pointing to a Multiresolution Mesh file) could be resolved." );
+                    }
+                } else {
+                    LOG.warn( "Enable to instantiate elevation model: "
+                              + elevationDataset.getName()
+                              + ": "
+                              + elevationDataset.getTitle()
+                              + " because no files (pointing to a Multiresolution Mesh file) were configured in the elevationmodel datasource element." );
+                }
+
+            } else {
+                LOG.warn( "Enable to instantiate elevation model: " + elevationDataset.getName() + ": "
+                          + elevationDataset.getTitle()
+                          + " because no datasource (pointing to a Multiresolution Mesh file) was configured." );
+            }
+        }
+    }
+}

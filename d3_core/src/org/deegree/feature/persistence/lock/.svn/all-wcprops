@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/deegree/!svn/ver/21300/deegree3/core/trunk/src/org/deegree/feature/persistence/lock
+END
+LockManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/deegree/!svn/ver/20580/deegree3/core/trunk/src/org/deegree/feature/persistence/lock/LockManager.java
+END
+DefaultLockManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/deegree/!svn/ver/21300/deegree3/core/trunk/src/org/deegree/feature/persistence/lock/DefaultLockManager.java
+END
+Lock.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/deegree/!svn/ver/20580/deegree3/core/trunk/src/org/deegree/feature/persistence/lock/Lock.java
+END
+DefaultLock.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/deegree/!svn/ver/21300/deegree3/core/trunk/src/org/deegree/feature/persistence/lock/DefaultLock.java
+END

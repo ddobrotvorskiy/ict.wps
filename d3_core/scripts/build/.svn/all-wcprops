@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/deegree/!svn/ver/20669/deegree3/core/trunk/scripts/build
+END
+bind-config-targets.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/deegree/!svn/ver/20669/deegree3/core/trunk/scripts/build/bind-config-targets.xml
+END
+crs-targets.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/deegree/!svn/ver/20313/deegree3/core/trunk/scripts/build/crs-targets.xml
+END

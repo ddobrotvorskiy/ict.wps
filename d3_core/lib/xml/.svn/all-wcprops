@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/lib/xml
+END
+axiom-api-1.2.9-SNAPSHOT.jar
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/lib/xml/axiom-api-1.2.9-SNAPSHOT.jar
+END
+stax-1.2.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/lib/xml/stax-1.2.0.jar
+END
+axiom-impl-1.2.9-SNAPSHOT.jar
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/lib/xml/axiom-impl-1.2.9-SNAPSHOT.jar
+END
+jaxen-1.1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/lib/xml/jaxen-1.1.1.jar
+END

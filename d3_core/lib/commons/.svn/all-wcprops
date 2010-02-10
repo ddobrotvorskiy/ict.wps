@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/deegree/!svn/ver/19277/deegree3/core/trunk/lib/commons
+END
+commons-httpclient-3.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/lib/commons/commons-httpclient-3.1.jar
+END
+commons-dbcp-1.2.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/lib/commons/commons-dbcp-1.2.2.jar
+END
+commons-math-2.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/deegree/!svn/ver/19277/deegree3/core/trunk/lib/commons/commons-math-2.0.jar
+END
+commons-pool-1.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/lib/commons/commons-pool-1.4.jar
+END
