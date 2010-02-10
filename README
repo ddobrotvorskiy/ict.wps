@@ -1,11 +1,11 @@
 NOTE FOR WPS DEVELOPERS
 
 Requirements:
- Java          1.6           java.sun.com
- Apache tomcat 6.x           http://www.sai.msu.su/apache/tomcat/tomcat-6/v6.0.24/bin/apache-tomcat-6.0.24-windows-x86.zip
- Apache ant    1.8           http://www.sai.msu.su/apache/ant/binaries/apache-ant-1.8.0-bin.zip
- Git                         http://msysgit.googlecode.com/files/Git-1.6.5.1-preview20091022.exe (msysgit for Windows)
- IntelliJ Idea               http://download-ln.jetbrains.com/idea/ideaIC-9.0.1.exe
+ Java          1.6  java.sun.com
+ Apache tomcat 6.x  http://www.sai.msu.su/apache/tomcat/tomcat-6/v6.0.24/bin/apache-tomcat-6.0.24-windows-x86.zip
+ Apache ant    1.8  http://www.sai.msu.su/apache/ant/binaries/apache-ant-1.8.0-bin.zip
+ Git                http://msysgit.googlecode.com/files/Git-1.6.5.1-preview20091022.exe (msysgit for Windows)
+ IntelliJ Idea      http://download-ln.jetbrains.com/idea/ideaIC-9.0.1.exe
 
 Getting project
 
@@ -17,7 +17,7 @@ Getting project
 
  3. Download project via IDE or manually
 
-    git clone git://github.com/mityok/ict.wps.git
+    git clone git@github.com:mityok/ict.wps.git
 
 Building project
 
