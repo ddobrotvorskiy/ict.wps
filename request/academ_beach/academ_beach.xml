@@ -9,11 +9,11 @@ http://schemas.opengis.net/wps/1.0.0/wpsExecute_request.xsd">
   <wps:DataInputs>
     <wps:Input>
       <ows:Identifier>InputRaster</ows:Identifier>
-      <wps:Reference mimeType="image/png" xlink:href="file:///windows/D/GIS/grant/academ_beach.png"/>
+      <wps:Reference mimeType="image/png" xlink:href="file://localhost/G:/repo/ict.wps/request/academ_beach/academ_beach.png"/>
     </wps:Input>
     <wps:Input>
       <ows:Identifier>TrainingSample</ows:Identifier>
-      <wps:Reference xlink:href="file:///windows/D/GIS/grant/academ_beach.txt"/>
+      <wps:Reference xlink:href="file://localhost/G:/repo/ict.wps/request/academ_beach/academ_beach.txt"/>
     </wps:Input>
   </wps:DataInputs>
 

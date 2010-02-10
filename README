@@ -1,75 +1,49 @@
-
-
 NOTE FOR WPS DEVELOPERS
 
-1. Specify tomcat.basedir property in d3_services/build.properties file
+Requirements:
+ Java          1.6           java.sun.com
+ Apache tomcat 6.x           http://www.sai.msu.su/apache/tomcat/tomcat-6/v6.0.24/bin/apache-tomcat-6.0.24-windows-x86.zip
+ Apache ant    1.8           http://www.sai.msu.su/apache/ant/binaries/apache-ant-1.8.0-bin.zip
+ Git                         http://msysgit.googlecode.com/files/Git-1.6.5.1-preview20091022.exe (msysgit for Windows)
+ IntelliJ Idea               http://download-ln.jetbrains.com/idea/ideaIC-9.0.1.exe
 
-Something like this:  
-  tomcat.basedir=/home/mityok/aspirantura/apache-tomcat-6.0.20
+Getting project
 
+ 1. Setup git (msysgit for windows)
+ 2. Setup global git parameters
 
-2. To rebuild and deploy wps webapp run 
- 
-  ant -f d3_services/scripts/build/webapp-targets.xml unregister-webapp create-wps-template register-webapp
+    git config --global user.name="Vasily Pupkin"
+    git config --global user.email="pupkin@gmail.com"
+
+ 3. Download project via IDE or manually
+
+    git clone git://github.com/mityok/ict.wps.git
+
+Building project
+
+ 1. Specify tomcat.basedir property in d3_services/build.properties file
+
+  Something like this:
+    tomcat.basedir=G:/bin/tomcat (Windows)
+  or
+    tomcat.basedir=/home/mityok/aspirantura/apache-tomcat-6.0.20 (Linuх)
+
+ 2. To rebuild and deploy wps webapp run
+
+    ant -f d3_services/scripts/build/webapp-targets.xml unregister-webapp create-wps-template register-webapp
   
-  Use ant -f d3_services/scripts/build/webapp-targets.xml -p
-  to see all build targets.
+    Use ant -f d3_services/scripts/build/webapp-targets.xml -p
+    to see all build targets.
 
-3. Run tomcat and go to http://127.0.0.1:8080/services
+ 3. Run tomcat and go to http://127.0.0.1:8080/services
 
+Meet project
 
+  Sample request for wps-based classifier in request/academ_beach/academ_beach.xml
+  Do not forget to write actual paths in request URLs.
 
-Add to wiki :
+Development
 
-
-h1. WPS project HOWTO
-
-В данном документе описывается рабочий процесс в проекте WPS.
-
-h2. Задачи проекта.
-
-# Поднять сервер WPS на общедоступной машине gis-app или gis-eng.
-# Реализовать имеющиеся алгоритмы классификации/кластеризации в виде WPS-сервисов.
-# Дать описание процесса реализации сервисов, чтобы прочие пользователи имели возможность дополнить сервер своими алгоритмами.
-
-h2. Реализация
-
-h3. Применяемые решения
- 
- # WPS - сервер проект "deegree":http://wiki.deegree.org/deegreeWiki/deegree3/WPSDocumentation
- # Платформа "Java 1.6":http://java.sun.com
- # Сервер приложений "Tomcat":http://tomcat.apache.org версии >=6.0   
- # Сборщик "Apache Ant":http://ant.apache.org/ 
-
-h3. Настрока рабочей среды
-
-Описание проверялось на linux Debian Lenny
-
-# Установить java, ant. Добавить их в переменную PATH , если не были добавлены при установке.
-# В качестве IDE рекомендую  
-#*Eclipse 
-#*Intellij Idea (9.0 Community Edition)
-#*NetBeans 
-# распаквать архив с проектом. 
-   tar xf deegree3.tar.gz
-# переместиться в директорию deegree3 (далее пути указаны от данной директории)
-# скачать и распаковать tomcat. Запустить его.
-# прописать путь до директории с tomcat-ом в свойстве tomcat.basedir в файле d3_services/build.properties
-# пересобрать и установить приложение командой 
-  <pre>ant -f d3_services/scripts/build/webapp-targets.xml unregister-webapp create-wps-template register-webapp<pre>
-# зайти по адресу http://127.0.0.1:8080/services
-
-
-h3. Рабочий процесс
-
-# Новые java классы добавлять в директорию d3_services/src/org/ict
-# xml  описания процессов добавлять в директорию d3_services/resources/example/conf/wps/processes
-# Пример тривиального WPS процесса org.ict.wps.process.SimpleProcesslet
-
-h3. Ссылки
-
-*http://wiki.deegree.org/deegreeWiki/deegree3/BuildingDeegree3
-*http://wiki.deegree.org/deegreeWiki/HowToCreateWPSProcesses
-*(добавить ссылки на сорцы от Edward Nash)
-
-
+  1. New java classes should be added to d3_services/src/org/ict package
+  2. Xml process descriptions should be added to d3_services/resources/example/conf/wps/processes
+  3. Sample wps process implemented in org.ict.wps.process.ParzenClassifierProcesslet
