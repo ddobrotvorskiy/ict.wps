@@ -1,5 +1,14 @@
-out/
+d3_tools/
+d3_test/
 d3_core/build/
 d3_services/build/
+
+classes/
+out/
+
+.classpath
+.project
+.settings
 .idea/
+.metadata/
 
