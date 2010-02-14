@@ -125,13 +125,14 @@ class LandgrebeFeatures {
     }
 
     Matrix features = new Matrix(F, dim, newDim);
-//    System.out.println("Features extracted in " + systime + " ms " + newDim + " features needed,  threshold = " + threshold);
-//    features.print(features.getColumnDimension(), features.getRowDimension());
-//    System.out.println("EigenValues:");
-//    for (int j = 0; j<dim; j++)
-//      System.out.print("  " + eigenValues[j]);
-//    System.out.println();
-//
+    //System.out.println("Features extracted in " + "???" + " ms " + newDim + " features needed,  threshold = " + eigenvaluesRelationThreshold);
+    System.out.println("Features:");
+    features.print(features.getColumnDimension(), features.getRowDimension());
+    System.out.println("EigenValues:");
+    for (int j = 0; j<dim; j++)
+      System.out.print("  " + eigenValues[j]);
+    System.out.println();
+
 
     return features;
   }

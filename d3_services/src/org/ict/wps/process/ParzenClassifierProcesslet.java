@@ -120,7 +120,7 @@ public class ParzenClassifierProcesslet implements Processlet {
   private OutputBundle doProcess(InputBundle inputBundle, ProcessletExecutionInfo info) {
 
     LOG.trace("create tree classifier");
-    Classifier classifier = Classifiers.createSimpleClassifier(inputBundle.task);
+    Classifier classifier = Classifiers.createTreeClassifier(inputBundle.task);
 
     LOG.trace("start pixel processing");
     Raster data = inputBundle.raster.getData();

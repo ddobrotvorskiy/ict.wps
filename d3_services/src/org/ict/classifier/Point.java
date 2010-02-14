@@ -110,7 +110,7 @@ public final class Point {
     for (int i = 0; i < dim; i++) {
       double val = 0.;
       for (int j = 0; j < data.length ; j++)
-        val += data[j] * A[j][i];
+        val += this.data[j] * A[j][i];
       data[i] = val;
     }
 

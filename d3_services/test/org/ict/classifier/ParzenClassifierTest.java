@@ -82,7 +82,7 @@ public class ParzenClassifierTest extends TestCase {
 
       //ParzenClassifier classifier = ParzenClassifier.createClassifier(tb.createTask());
       //ParzenClassifier classifier = ParzenClassifier.createClassifier(HyperCubeOptimizer.optimizeTask(tb.createTask()));
-      Classifier classifier = Classifiers.createClassifier(tb.createTask());
+      Classifier classifier = Classifiers.createTreeClassifier(tb.createTask());
 
       int errCount = 0;
       int [] byClassDistribution = new int[] {0, 0};
