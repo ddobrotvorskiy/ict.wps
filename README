@@ -14,8 +14,9 @@ Getting project
  1. Setup git (msysgit for windows)
  2. Setup global git parameters
 
-    git config --global user.name="Vasily Pupkin"
-    git config --global user.email="pupkin@gmail.com"
+    git config --global user.name "Vasily Pupkin"
+    git config --global user.email "pupkin@gmail.com"
+    git confog --global core.autocrlf true
 
  3. Download project via IDE or manually
 
