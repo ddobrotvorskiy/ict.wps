@@ -1,63 +1,0 @@
-10
-
-dir
-21853
-http://wald.intevation.org/svn/deegree/deegree3/services/trunk/src/org/deegree/services/controller/sos
-http://wald.intevation.org/svn/deegree
-
-
-
-2009-10-26T13:06:17.254606Z
-20370
-aschmitz
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-20a5a20e-76a8-4a5e-adb6-8db71fc8bde4
-
-configuration
-dir
-
-OWSExceptionAdapter.java
-file
-
-
-
-
-2009-11-08T13:40:51.000000Z
-701649f064059c3c4894f639914efe87
-2009-08-28T08:26:53.350670Z
-19378
-aionita
-has-props
-
-SOSController.java
-file
-
-
-
-
-2009-11-08T13:40:51.000000Z
-7075517e421c17fd6f293638a4182aef
-2009-10-19T13:20:57.245515Z
-20192
-aionita
-has-props
-
-capabilities
-dir
-
-getobservation
-dir
-

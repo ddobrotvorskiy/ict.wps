@@ -1,58 +1,0 @@
-10
-
-dir
-21853
-http://wald.intevation.org/svn/deegree/deegree3/services/trunk/src/org/deegree/services
-http://wald.intevation.org/svn/deegree
-
-
-
-2010-01-11T12:59:24.829184Z
-21847
-sthomas
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-20a5a20e-76a8-4a5e-adb6-8db71fc8bde4
-
-i18n
-dir
-
-wfs
-dir
-
-wpvs
-dir
-
-controller
-dir
-
-sos
-dir
-
-wms
-dir
-
-wps
-dir
-
-csw
-dir
-
-wcs
-dir
-
-exception
-dir
-

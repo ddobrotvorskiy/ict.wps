@@ -1,82 +1,0 @@
-10
-
-dir
-21853
-http://wald.intevation.org/svn/deegree/deegree3/core/trunk/lib
-http://wald.intevation.org/svn/deegree
-
-
-
-2009-11-05T12:14:59.226644Z
-20587
-aschmitz
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-20a5a20e-76a8-4a5e-adb6-8db71fc8bde4
-
-ant-contrib
-dir
-
-ehcache
-dir
-
-mail
-dir
-
-jaxb
-dir
-
-opengis-schemas
-dir
-
-logging
-dir
-
-cup
-dir
-
-postgis
-dir
-
-xerces
-dir
-
-junit
-dir
-
-batik
-dir
-
-jogl
-dir
-
-xml
-dir
-
-jts
-dir
-
-jai
-dir
-
-derby
-dir
-
-java3d
-dir
-
-commons
-dir
-

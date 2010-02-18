@@ -1,67 +1,0 @@
-10
-
-dir
-21853
-http://wald.intevation.org/svn/deegree/deegree3/core/trunk/src/org/deegree/commons
-http://wald.intevation.org/svn/deegree
-
-
-
-2010-01-11T07:46:49.422358Z
-21836
-aschmitz
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-20a5a20e-76a8-4a5e-adb6-8db71fc8bde4
-
-i18n
-dir
-
-uom
-dir
-
-utils
-dir
-
-xml
-dir
-
-concurrent
-dir
-
-jdbc
-dir
-
-mail
-dir
-
-types
-dir
-
-version
-dir
-
-configuration
-dir
-
-index
-dir
-
-datasource
-dir
-
-dataaccess
-dir
-

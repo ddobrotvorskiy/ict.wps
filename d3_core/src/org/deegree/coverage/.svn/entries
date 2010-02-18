@@ -1,63 +1,0 @@
-10
-
-dir
-21853
-http://wald.intevation.org/svn/deegree/deegree3/core/trunk/src/org/deegree/coverage
-http://wald.intevation.org/svn/deegree
-
-
-
-2010-01-07T12:47:46.817267Z
-21813
-rbezema
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-20a5a20e-76a8-4a5e-adb6-8db71fc8bde4
-
-AbstractCoverage.java
-file
-
-
-
-
-2009-11-08T13:39:08.000000Z
-d2860a3e30bdd354478e24146403d55f
-2009-08-27T10:49:08.516498Z
-19360
-rbezema
-has-props
-
-raster
-dir
-
-filter
-dir
-
-rangeset
-dir
-
-SupplementProperties.java
-file
-
-
-
-
-2009-11-08T13:39:08.000000Z
-d15dd768b9301892b58e8c21d2a8e434
-2009-09-10T10:27:26.729999Z
-19569
-rbezema
-has-props
-

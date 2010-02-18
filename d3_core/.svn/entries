@@ -1,85 +1,0 @@
-10
-
-dir
-21853
-http://wald.intevation.org/svn/deegree/deegree3/core/trunk
-http://wald.intevation.org/svn/deegree
-
-
-
-2010-01-11T13:50:15.220015Z
-21852
-aschmitz
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-20a5a20e-76a8-4a5e-adb6-8db71fc8bde4
-
-test
-dir
-
-lib
-dir
-
-scripts
-dir
-
-src
-dir
-
-resources
-dir
-
-build.properties
-file
-
-
-
-
-2009-11-08T13:40:06.000000Z
-20b2af975e9e44fbfdb384d726e0bdb8
-2009-08-24T15:52:42.688232Z
-19315
-rbezema
-has-props
-
-README.txt
-file
-
-
-
-
-2009-11-08T13:40:06.000000Z
-ddd3da2454d79d5769f8dff663f42600
-2009-11-05T12:14:59.226644Z
-20587
-aschmitz
-has-props
-
-src-api
-dir
-
-build.xml
-file
-
-
-
-
-2009-11-08T13:40:06.000000Z
-73c7a5f64d95b9b37bc7d5e74ee02747
-2009-09-24T13:29:53.908238Z
-19767
-mschneider
-has-props
-

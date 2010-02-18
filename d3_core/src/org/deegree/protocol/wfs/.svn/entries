@@ -1,97 +1,0 @@
-10
-
-dir
-21853
-http://wald.intevation.org/svn/deegree/deegree3/core/trunk/src/org/deegree/protocol/wfs
-http://wald.intevation.org/svn/deegree
-
-
-
-2009-12-09T14:08:59.076373Z
-21344
-aionita
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-20a5a20e-76a8-4a5e-adb6-8db71fc8bde4
-
-getfeaturewithlock
-dir
-
-lockfeature
-dir
-
-transaction
-dir
-
-getgmlobject
-dir
-
-capabilities
-dir
-
-getfeature
-dir
-
-AbstractWFSRequest.java
-file
-
-
-
-
-2009-11-08T13:37:36.000000Z
-a23e0819e0fc6d7323e0a68e355d16d5
-2009-09-22T17:04:14.879473Z
-19720
-mschneider
-
-WFSConstants.java
-file
-
-
-
-
-2009-11-08T13:37:36.000000Z
-ed88cc3eaff1a3e01dbe310a02726c88
-2009-08-11T16:20:07.033871Z
-19043
-mschneider
-
-describefeaturetype
-dir
-
-AbstractWFSRequestKVPAdapter.java
-file
-
-
-
-
-2009-11-08T13:37:36.000000Z
-f3d2bd98c94f0605f74f9e58dda6b892
-2009-06-17T14:00:07.522388Z
-18171
-mschneider
-
-AbstractWFSRequestXMLAdapter.java
-file
-
-
-
-
-2009-11-08T13:37:36.000000Z
-43a311d1eafb2c05f07a6d0617617f91
-2009-10-30T06:56:26.429652Z
-20460
-sthomas
-
