@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/deegree/!svn/ver/21659/deegree3/core/trunk/src/org/deegree/gml/dictionary
+END
+GMLDictionaryWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/deegree/!svn/ver/21659/deegree3/core/trunk/src/org/deegree/gml/dictionary/GMLDictionaryWriter.java
+END
+GenericDictionary.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/deegree/!svn/ver/21659/deegree3/core/trunk/src/org/deegree/gml/dictionary/GenericDictionary.java
+END
+Dictionary.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/deegree/!svn/ver/21659/deegree3/core/trunk/src/org/deegree/gml/dictionary/Dictionary.java
+END
+GenericDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/deegree/!svn/ver/21659/deegree3/core/trunk/src/org/deegree/gml/dictionary/GenericDefinition.java
+END
+Definition.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/deegree/!svn/ver/21659/deegree3/core/trunk/src/org/deegree/gml/dictionary/Definition.java
+END
+GMLDictionaryReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/deegree/!svn/ver/21659/deegree3/core/trunk/src/org/deegree/gml/dictionary/GMLDictionaryReader.java
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/deegree/!svn/ver/20241/deegree3/core/trunk/src/org/deegree/protocol/ows/capabilities
+END
+GetCapabilitiesKVPParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/deegree/!svn/ver/20096/deegree3/core/trunk/src/org/deegree/protocol/ows/capabilities/GetCapabilitiesKVPParser.java
+END
+GetCapabilitiesXMLParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/deegree/!svn/ver/20096/deegree3/core/trunk/src/org/deegree/protocol/ows/capabilities/GetCapabilitiesXMLParser.java
+END
+GetCapabilities.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/deegree/!svn/ver/20241/deegree3/core/trunk/src/org/deegree/protocol/ows/capabilities/GetCapabilities.java
+END

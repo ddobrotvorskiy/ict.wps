@@ -1,0 +1,43 @@
+10
+
+dir
+21853
+http://wald.intevation.org/svn/deegree/deegree3/core/trunk/test/org/deegree/protocol/wfs
+http://wald.intevation.org/svn/deegree
+
+
+
+2009-11-24T09:39:09.374816Z
+20991
+sthomas
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+20a5a20e-76a8-4a5e-adb6-8db71fc8bde4
+
+getfeaturewithlock
+dir
+
+lockfeature
+dir
+
+transaction
+dir
+
+getfeature
+dir
+
+describefeaturetype
+dir
+

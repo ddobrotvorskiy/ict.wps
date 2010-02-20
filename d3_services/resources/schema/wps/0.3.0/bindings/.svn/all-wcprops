@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/deegree/!svn/ver/20009/deegree3/services/trunk/resources/schema/wps/0.3.0/bindings
+END
+wps_process_bindings.xjb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/deegree/!svn/ver/20009/deegree3/services/trunk/resources/schema/wps/0.3.0/bindings/wps_process_bindings.xjb
+END
+wps_published_bindings.xjb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/deegree/!svn/ver/20009/deegree3/services/trunk/resources/schema/wps/0.3.0/bindings/wps_published_bindings.xjb
+END
+wps_service_bindings.xjb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/deegree/!svn/ver/20009/deegree3/services/trunk/resources/schema/wps/0.3.0/bindings/wps_service_bindings.xjb
+END

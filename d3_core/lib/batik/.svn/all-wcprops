@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/deegree/!svn/ver/20587/deegree3/core/trunk/lib/batik
+END
+batik-bridge.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/deegree/!svn/ver/20587/deegree3/core/trunk/lib/batik/batik-bridge.jar
+END
+batik-parser.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/deegree/!svn/ver/20587/deegree3/core/trunk/lib/batik/batik-parser.jar
+END
+batik-svg-dom.jar
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/deegree/!svn/ver/20587/deegree3/core/trunk/lib/batik/batik-svg-dom.jar
+END
+batik-util.jar
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/deegree/!svn/ver/20587/deegree3/core/trunk/lib/batik/batik-util.jar
+END
+batik-dom.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/deegree/!svn/ver/20587/deegree3/core/trunk/lib/batik/batik-dom.jar
+END
+batik-ext.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/deegree/!svn/ver/20587/deegree3/core/trunk/lib/batik/batik-ext.jar
+END
+batik-gvt.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/deegree/!svn/ver/20587/deegree3/core/trunk/lib/batik/batik-gvt.jar
+END
+batik-xml.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/deegree/!svn/ver/20587/deegree3/core/trunk/lib/batik/batik-xml.jar
+END
+xml-apis-ext.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/deegree/!svn/ver/20587/deegree3/core/trunk/lib/batik/xml-apis-ext.jar
+END
+batik-anim.jar
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/deegree/!svn/ver/20587/deegree3/core/trunk/lib/batik/batik-anim.jar
+END
+batik-script.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/deegree/!svn/ver/20587/deegree3/core/trunk/lib/batik/batik-script.jar
+END
+batik-awt-util.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/deegree/!svn/ver/20587/deegree3/core/trunk/lib/batik/batik-awt-util.jar
+END
+batik-css.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/deegree/!svn/ver/20587/deegree3/core/trunk/lib/batik/batik-css.jar
+END

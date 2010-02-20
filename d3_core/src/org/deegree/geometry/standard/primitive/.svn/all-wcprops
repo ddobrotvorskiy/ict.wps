@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/deegree/!svn/ver/21659/deegree3/core/trunk/src/org/deegree/geometry/standard/primitive
+END
+DefaultLinearRing.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/geometry/standard/primitive/DefaultLinearRing.java
+END
+DefaultSolid.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/deegree/!svn/ver/18899/deegree3/core/trunk/src/org/deegree/geometry/standard/primitive/DefaultSolid.java
+END
+DefaultTin.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/deegree/!svn/ver/18997/deegree3/core/trunk/src/org/deegree/geometry/standard/primitive/DefaultTin.java
+END
+DefaultPolyhedralSurface.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/deegree/!svn/ver/18997/deegree3/core/trunk/src/org/deegree/geometry/standard/primitive/DefaultPolyhedralSurface.java
+END
+DefaultTriangulatedSurface.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/deegree/!svn/ver/18997/deegree3/core/trunk/src/org/deegree/geometry/standard/primitive/DefaultTriangulatedSurface.java
+END
+DefaultOrientableSurface.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/deegree/!svn/ver/21659/deegree3/core/trunk/src/org/deegree/geometry/standard/primitive/DefaultOrientableSurface.java
+END
+DefaultLineString.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/deegree/!svn/ver/18997/deegree3/core/trunk/src/org/deegree/geometry/standard/primitive/DefaultLineString.java
+END
+DefaultRing.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/deegree/!svn/ver/19018/deegree3/core/trunk/src/org/deegree/geometry/standard/primitive/DefaultRing.java
+END
+DefaultCurve.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/deegree/!svn/ver/19018/deegree3/core/trunk/src/org/deegree/geometry/standard/primitive/DefaultCurve.java
+END
+DefaultPolygon.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/deegree/!svn/ver/20208/deegree3/core/trunk/src/org/deegree/geometry/standard/primitive/DefaultPolygon.java
+END
+DefaultSurface.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/deegree/!svn/ver/20418/deegree3/core/trunk/src/org/deegree/geometry/standard/primitive/DefaultSurface.java
+END
+DefaultOrientableCurve.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/deegree/!svn/ver/21659/deegree3/core/trunk/src/org/deegree/geometry/standard/primitive/DefaultOrientableCurve.java
+END
+DefaultPoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/deegree/!svn/ver/19018/deegree3/core/trunk/src/org/deegree/geometry/standard/primitive/DefaultPoint.java
+END

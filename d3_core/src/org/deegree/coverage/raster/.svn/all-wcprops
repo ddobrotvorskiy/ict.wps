@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/deegree/!svn/ver/21813/deegree3/core/trunk/src/org/deegree/coverage/raster
+END
+MultiResolutionRaster.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/deegree/!svn/ver/21386/deegree3/core/trunk/src/org/deegree/coverage/raster/MultiResolutionRaster.java
+END
+TiledRaster.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/deegree/!svn/ver/21493/deegree3/core/trunk/src/org/deegree/coverage/raster/TiledRaster.java
+END
+RasterTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/deegree/!svn/ver/21788/deegree3/core/trunk/src/org/deegree/coverage/raster/RasterTransformer.java
+END
+AbstractRaster.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/deegree/!svn/ver/21493/deegree3/core/trunk/src/org/deegree/coverage/raster/AbstractRaster.java
+END
+SimpleRaster.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/deegree/!svn/ver/21787/deegree3/core/trunk/src/org/deegree/coverage/raster/SimpleRaster.java
+END
+MultiRangedRaster.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/deegree/!svn/ver/20445/deegree3/core/trunk/src/org/deegree/coverage/raster/MultiRangedRaster.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/coverage/raster/package.html
+END

@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/deegree/!svn/ver/21850/deegree3/services/trunk/resources/example/requests/csw/examples/GetRecords/xml
+END
+Beyond.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/deegree/!svn/ver/21073/deegree3/services/trunk/resources/example/requests/csw/examples/GetRecords/xml/Beyond.xml
+END
+getRecords.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/deegree/!svn/ver/20747/deegree3/services/trunk/resources/example/requests/csw/examples/GetRecords/xml/getRecords.xml
+END
+AND.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/deegree/!svn/ver/21073/deegree3/services/trunk/resources/example/requests/csw/examples/GetRecords/xml/AND.xml
+END
+Not_And.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/deegree/!svn/ver/21073/deegree3/services/trunk/resources/example/requests/csw/examples/GetRecords/xml/Not_And.xml
+END
+sortBy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/deegree/!svn/ver/21073/deegree3/services/trunk/resources/example/requests/csw/examples/GetRecords/xml/sortBy.xml
+END
+Disjoint.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/deegree/!svn/ver/21073/deegree3/services/trunk/resources/example/requests/csw/examples/GetRecords/xml/Disjoint.xml
+END
+Not_And_2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/deegree/!svn/ver/21073/deegree3/services/trunk/resources/example/requests/csw/examples/GetRecords/xml/Not_And_2.xml
+END
+getFrom_title.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/deegree/!svn/ver/21850/deegree3/services/trunk/resources/example/requests/csw/examples/GetRecords/xml/getFrom_title.xml
+END
+PropEqual.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/deegree/!svn/ver/21850/deegree3/services/trunk/resources/example/requests/csw/examples/GetRecords/xml/PropEqual.xml
+END
+getRecordsComplex_1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/deegree/!svn/ver/21073/deegree3/services/trunk/resources/example/requests/csw/examples/GetRecords/xml/getRecordsComplex_1.xml
+END
+getAllRecords.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/deegree/!svn/ver/21073/deegree3/services/trunk/resources/example/requests/csw/examples/GetRecords/xml/getAllRecords.xml
+END
+getRecordsDistSearch.xml
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/deegree/!svn/ver/21073/deegree3/services/trunk/resources/example/requests/csw/examples/GetRecords/xml/getRecordsDistSearch.xml
+END
+BoundingBox_1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/deegree/!svn/ver/21073/deegree3/services/trunk/resources/example/requests/csw/examples/GetRecords/xml/BoundingBox_1.xml
+END
+BoundingBox_2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/deegree/!svn/ver/21073/deegree3/services/trunk/resources/example/requests/csw/examples/GetRecords/xml/BoundingBox_2.xml
+END

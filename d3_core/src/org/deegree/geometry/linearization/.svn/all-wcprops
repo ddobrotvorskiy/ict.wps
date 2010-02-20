@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/deegree/!svn/ver/21820/deegree3/core/trunk/src/org/deegree/geometry/linearization
+END
+LinearizationCriterion.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/geometry/linearization/LinearizationCriterion.java
+END
+CurveLinearizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/deegree/!svn/ver/21820/deegree3/core/trunk/src/org/deegree/geometry/linearization/CurveLinearizer.java
+END
+NumPointsCriterion.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/geometry/linearization/NumPointsCriterion.java
+END
+SurfaceLinearizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/deegree/!svn/ver/18997/deegree3/core/trunk/src/org/deegree/geometry/linearization/SurfaceLinearizer.java
+END
+MaxErrorCriterion.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/deegree/!svn/ver/20867/deegree3/core/trunk/src/org/deegree/geometry/linearization/MaxErrorCriterion.java
+END

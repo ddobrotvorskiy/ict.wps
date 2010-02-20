@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/deegree/!svn/ver/19845/deegree3/core/trunk/src/org/deegree/rendering/r3d/opengl/display
+END
+TrackBall.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/rendering/r3d/opengl/display/TrackBall.java
+END
+LODAnalyzer.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/rendering/r3d/opengl/display/LODAnalyzer.java
+END
+OpenGLEventHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/deegree/!svn/ver/19845/deegree3/core/trunk/src/org/deegree/rendering/r3d/opengl/display/OpenGLEventHandler.java
+END
+TextureTileAnalyzer.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/rendering/r3d/opengl/display/TextureTileAnalyzer.java
+END

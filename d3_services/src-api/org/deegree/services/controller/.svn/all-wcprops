@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/deegree/!svn/ver/21754/deegree3/services/trunk/src-api/org/deegree/services/controller
+END
+AbstractOGCServiceController.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/deegree/!svn/ver/20152/deegree3/services/trunk/src-api/org/deegree/services/controller/AbstractOGCServiceController.java
+END
+OGCFrontController.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/deegree/!svn/ver/21754/deegree3/services/trunk/src-api/org/deegree/services/controller/OGCFrontController.java
+END
+FrontControllerStats.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/deegree/!svn/ver/19262/deegree3/services/trunk/src-api/org/deegree/services/controller/FrontControllerStats.java
+END
+RequestContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/deegree/!svn/ver/18171/deegree3/services/trunk/src-api/org/deegree/services/controller/RequestContext.java
+END

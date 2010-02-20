@@ -1,0 +1,68 @@
+10
+
+dir
+21853
+http://wald.intevation.org/svn/deegree/deegree3/core/trunk/src/org/deegree/protocol/sos
+http://wald.intevation.org/svn/deegree
+
+
+
+2009-11-17T17:12:47.608746Z
+20844
+aionita
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+20a5a20e-76a8-4a5e-adb6-8db71fc8bde4
+
+SOSRequest100XMLAdapter.java
+file
+
+
+
+
+2009-11-08T13:37:38.000000Z
+7c5ad720b2d41c7bb9c996a18f398f14
+2009-08-28T08:26:53.350670Z
+19378
+aionita
+has-props
+
+SOSConstants.java
+file
+
+
+
+
+2009-11-08T13:37:38.000000Z
+32169b2b02baf14b7a226343e550fa04
+2009-08-27T14:05:50.529840Z
+19373
+aionita
+
+filter
+dir
+
+describesensor
+dir
+
+getobservation
+dir
+
+getfeatureofinterest
+dir
+
+time
+dir
+

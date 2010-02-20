@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/deegree/!svn/ver/21836/deegree3/core/trunk/src/org/deegree/commons/utils/templating
+END
+Templating.flex
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/deegree/!svn/ver/21835/deegree3/core/trunk/src/org/deegree/commons/utils/templating/Templating.flex
+END
+TemplatingParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/deegree/!svn/ver/21819/deegree3/core/trunk/src/org/deegree/commons/utils/templating/TemplatingParser.java
+END
+TemplatingLexer.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/deegree/!svn/ver/21835/deegree3/core/trunk/src/org/deegree/commons/utils/templating/TemplatingLexer.java
+END
+TemplatingEvaluator.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/deegree/!svn/ver/21836/deegree3/core/trunk/src/org/deegree/commons/utils/templating/TemplatingEvaluator.java
+END
+Templating.cup
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/deegree/!svn/ver/21819/deegree3/core/trunk/src/org/deegree/commons/utils/templating/Templating.cup
+END
+TemplatingSymbols.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/deegree/!svn/ver/21819/deegree3/core/trunk/src/org/deegree/commons/utils/templating/TemplatingSymbols.java
+END

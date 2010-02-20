@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/deegree/!svn/ver/18474/deegree3/services/trunk/test/org/deegree/services/wps
+END
+wps_configuration.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/deegree/!svn/ver/13146/deegree3/services/trunk/test/org/deegree/services/wps/wps_configuration.xml
+END
+WPSConfigurationTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/deegree/!svn/ver/18171/deegree3/services/trunk/test/org/deegree/services/wps/WPSConfigurationTest.java
+END
+services_metadata.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/deegree/!svn/ver/13146/deegree3/services/trunk/test/org/deegree/services/wps/services_metadata.xml
+END
+wps_incorrect_configuration.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/deegree/!svn/ver/13146/deegree3/services/trunk/test/org/deegree/services/wps/wps_incorrect_configuration.xml
+END
+WPSControllerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/deegree/!svn/ver/18474/deegree3/services/trunk/test/org/deegree/services/wps/WPSControllerTest.java
+END

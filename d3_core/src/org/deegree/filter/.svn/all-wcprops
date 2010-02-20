@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/deegree/!svn/ver/21814/deegree3/core/trunk/src/org/deegree/filter
+END
+Expression.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/deegree/!svn/ver/20355/deegree3/core/trunk/src/org/deegree/filter/Expression.java
+END
+OperatorFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/filter/OperatorFilter.java
+END
+IdFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/filter/IdFilter.java
+END
+Filter.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/deegree/!svn/ver/20203/deegree3/core/trunk/src/org/deegree/filter/Filter.java
+END
+MatchableObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/deegree/!svn/ver/21206/deegree3/core/trunk/src/org/deegree/filter/MatchableObject.java
+END
+Filters.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/deegree/!svn/ver/20388/deegree3/core/trunk/src/org/deegree/filter/Filters.java
+END
+Operator.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/filter/Operator.java
+END
+FilterEvaluationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/filter/FilterEvaluationException.java
+END

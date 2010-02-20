@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/deegree/!svn/ver/13479/deegree3/services/trunk/resources/example/data/sos
+END
+utah-sensorml.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/deegree/!svn/ver/13479/deegree3/services/trunk/resources/example/data/sos/utah-sensorml.xml
+END
+foobarnator-sensorml.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/deegree/!svn/ver/13479/deegree3/services/trunk/resources/example/data/sos/foobarnator-sensorml.xml
+END

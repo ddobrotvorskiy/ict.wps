@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/deegree/!svn/ver/20008/deegree3/services/trunk/src/org/deegree/services/sos/configuration
+END
+package-info.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/deegree/!svn/ver/20008/deegree3/services/trunk/src/org/deegree/services/sos/configuration/package-info.java
+END
+Option.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/deegree/!svn/ver/20008/deegree3/services/trunk/src/org/deegree/services/sos/configuration/Option.java
+END
+ServiceConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/deegree/!svn/ver/20008/deegree3/services/trunk/src/org/deegree/services/sos/configuration/ServiceConfiguration.java
+END
+Column.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/deegree/!svn/ver/20008/deegree3/services/trunk/src/org/deegree/services/sos/configuration/Column.java
+END
+ObjectFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/deegree/!svn/ver/20008/deegree3/services/trunk/src/org/deegree/services/sos/configuration/ObjectFactory.java
+END

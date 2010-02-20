@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/deegree/!svn/ver/21847/deegree3/services/trunk/src/org/deegree/services/controller/csw
+END
+CSWController.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/deegree/!svn/ver/21072/deegree3/services/trunk/src/org/deegree/services/controller/csw/CSWController.java
+END
+AbstractCSWKVPAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/deegree/!svn/ver/20379/deegree3/services/trunk/src/org/deegree/services/controller/csw/AbstractCSWKVPAdapter.java
+END
+AbstractCSWRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/deegree/!svn/ver/21664/deegree3/services/trunk/src/org/deegree/services/controller/csw/AbstractCSWRequest.java
+END
+AbstractCSWRequestXMLAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/deegree/!svn/ver/20472/deegree3/services/trunk/src/org/deegree/services/controller/csw/AbstractCSWRequestXMLAdapter.java
+END

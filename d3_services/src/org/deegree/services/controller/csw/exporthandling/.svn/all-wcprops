@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/deegree/!svn/ver/21847/deegree3/services/trunk/src/org/deegree/services/controller/csw/exporthandling
+END
+GetRecordsHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/deegree/!svn/ver/21846/deegree3/services/trunk/src/org/deegree/services/controller/csw/exporthandling/GetRecordsHandler.java
+END
+TransactionHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/deegree/!svn/ver/21847/deegree3/services/trunk/src/org/deegree/services/controller/csw/exporthandling/TransactionHandler.java
+END
+GetCapabilitiesHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/deegree/!svn/ver/21622/deegree3/services/trunk/src/org/deegree/services/controller/csw/exporthandling/GetCapabilitiesHandler.java
+END
+DescribeRecordHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/deegree/!svn/ver/21622/deegree3/services/trunk/src/org/deegree/services/controller/csw/exporthandling/DescribeRecordHandler.java
+END

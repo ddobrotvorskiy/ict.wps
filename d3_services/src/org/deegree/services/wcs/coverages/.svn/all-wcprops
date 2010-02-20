@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/deegree/!svn/ver/19965/deegree3/services/trunk/src/org/deegree/services/wcs/coverages
+END
+SimpleCoverage.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/deegree/!svn/ver/19573/deegree3/services/trunk/src/org/deegree/services/wcs/coverages/SimpleCoverage.java
+END
+CoverageTransform.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/deegree/!svn/ver/19965/deegree3/services/trunk/src/org/deegree/services/wcs/coverages/CoverageTransform.java
+END
+WCSCoverage.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/deegree/!svn/ver/19574/deegree3/services/trunk/src/org/deegree/services/wcs/coverages/WCSCoverage.java
+END
+SimpleRasterResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/deegree/!svn/ver/19573/deegree3/services/trunk/src/org/deegree/services/wcs/coverages/SimpleRasterResult.java
+END
+MultiResolutionCoverage.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/deegree/!svn/ver/19573/deegree3/services/trunk/src/org/deegree/services/wcs/coverages/MultiResolutionCoverage.java
+END

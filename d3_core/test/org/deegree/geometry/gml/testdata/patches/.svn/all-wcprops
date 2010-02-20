@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/patches
+END
+Cone.gml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/patches/Cone.gml
+END
+Rectangle.gml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/patches/Rectangle.gml
+END
+Triangle.gml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/patches/Triangle.gml
+END
+Sphere.gml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/patches/Sphere.gml
+END
+PolygonPatch.gml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/patches/PolygonPatch.gml
+END
+Cylinder.gml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/patches/Cylinder.gml
+END

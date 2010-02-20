@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/deegree/!svn/ver/20355/deegree3/core/trunk/src/org/deegree/protocol/wfs/getfeaturewithlock
+END
+GetFeatureWithLock.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/deegree/!svn/ver/19720/deegree3/core/trunk/src/org/deegree/protocol/wfs/getfeaturewithlock/GetFeatureWithLock.java
+END
+GetFeatureWithLockKVPAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/deegree/!svn/ver/20355/deegree3/core/trunk/src/org/deegree/protocol/wfs/getfeaturewithlock/GetFeatureWithLockKVPAdapter.java
+END
+GetFeatureWithLockXMLAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/deegree/!svn/ver/20355/deegree3/core/trunk/src/org/deegree/protocol/wfs/getfeaturewithlock/GetFeatureWithLockXMLAdapter.java
+END

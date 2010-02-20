@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/deegree/!svn/ver/21822/deegree3/services/trunk/src/org/deegree/services/controller/configuration
+END
+ServiceType.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/deegree/!svn/ver/21822/deegree3/services/trunk/src/org/deegree/services/controller/configuration/ServiceType.java
+END
+package-info.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/deegree/!svn/ver/21822/deegree3/services/trunk/src/org/deegree/services/controller/configuration/package-info.java
+END
+DeegreeServicesMetadata.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/deegree/!svn/ver/21822/deegree3/services/trunk/src/org/deegree/services/controller/configuration/DeegreeServicesMetadata.java
+END
+AddressType.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/deegree/!svn/ver/21822/deegree3/services/trunk/src/org/deegree/services/controller/configuration/AddressType.java
+END
+DCPType.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/deegree/!svn/ver/21822/deegree3/services/trunk/src/org/deegree/services/controller/configuration/DCPType.java
+END
+AllowedServices.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/deegree/!svn/ver/21822/deegree3/services/trunk/src/org/deegree/services/controller/configuration/AllowedServices.java
+END
+ConfiguredServicesType.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/deegree/!svn/ver/21822/deegree3/services/trunk/src/org/deegree/services/controller/configuration/ConfiguredServicesType.java
+END
+ServiceIdentificationType.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/deegree/!svn/ver/21822/deegree3/services/trunk/src/org/deegree/services/controller/configuration/ServiceIdentificationType.java
+END
+ServiceProviderType.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/deegree/!svn/ver/21822/deegree3/services/trunk/src/org/deegree/services/controller/configuration/ServiceProviderType.java
+END
+ObjectFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/deegree/!svn/ver/21822/deegree3/services/trunk/src/org/deegree/services/controller/configuration/ObjectFactory.java
+END
+ServiceContactType.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/deegree/!svn/ver/21822/deegree3/services/trunk/src/org/deegree/services/controller/configuration/ServiceContactType.java
+END

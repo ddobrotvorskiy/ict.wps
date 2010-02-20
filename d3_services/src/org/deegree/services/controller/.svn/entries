@@ -1,0 +1,90 @@
+10
+
+dir
+21853
+http://wald.intevation.org/svn/deegree/deegree3/services/trunk/src/org/deegree/services/controller
+http://wald.intevation.org/svn/deegree
+
+
+
+2010-01-11T12:59:24.829184Z
+21847
+sthomas
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+20a5a20e-76a8-4a5e-adb6-8db71fc8bde4
+
+wfs
+dir
+
+wpvs
+dir
+
+utils
+dir
+
+rra
+dir
+
+sos
+dir
+
+wms
+dir
+
+ImplementationMetadata.java
+file
+
+
+
+
+2009-11-08T13:41:15.000000Z
+a388a38c18c738af781f07fc5c9ecdb1
+2009-08-17T11:40:34.989949Z
+19154
+mschneider
+has-props
+
+configuration
+dir
+
+ows
+dir
+
+wps
+dir
+
+csw
+dir
+
+wcs
+dir
+
+exception
+dir
+
+TestSoapRequests.java
+file
+
+
+
+
+2009-11-08T13:41:15.000000Z
+bd8adee29e7aaab498c74362362ab4c8
+2009-07-29T16:54:42.842347Z
+18799
+mschneider
+has-props
+

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/deegree/!svn/ver/20512/deegree3/services/trunk/src/org/deegree/services/controller/csw/capabilities
+END
+GetCapabilities202KVPAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/deegree/!svn/ver/20512/deegree3/services/trunk/src/org/deegree/services/controller/csw/capabilities/GetCapabilities202KVPAdapter.java
+END
+GetCapabilitiesVersionXMLAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/deegree/!svn/ver/20335/deegree3/services/trunk/src/org/deegree/services/controller/csw/capabilities/GetCapabilitiesVersionXMLAdapter.java
+END

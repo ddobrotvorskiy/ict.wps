@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/deegree/!svn/ver/19768/deegree3/services/trunk/resources/schema/wms/0.2.0
+END
+wms_published_information.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/deegree/!svn/ver/19768/deegree3/services/trunk/resources/schema/wms/0.2.0/wms_published_information.xsd
+END
+wms_configuration.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/deegree/!svn/ver/19768/deegree3/services/trunk/resources/schema/wms/0.2.0/wms_configuration.xsd
+END
+wms_service_configuration.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/deegree/!svn/ver/19768/deegree3/services/trunk/resources/schema/wms/0.2.0/wms_service_configuration.xsd
+END

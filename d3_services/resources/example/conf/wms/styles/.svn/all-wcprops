@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/deegree/!svn/ver/17837/deegree3/services/trunk/resources/example/conf/wms/styles
+END
+example-linesymbolizer.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/deegree/!svn/ver/17640/deegree3/services/trunk/resources/example/conf/wms/styles/example-linesymbolizer.xml
+END
+example-polygonsymbolizer.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/deegree/!svn/ver/17640/deegree3/services/trunk/resources/example/conf/wms/styles/example-polygonsymbolizer.xml
+END
+example-pointsymbolizer1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/deegree/!svn/ver/17640/deegree3/services/trunk/resources/example/conf/wms/styles/example-pointsymbolizer1.xml
+END
+example-pointsymbolizer2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/deegree/!svn/ver/17837/deegree3/services/trunk/resources/example/conf/wms/styles/example-pointsymbolizer2.xml
+END
+example-coveragestyle.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/deegree/!svn/ver/17640/deegree3/services/trunk/resources/example/conf/wms/styles/example-coveragestyle.xml
+END
+example-featurestyle.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/deegree/!svn/ver/17640/deegree3/services/trunk/resources/example/conf/wms/styles/example-featurestyle.xml
+END
+example-rastersymbolizer1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/deegree/!svn/ver/17640/deegree3/services/trunk/resources/example/conf/wms/styles/example-rastersymbolizer1.xml
+END
+example-rastersymbolizer2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/deegree/!svn/ver/17640/deegree3/services/trunk/resources/example/conf/wms/styles/example-rastersymbolizer2.xml
+END
+example-textsymbolizer.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/deegree/!svn/ver/17640/deegree3/services/trunk/resources/example/conf/wms/styles/example-textsymbolizer.xml
+END

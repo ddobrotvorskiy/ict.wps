@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/deegree/!svn/ver/19550/deegree3/services/trunk/src/org/deegree/services/controller/wcs/getcoverage
+END
+GetCoverage.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/deegree/!svn/ver/19365/deegree3/services/trunk/src/org/deegree/services/controller/wcs/getcoverage/GetCoverage.java
+END
+GetCoverage100KVPAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/deegree/!svn/ver/19550/deegree3/services/trunk/src/org/deegree/services/controller/wcs/getcoverage/GetCoverage100KVPAdapter.java
+END
+GetCoverage100XMLAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/deegree/!svn/ver/19550/deegree3/services/trunk/src/org/deegree/services/controller/wcs/getcoverage/GetCoverage100XMLAdapter.java
+END

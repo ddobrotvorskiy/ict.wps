@@ -1,0 +1,105 @@
+10
+
+dir
+21853
+http://wald.intevation.org/svn/deegree/deegree3/core/trunk/src/org/deegree/geometry/standard
+http://wald.intevation.org/svn/deegree
+
+
+
+2009-12-23T13:29:54.499160Z
+21659
+mschneider
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+20a5a20e-76a8-4a5e-adb6-8db71fc8bde4
+
+surfacepatches
+dir
+
+composite
+dir
+
+DefaultEnvelope.java
+file
+
+
+
+
+2009-11-08T13:39:38.000000Z
+6769219ab1f48ab54f11adf3b5186290
+2009-09-29T12:54:14.017801Z
+19845
+mschneider
+has-props
+
+AbstractDefaultGeometry.java
+file
+
+
+
+
+2010-01-09T15:26:35.000000Z
+74e2f1b66d47b7e6d74515aadc4dd4c6
+2009-12-23T13:29:54.499160Z
+21659
+mschneider
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+16410
+
+primitive
+dir
+
+JTSGeometryPair.java
+file
+
+
+
+
+2009-11-08T13:39:38.000000Z
+a1dedac6128675b85aec94a5d4e15c9a
+2009-10-20T11:50:12.977355Z
+20208
+mschneider
+
+curvesegments
+dir
+
+multi
+dir
+
+points
+dir
+

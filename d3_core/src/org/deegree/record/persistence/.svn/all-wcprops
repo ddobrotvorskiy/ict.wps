@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/deegree/!svn/ver/21842/deegree3/core/trunk/src/org/deegree/record/persistence
+END
+DBConnectionManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/deegree/!svn/ver/20620/deegree3/core/trunk/src/org/deegree/record/persistence/DBConnectionManager.java
+END
+RecordStoreManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/deegree/!svn/ver/21603/deegree3/core/trunk/src/org/deegree/record/persistence/RecordStoreManager.java
+END
+ConstraintTransformator.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/deegree/!svn/ver/20904/deegree3/core/trunk/src/org/deegree/record/persistence/ConstraintTransformator.java
+END
+MappingInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/deegree/!svn/ver/21811/deegree3/core/trunk/src/org/deegree/record/persistence/MappingInfo.java
+END
+GenericDatabaseDS.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/deegree/!svn/ver/21722/deegree3/core/trunk/src/org/deegree/record/persistence/GenericDatabaseDS.java
+END
+RecordStoreException.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/deegree/!svn/ver/20338/deegree3/core/trunk/src/org/deegree/record/persistence/RecordStoreException.java
+END
+RecordStore.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/deegree/!svn/ver/21841/deegree3/core/trunk/src/org/deegree/record/persistence/RecordStore.java
+END

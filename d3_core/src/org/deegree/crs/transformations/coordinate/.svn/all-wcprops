@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/crs/transformations/coordinate
+END
+MatrixTransform.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/crs/transformations/coordinate/MatrixTransform.java
+END
+ConcatenatedTransform.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/crs/transformations/coordinate/ConcatenatedTransform.java
+END
+DirectTransform.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/crs/transformations/coordinate/DirectTransform.java
+END
+ProjectionTransform.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/crs/transformations/coordinate/ProjectionTransform.java
+END
+NotSupportedTransformation.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/crs/transformations/coordinate/NotSupportedTransformation.java
+END
+CRSTransformation.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/crs/transformations/coordinate/CRSTransformation.java
+END
+GeocentricTransform.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/crs/transformations/coordinate/GeocentricTransform.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/crs/transformations/coordinate/package.html
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/deegree/!svn/ver/21815/deegree3/core/trunk/src/org/deegree/commons/index
+END
+QTree.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/deegree/!svn/ver/19885/deegree3/core/trunk/src/org/deegree/commons/index/QTree.java
+END
+RTree.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/deegree/!svn/ver/21815/deegree3/core/trunk/src/org/deegree/commons/index/RTree.java
+END
+SpatialIndex.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/deegree/!svn/ver/19860/deegree3/core/trunk/src/org/deegree/commons/index/SpatialIndex.java
+END

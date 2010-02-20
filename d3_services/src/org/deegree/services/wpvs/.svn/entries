@@ -1,0 +1,72 @@
+10
+
+dir
+21853
+http://wald.intevation.org/svn/deegree/deegree3/services/trunk/src/org/deegree/services/wpvs
+http://wald.intevation.org/svn/deegree
+
+
+
+2009-10-15T08:29:31.301796Z
+20137
+rbezema
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+20a5a20e-76a8-4a5e-adb6-8db71fc8bde4
+
+model
+dir
+
+config
+dir
+
+PerspectiveViewService.java
+file
+
+
+
+
+2009-11-08T13:40:41.000000Z
+fb756fe8d4e48f0a0971c134ebbd1cd6
+2009-08-03T09:51:28.680136Z
+18856
+rbezema
+has-props
+
+configuration
+dir
+
+io
+dir
+
+WPVSConfiguration.java
+file
+
+
+
+
+2009-11-08T13:40:41.000000Z
+e0750ea9e4839347d8d9560ec32bec24
+2009-06-17T14:00:07.522388Z
+18171
+mschneider
+has-props
+
+rendering
+dir
+
+exception
+dir
+

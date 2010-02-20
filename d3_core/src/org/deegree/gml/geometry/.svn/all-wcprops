@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/deegree/!svn/ver/21659/deegree3/core/trunk/src/org/deegree/gml/geometry
+END
+GML2GeometryReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/deegree/!svn/ver/21539/deegree3/core/trunk/src/org/deegree/gml/geometry/GML2GeometryReader.java
+END
+GML3GeometryReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/deegree/!svn/ver/21659/deegree3/core/trunk/src/org/deegree/gml/geometry/GML3GeometryReader.java
+END
+GMLGeometryWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/deegree/!svn/ver/21538/deegree3/core/trunk/src/org/deegree/gml/geometry/GMLGeometryWriter.java
+END
+GML2GeometryWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/deegree/!svn/ver/21539/deegree3/core/trunk/src/org/deegree/gml/geometry/GML2GeometryWriter.java
+END
+GML3GeometryWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/deegree/!svn/ver/21659/deegree3/core/trunk/src/org/deegree/gml/geometry/GML3GeometryWriter.java
+END
+GML3GeometryBaseReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/deegree/!svn/ver/21538/deegree3/core/trunk/src/org/deegree/gml/geometry/GML3GeometryBaseReader.java
+END
+GML3CurveSegmentReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/deegree/!svn/ver/21538/deegree3/core/trunk/src/org/deegree/gml/geometry/GML3CurveSegmentReader.java
+END
+GML3SurfacePatchReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/deegree/!svn/ver/21538/deegree3/core/trunk/src/org/deegree/gml/geometry/GML3SurfacePatchReader.java
+END
+GMLGeometryReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/deegree/!svn/ver/21538/deegree3/core/trunk/src/org/deegree/gml/geometry/GMLGeometryReader.java
+END

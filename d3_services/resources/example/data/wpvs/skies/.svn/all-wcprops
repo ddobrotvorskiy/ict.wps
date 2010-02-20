@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/deegree/!svn/ver/17649/deegree3/services/trunk/resources/example/data/wpvs/skies
+END
+sunset.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/deegree/!svn/ver/17625/deegree3/services/trunk/resources/example/data/wpvs/skies/sunset.jpg
+END
+cirrus_cloud.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/deegree/!svn/ver/17649/deegree3/services/trunk/resources/example/data/wpvs/skies/cirrus_cloud.jpg
+END
+cloudy.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/deegree/!svn/ver/17625/deegree3/services/trunk/resources/example/data/wpvs/skies/cloudy.jpg
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/deegree/!svn/ver/19964/deegree3/services/trunk/src/org/deegree/services/wcs/model
+END
+Grid.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/deegree/!svn/ver/19964/deegree3/services/trunk/src/org/deegree/services/wcs/model/Grid.java
+END
+CoverageOptions.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/deegree/!svn/ver/19041/deegree3/services/trunk/src/org/deegree/services/wcs/model/CoverageOptions.java
+END
+CoverageResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/deegree/!svn/ver/19365/deegree3/services/trunk/src/org/deegree/services/wcs/model/CoverageResult.java
+END

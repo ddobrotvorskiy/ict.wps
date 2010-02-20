@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/deegree/!svn/ver/20112/deegree3/core/trunk/src/org/deegree/protocol/wfs/capabilities
+END
+GetCapabilitiesKVPAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/deegree/!svn/ver/19153/deegree3/core/trunk/src/org/deegree/protocol/wfs/capabilities/GetCapabilitiesKVPAdapter.java
+END
+GetCapabilitiesXMLAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/deegree/!svn/ver/20112/deegree3/core/trunk/src/org/deegree/protocol/wfs/capabilities/GetCapabilitiesXMLAdapter.java
+END

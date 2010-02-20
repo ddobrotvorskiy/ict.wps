@@ -1,0 +1,491 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/deegree/!svn/ver/21290/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries
+END
+Point_pos.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/deegree/!svn/ver/21236/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/Point_pos.wkt11
+END
+CompositeSurface.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/deegree/!svn/ver/21185/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/CompositeSurface.wkt11
+END
+MultiPoint.gml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/MultiPoint.gml
+END
+Envelope.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/deegree/!svn/ver/21290/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/Envelope.wkt11
+END
+Point_coord.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/deegree/!svn/ver/21236/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/Point_coord.wkt11
+END
+CompositeCurve.gml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/CompositeCurve.gml
+END
+PolyhedralSurface.gml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/PolyhedralSurface.gml
+END
+MultiPoint_members.gml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/MultiPoint_members.gml
+END
+XLinkLineString.gml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/XLinkLineString.gml
+END
+MultiSolid.gml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/MultiSolid.gml
+END
+Surface.gml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/Surface.gml
+END
+MultiPoint_mixed.gml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/MultiPoint_mixed.gml
+END
+LineString_posList.gml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/LineString_posList.gml
+END
+MultiPoint.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/deegree/!svn/ver/21236/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/MultiPoint.wkt11
+END
+LineString_pointProperty.gml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/LineString_pointProperty.gml
+END
+XLinkMultiGeometry1.gml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/XLinkMultiGeometry1.gml
+END
+CompositeSolid.gml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/CompositeSolid.gml
+END
+OrientableSurface.gml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/OrientableSurface.gml
+END
+XLinkMultiGeometry2.gml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/deegree/!svn/ver/20237/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/XLinkMultiGeometry2.gml
+END
+Envelope_coordinates.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/deegree/!svn/ver/21185/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/Envelope_coordinates.wkt11
+END
+Envelope_coord.gml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/Envelope_coord.gml
+END
+MultiSurface.gml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/MultiSurface.gml
+END
+PolyhedralSurface.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/deegree/!svn/ver/21075/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/PolyhedralSurface.wkt11
+END
+MultiPoint_members.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/deegree/!svn/ver/21236/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/MultiPoint_members.wkt11
+END
+MultiGeometry.gml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/MultiGeometry.gml
+END
+Point_coordinates.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/deegree/!svn/ver/21236/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/Point_coordinates.wkt11
+END
+CompositeSurface.gml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/CompositeSurface.gml
+END
+XLinkLineString.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/deegree/!svn/ver/21185/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/XLinkLineString.wkt11
+END
+Envelope.gml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/Envelope.gml
+END
+Polygon.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/deegree/!svn/ver/21075/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/Polygon.wkt11
+END
+Point_coord.gml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/Point_coord.gml
+END
+Surface.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/deegree/!svn/ver/21290/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/Surface.wkt11
+END
+MultiLineString.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/deegree/!svn/ver/21075/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/MultiLineString.wkt11
+END
+MultiPoint_mixed.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/deegree/!svn/ver/21236/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/MultiPoint_mixed.wkt11
+END
+LineString_pointProperty.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/deegree/!svn/ver/21185/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/LineString_pointProperty.wkt11
+END
+StandardProps.gml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/deegree/!svn/ver/18865/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/StandardProps.gml
+END
+Curve.gml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/Curve.gml
+END
+XLinkMultiGeometry2.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/deegree/!svn/ver/21075/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/XLinkMultiGeometry2.wkt11
+END
+Ring.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/deegree/!svn/ver/21185/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/Ring.wkt11
+END
+LineString_pos.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/deegree/!svn/ver/21185/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/LineString_pos.wkt11
+END
+TriangulatedSurface.gml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/TriangulatedSurface.gml
+END
+MultiGeometry.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/deegree/!svn/ver/21185/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/MultiGeometry.wkt11
+END
+LineString_pointRep.gml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/LineString_pointRep.gml
+END
+GeometricComplex.gml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/GeometricComplex.gml
+END
+Envelope_coordinates.gml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/Envelope_coordinates.gml
+END
+LineString_coordinates.gml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/LineString_coordinates.gml
+END
+Solid.gml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/Solid.gml
+END
+StandardProps.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/deegree/!svn/ver/21185/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/StandardProps.wkt11
+END
+Curve.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/deegree/!svn/ver/21236/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/Curve.wkt11
+END
+OrientableCurve.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/deegree/!svn/ver/21185/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/OrientableCurve.wkt11
+END
+Point_coordinates.gml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/Point_coordinates.gml
+END
+TriangulatedSurface.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/deegree/!svn/ver/21075/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/TriangulatedSurface.wkt11
+END
+LineString_pointRep.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/deegree/!svn/ver/21185/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/LineString_pointRep.wkt11
+END
+Polygon.gml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/Polygon.gml
+END
+MultiCurve.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/deegree/!svn/ver/21185/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/MultiCurve.wkt11
+END
+XLinkMultiLineString.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/deegree/!svn/ver/21185/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/XLinkMultiLineString.wkt11
+END
+MultiLineString.gml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/MultiLineString.gml
+END
+LinearRing.gml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/LinearRing.gml
+END
+Tin.gml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/Tin.gml
+END
+Envelope_pos.gml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/Envelope_pos.gml
+END
+GeometricComplex.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/deegree/!svn/ver/21185/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/GeometricComplex.wkt11
+END
+Ring.gml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/Ring.gml
+END
+LineString_pos.gml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/LineString_pos.gml
+END
+CompositeCurve.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/deegree/!svn/ver/21236/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/CompositeCurve.wkt11
+END
+LineString_coordinates.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/deegree/!svn/ver/21185/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/LineString_coordinates.wkt11
+END
+MultiPolygon.gml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/MultiPolygon.gml
+END
+LineString_coord.gml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/LineString_coord.gml
+END
+Point_pos.gml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/Point_pos.gml
+END
+LinearRing.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/deegree/!svn/ver/21185/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/LinearRing.wkt11
+END
+LineString_posList.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/deegree/!svn/ver/21185/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/LineString_posList.wkt11
+END
+OrientableSurface.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/deegree/!svn/ver/21185/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/OrientableSurface.wkt11
+END
+CompositeSolid.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/deegree/!svn/ver/21185/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/CompositeSolid.wkt11
+END
+XLinkMultiGeometry1.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/deegree/!svn/ver/21075/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/XLinkMultiGeometry1.wkt11
+END
+Envelope_pos.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/deegree/!svn/ver/21185/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/Envelope_pos.wkt11
+END
+OrientableCurve.gml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/OrientableCurve.gml
+END
+MultiPolygon.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/deegree/!svn/ver/21075/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/MultiPolygon.wkt11
+END
+MultiSurface.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/deegree/!svn/ver/21185/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/MultiSurface.wkt11
+END
+Envelope_coord.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/deegree/!svn/ver/21185/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/Envelope_coord.wkt11
+END
+LineString_coord.wkt11
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/deegree/!svn/ver/21185/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/LineString_coord.wkt11
+END
+XLinkMultiLineString.gml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/deegree/!svn/ver/20237/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/XLinkMultiLineString.gml
+END
+MultiCurve.gml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/test/org/deegree/geometry/gml/testdata/geometries/MultiCurve.gml
+END

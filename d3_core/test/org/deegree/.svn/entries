@@ -1,0 +1,92 @@
+10
+
+dir
+21853
+http://wald.intevation.org/svn/deegree/deegree3/core/trunk/test/org/deegree
+http://wald.intevation.org/svn/deegree
+
+
+
+2010-01-07T14:21:33.645990Z
+21817
+rbezema
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+20a5a20e-76a8-4a5e-adb6-8db71fc8bde4
+
+gml
+dir
+
+protocol
+dir
+
+CoreTestSuite.java
+file
+
+
+
+
+2010-01-09T15:25:52.000000Z
+87bd9419b2ada7ca47fc4a206b3fea9d
+2009-12-17T21:06:02.572335Z
+21538
+mschneider
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13348
+
+filter
+dir
+
+crs
+dir
+
+junit
+dir
+
+commons
+dir
+
+coverage
+dir
+
+feature
+dir
+
+geometry
+dir
+
+rendering
+dir
+

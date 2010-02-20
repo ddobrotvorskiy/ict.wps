@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/deegree/!svn/ver/19860/deegree3/core/trunk/src/org/deegree/rendering/r3d/opengl/rendering/model/manager
+END
+QTModelScene.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/deegree/!svn/ver/19860/deegree3/core/trunk/src/org/deegree/rendering/r3d/opengl/rendering/model/manager/QTModelScene.java
+END
+BuildingRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/deegree/!svn/ver/19860/deegree3/core/trunk/src/org/deegree/rendering/r3d/opengl/rendering/model/manager/BuildingRenderer.java
+END
+TreeRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/deegree/!svn/ver/19841/deegree3/core/trunk/src/org/deegree/rendering/r3d/opengl/rendering/model/manager/TreeRenderer.java
+END
+LODSwitcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/deegree/!svn/ver/18716/deegree3/core/trunk/src/org/deegree/rendering/r3d/opengl/rendering/model/manager/LODSwitcher.java
+END
+PositionableModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/deegree/!svn/ver/19841/deegree3/core/trunk/src/org/deegree/rendering/r3d/opengl/rendering/model/manager/PositionableModel.java
+END
+RenderableManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/deegree/!svn/ver/19841/deegree3/core/trunk/src/org/deegree/rendering/r3d/opengl/rendering/model/manager/RenderableManager.java
+END

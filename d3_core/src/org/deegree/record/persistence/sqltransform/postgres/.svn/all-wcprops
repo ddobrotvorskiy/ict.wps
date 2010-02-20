@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/deegree/!svn/ver/21817/deegree3/core/trunk/src/org/deegree/record/persistence/sqltransform/postgres
+END
+TransformatorPostGres.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/deegree/!svn/ver/21429/deegree3/core/trunk/src/org/deegree/record/persistence/sqltransform/postgres/TransformatorPostGres.java
+END
+ExpressionFilterHandling.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/deegree/!svn/ver/21812/deegree3/core/trunk/src/org/deegree/record/persistence/sqltransform/postgres/ExpressionFilterHandling.java
+END
+ExpressionFilterObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/deegree/!svn/ver/21019/deegree3/core/trunk/src/org/deegree/record/persistence/sqltransform/postgres/ExpressionFilterObject.java
+END
+SpatialOperatorTransformingPostGIS.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/deegree/!svn/ver/21817/deegree3/core/trunk/src/org/deegree/record/persistence/sqltransform/postgres/SpatialOperatorTransformingPostGIS.java
+END

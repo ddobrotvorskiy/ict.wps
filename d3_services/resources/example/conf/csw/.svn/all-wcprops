@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/deegree/!svn/ver/20682/deegree3/services/trunk/resources/example/conf/csw
+END
+csw_configuration.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/deegree/!svn/ver/20682/deegree3/services/trunk/resources/example/conf/csw/csw_configuration.xml
+END
+Capabilities_response.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/deegree/!svn/ver/20314/deegree3/services/trunk/resources/example/conf/csw/Capabilities_response.xml
+END

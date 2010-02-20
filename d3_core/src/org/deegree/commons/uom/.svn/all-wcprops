@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/deegree/!svn/ver/20418/deegree3/core/trunk/src/org/deegree/commons/uom
+END
+Unit.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/deegree/!svn/ver/18899/deegree3/core/trunk/src/org/deegree/commons/uom/Unit.java
+END
+Length.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/deegree/!svn/ver/20418/deegree3/core/trunk/src/org/deegree/commons/uom/Length.java
+END
+Measure.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/deegree/!svn/ver/20418/deegree3/core/trunk/src/org/deegree/commons/uom/Measure.java
+END
+Angle.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/deegree/!svn/ver/20418/deegree3/core/trunk/src/org/deegree/commons/uom/Angle.java
+END

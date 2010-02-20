@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/deegree/!svn/ver/21538/deegree3/core/trunk/src/org/deegree/filter/xml
+END
+Filter110XMLEncoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/deegree/!svn/ver/20180/deegree3/core/trunk/src/org/deegree/filter/xml/Filter110XMLEncoder.java
+END
+FilterCapabilitiesExporter.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/deegree/!svn/ver/18841/deegree3/core/trunk/src/org/deegree/filter/xml/FilterCapabilitiesExporter.java
+END
+Filter100XMLDecoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/deegree/!svn/ver/21538/deegree3/core/trunk/src/org/deegree/filter/xml/Filter100XMLDecoder.java
+END
+Filter110XMLDecoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/deegree/!svn/ver/21538/deegree3/core/trunk/src/org/deegree/filter/xml/Filter110XMLDecoder.java
+END

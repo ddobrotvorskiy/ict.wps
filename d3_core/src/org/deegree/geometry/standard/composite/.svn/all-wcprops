@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/deegree/!svn/ver/20208/deegree3/core/trunk/src/org/deegree/geometry/standard/composite
+END
+DefaultCompositeSurface.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/deegree/!svn/ver/20208/deegree3/core/trunk/src/org/deegree/geometry/standard/composite/DefaultCompositeSurface.java
+END
+DefaultCompositeSolid.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/deegree/!svn/ver/18899/deegree3/core/trunk/src/org/deegree/geometry/standard/composite/DefaultCompositeSolid.java
+END
+DefaultCompositeGeometry.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/deegree/!svn/ver/20208/deegree3/core/trunk/src/org/deegree/geometry/standard/composite/DefaultCompositeGeometry.java
+END
+DefaultCompositeCurve.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/deegree/!svn/ver/20208/deegree3/core/trunk/src/org/deegree/geometry/standard/composite/DefaultCompositeCurve.java
+END

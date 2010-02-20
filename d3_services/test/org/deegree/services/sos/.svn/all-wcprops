@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/deegree/!svn/ver/19391/deegree3/services/trunk/test/org/deegree/services/sos
+END
+create_testdb.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/deegree/!svn/ver/12910/deegree3/services/trunk/test/org/deegree/services/sos/create_testdb.py
+END
+ObservationDatastoreTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/deegree/!svn/ver/19386/deegree3/services/trunk/test/org/deegree/services/sos/ObservationDatastoreTest.java
+END
+create_testdb.sql
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/deegree/!svn/ver/12750/deegree3/services/trunk/test/org/deegree/services/sos/create_testdb.sql
+END
+sos_configuration.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/deegree/!svn/ver/19389/deegree3/services/trunk/test/org/deegree/services/sos/sos_configuration.xml
+END
+foobarnator-sensorml.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/deegree/!svn/ver/12750/deegree3/services/trunk/test/org/deegree/services/sos/foobarnator-sensorml.xml
+END
+SOSConfigurationTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/deegree/!svn/ver/19391/deegree3/services/trunk/test/org/deegree/services/sos/SOSConfigurationTest.java
+END

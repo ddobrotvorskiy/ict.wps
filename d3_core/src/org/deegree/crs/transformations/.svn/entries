@@ -1,0 +1,76 @@
+10
+
+dir
+21853
+http://wald.intevation.org/svn/deegree/deegree3/core/trunk/src/org/deegree/crs/transformations
+http://wald.intevation.org/svn/deegree
+
+
+
+2009-10-21T15:49:31.843732Z
+20286
+aionita
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+20a5a20e-76a8-4a5e-adb6-8db71fc8bde4
+
+helmert
+dir
+
+polynomial
+dir
+
+Transformation.java
+file
+
+
+
+
+2009-11-08T13:38:00.000000Z
+0e92d8e2ed25289c512e2180cd3dde69
+2009-10-14T15:04:57.212229Z
+20127
+mschneider
+has-props
+
+coordinate
+dir
+
+TransformationFactory.java
+file
+
+
+
+
+2009-11-08T13:38:00.000000Z
+0688791323b9b705c541b77cb576392a
+2009-10-21T15:49:31.843732Z
+20286
+aionita
+has-props
+
+package.html
+file
+
+
+
+
+2009-11-08T13:38:00.000000Z
+a719d5f1576c13e6e443cbe7220e75ff
+2009-04-08T15:14:30.775570Z
+17229
+rbezema
+has-props
+

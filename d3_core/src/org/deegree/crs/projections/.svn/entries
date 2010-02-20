@@ -1,0 +1,76 @@
+10
+
+dir
+21853
+http://wald.intevation.org/svn/deegree/deegree3/core/trunk/src/org/deegree/crs/projections
+http://wald.intevation.org/svn/deegree
+
+
+
+2009-07-08T13:45:27.079414Z
+18385
+rbezema
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+20a5a20e-76a8-4a5e-adb6-8db71fc8bde4
+
+cylindric
+dir
+
+conic
+dir
+
+Projection.java
+file
+
+
+
+
+2009-11-08T13:38:03.000000Z
+4be8e66289320d5d167ea94137266a12
+2009-07-08T13:45:27.079414Z
+18385
+rbezema
+has-props
+
+ProjectionUtils.java
+file
+
+
+
+
+2009-11-08T13:38:03.000000Z
+b56215ac0464bbff8f79f725bda7758f
+2009-06-17T14:00:07.522388Z
+18171
+mschneider
+has-props
+
+azimuthal
+dir
+
+package.html
+file
+
+
+
+
+2009-11-08T13:38:03.000000Z
+3303f3431c91533c0f2e55413ca98b44
+2009-04-08T15:14:30.775570Z
+17229
+rbezema
+has-props
+

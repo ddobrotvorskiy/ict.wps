@@ -1,0 +1,16 @@
+K 10
+svn:ignore
+V 84
+.classpath
+docs
+dist
+.project
+classes
+.settings
+testclasses
+bin
+build
+doc
+derby.log
+
+END

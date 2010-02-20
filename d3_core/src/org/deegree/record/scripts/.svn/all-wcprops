@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/deegree/!svn/ver/21827/deegree3/core/trunk/src/org/deegree/record/scripts
+END
+geometrytest_PostGIS_1_3.sql
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/deegree/!svn/ver/21569/deegree3/core/trunk/src/org/deegree/record/scripts/geometrytest_PostGIS_1_3.sql
+END
+deegree3_CSW_CQP_Insert.sql
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/deegree/!svn/ver/21823/deegree3/core/trunk/src/org/deegree/record/scripts/deegree3_CSW_CQP_Insert.sql
+END
+transactionoperation.sql
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/deegree/!svn/ver/21827/deegree3/core/trunk/src/org/deegree/record/scripts/transactionoperation.sql
+END
+filterExpressions
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/deegree/!svn/ver/21569/deegree3/core/trunk/src/org/deegree/record/scripts/filterExpressions
+END
+WKB_research.sql
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/deegree/!svn/ver/21569/deegree3/core/trunk/src/org/deegree/record/scripts/WKB_research.sql
+END
+deegree3_CSW.sql
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/deegree/!svn/ver/21823/deegree3/core/trunk/src/org/deegree/record/scripts/deegree3_CSW.sql
+END
