@@ -40,7 +40,7 @@ abstract class BayesClassifier implements Classifier {
     return task;
   }
 
-
+  @Override
   public final int getSlidingExamError() {
     int errors = 0;
     for (Clazz c : task.getClasses()) {

@@ -9,40 +9,39 @@ import Jama.Matrix;
  */
 public class ClassifierWithFeatures implements Classifier {
 
-  private final Classifier originalClassifier;
-
-  private final Classifier innerClassifier;
-
-  private final ClassificationTask originalTask;
-
+  private final Classifier classifier;
   private final Matrix features;
 
   public ClassifierWithFeatures(Classifier classifier, Matrix features) {
-    this.originalClassifier = classifier;
-    this.innerClassifier = classifier.recountInNewFeatures(features);
-    this.originalTask = classifier.getTask();
+    this.classifier = classifier;
     this.features = features;
   }
 
   @Override
   public int classify(Point point) {
-    return innerClassifier.classify(point.recount(features));
+    return classifier.classify(point.recount(features));
   }
 
   @Override
   public ClassificationTask getTask() {
-    return originalTask;
+    return classifier.getTask();
   }
 
 
   @Override
   public Classifier recountInNewFeatures(Matrix features) {
+    throw new UnsupportedOperationException("");
+//
+//    // TODO: test and remove this throw
+//    //if (true)
+//      throw new UnsupportedOperationException("Unreliable piece of code");
+//
+//    // possible solution
+//    //return new ClassifierWithFeatures(classifier.recountInNewFeatures(features), this.features.times(features));
+  }
 
-    // TODO: test and remove this throw
-    if (true)
-      throw new UnsupportedOperationException("Unreliable piece of code");
-
-    // possible solution
-    return new ClassifierWithFeatures(originalClassifier.recountInNewFeatures(features), this.features.times(features));
+  @Override
+  public final int getSlidingExamError() {
+    return classifier.getSlidingExamError();
   }
 }

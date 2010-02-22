@@ -88,6 +88,12 @@ public final class ClassificationTask {
     return builder.createTask();
   }
 
+  public static ClassificationTask createTrivial(Clazz c) {
+    ClassificationTask.Builder b = new ClassificationTask.Builder();
+    b.addClass(c);
+    return b.createTask();
+  }
+
   public static final class Builder {
     private int dimension = -1;
     private final List<Clazz> classes;

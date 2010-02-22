@@ -1,11 +1,12 @@
 package org.ict.classifier;
 
 import junit.framework.TestCase;
-import org.ict.classifier.util.NormalDistribution;
+import org.ict.classifier.model.Model6Normals;
+import org.ict.util.Timer;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import javax.swing.*;
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -18,91 +19,49 @@ import java.util.concurrent.TimeUnit;
  */
 public class TreeClassifierTest extends TestCase {
 
-  // Значения расстояния Джефриса-Матусита для ошибок в 5% , 10% , 15%
-  private static final double r5 = 10.89;
-  private static final double r10 = 6.55;
-  private static final double r15 = 4.33;
+  private static Logger log = LoggerFactory.getLogger(TreeClassifier.class);
 
-  // Допустимые значения ошибок для опеделения состоятельности классификатора.
-  private static final double errorLimit5 = 0.055;
-  private static final double errorLimit10 = 0.11;
-  private static final double errorLimit15 = 0.16;
 
   // Число повторений проверки для исключения влияния некорректных выборок
   private static final int repeats = 5;
 
-  // Объем обучающих выборок в точках на каждую размерность
-  private static final int trainPointsPerDimension = 100;
-
-    // Объем контрольной выборки в  точках на каждую размерность
+  // Объем контрольной выборки в  точках на каждую размерность
   private static final int controlPointsPerDimension = 1000;
-
-
-  private static final int DIM = 3; // >= 3
-
-  private static final double SIGMA = 10.;
 
   // Задача из шести двух нормально распределенных классов, объединенных по парам с ошибкой 5%
   @Test
   public void test_treeClassify() throws Exception {
-
-    double [] mu = new double[DIM];
-    double [] sigma = new double[DIM];
-
-    for (int i = 0; i < DIM; i ++) {
-      mu[i] = 0;
-      sigma[i] = SIGMA;
-    }
-
-    double deltaMu = Math.sqrt(r5) * SIGMA;
 
     List<Double> errors = new ArrayList<Double>(repeats);
 
     for (int r = 0; r < repeats; r++) {
       long start = System.nanoTime();
 
-      NormalDistribution [] n = new NormalDistribution[6];
+      Model6Normals model = new Model6Normals();
+      ClassificationTask task = model.getTask();
 
-      for (int k = 0; k < 3 ; k++) {
-        mu[k] = SIGMA * 5;
-        n[2 * k] = new NormalDistribution(mu, sigma);
-        mu[k] = SIGMA * 5 + deltaMu;
-        n[2 * k + 1] = new NormalDistribution(mu, sigma);
-        mu[k] = 0;
-      }
-
-
-      Clazz.Builder [] b = new Clazz.Builder [6];
-      for (int k = 0; k < 6; k++) {
-        b[k] = new Clazz.Builder(k);
-      }
-
-      for (int i = 0; i < DIM * trainPointsPerDimension; i++ ) {
-        for (int k = 0; k < 6; k++) {
-          b[k].addPoint(Point.create(n[k].next()));
-        }
-      }
-
-      ClassificationTask.Builder tb = new ClassificationTask.Builder();
-      for (int k = 0; k < 6; k++) {
-        tb.addClass(b[k].createClass());
-      }
-
-      TreeClassifier classifier = new TreeClassifier(tb.createTask());
+      Timer timer = new Timer();
+      timer.setState("building tree classifier");
+      TreeClassifier treeClassifier = new TreeClassifier(task);
+      timer.setState("classification");
 
       int errCount = 0;
       int [] byClassDistribution = new int[6];
       int res;
+      int DIM = task.getDimension();
       for (int i = 0; i < DIM * controlPointsPerDimension; i++ ) {
         for (int k = 0; k < 6; k++) {
-          res = classifier.classify(Point.create(n[k].next()));
+          res = treeClassifier.classify(model.generatePoint(k));
           if (res != k) errCount ++;
           byClassDistribution[res] ++;
         }
       }
 
+      timer.stop();
+      log.trace(timer.getReport());
+
       double e = (double) errCount / (6.0 * DIM * controlPointsPerDimension);
-      System.out.println(" results = " + Arrays.toString(byClassDistribution) +
+      log.trace(" results = " + Arrays.toString(byClassDistribution) +
                          " time = " + TimeUnit.MILLISECONDS.convert(System.nanoTime() - start, TimeUnit.NANOSECONDS) +
                          " error = " + ( 100.0 * e ) + "%" );
       errors.add(e);
@@ -114,43 +73,11 @@ public class TreeClassifierTest extends TestCase {
     }
     averageError /= errors.size();
 
-    System.out.println(" expected error 5% ; acceptable error " + ( 100.0 * errorLimit5 ) + "% ; actual error = " + ( 100.0 * averageError ) + "%");
-    assertTrue("Unacceptable classification error:  expected 5% ; acceptable " + ( 100.0 * errorLimit5 ) + "% ; actual " + ( 100.0 * averageError ) + "%",
-                averageError < errorLimit5);
+    double errorLimit = Model6Normals.getAcceptableError();
+
+    log.trace(" expected error " + (100.0 * Model6Normals.getExpectedError()) + "% ; acceptable error " + ( 100.0 * errorLimit ) + "% ; actual error = " + ( 100.0 * averageError ) + "%");
+    assertTrue("Unacceptable classification error:  expected 5% ; acceptable " + ( 100.0 * errorLimit ) + "% ; actual " + ( 100.0 * averageError ) + "%",
+                averageError < errorLimit);
   }
 
-
-  public static void main(String [] argv) {
-
-    JFrame frame = new JFrame("Display image");
-    Panel panel = new Panel() {
-      public void paint(Graphics g) {
-
-        double [] mu = new double[DIM];
-        double [] sigma = new double[DIM];
-
-        for (int i = 0; i < DIM; i ++) {
-          mu[i] = 0;
-          sigma[i] = SIGMA;
-        }
-
-        mu[0] = 0.0;
-        NormalDistribution n0 = new NormalDistribution(mu, sigma);
-        mu[0] = Math.sqrt(r5) * SIGMA;
-        NormalDistribution n1 = new NormalDistribution(mu, sigma);
-
-        for (int i = 0 ; i < 2000; i++) {
-          double [] point = n0.next();
-          g.drawLine(250 + (int)Math.round(point[0]), 250 + (int)Math.round(point[1]),
-                     250 + (int)Math.round(point[0]), 250 + (int)Math.round(point[1]));
-          point = n1.next();
-          g.drawLine(250 + (int)Math.round(point[0]), 250 + (int)Math.round(point[1]),
-                     250 + (int)Math.round(point[0]), 250 + (int)Math.round(point[1]));
-        }
-      }
-    };
-    frame.getContentPane().add(panel);
-    frame.setSize(500, 500);
-    frame.setVisible(true);
-  }
 }

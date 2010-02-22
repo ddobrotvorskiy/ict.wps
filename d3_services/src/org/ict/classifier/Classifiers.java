@@ -33,14 +33,11 @@ public final class Classifiers {
 
 
     ClassificationTask optimizedTask = HyperCubeOptimizer.optimizeTask(task);
-
     BayesClassifier classifier = ParzenClassifier.createClassifier(optimizedTask);
 
-    //TODO debug LandgrebeFeatures
     Matrix features = LandgrebeFeatures.extractFeatures(classifier);
-
-    //TODO debug ClassifierWithFeatures
-    return new ClassifierWithFeatures(classifier, features);
+    optimizedTask = HyperCubeOptimizer.optimizeTask(task.recountInNewFeatures(features));
+    return new ClassifierWithFeatures(ParzenClassifier.createClassifier(optimizedTask), features);
   }
 
   public static Classifier createTreeClassifier(ClassificationTask task) {

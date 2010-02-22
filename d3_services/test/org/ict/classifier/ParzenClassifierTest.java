@@ -1,15 +1,13 @@
 package org.ict.classifier;
 
-import Jama.Matrix;
 import junit.framework.TestCase;
-import org.ict.classifier.io.AsciiTaskReader;
-import org.ict.classifier.util.NormalDistribution;
+import org.ict.classifier.model.FixedModel2Normals;
+import org.ict.classifier.model.Model;
+import org.ict.classifier.model.Model2Normals;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import javax.swing.*;
-import java.awt.*;
-import java.io.Reader;
-import java.io.StringReader;
 import java.util.*;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -21,81 +19,42 @@ import java.util.concurrent.TimeUnit;
  */
 public class ParzenClassifierTest extends TestCase {
 
-  // Значения расстояния Джефриса-Матусита для ошибок в 5% , 10% , 15%
-  private static final double r5 = 10.89;
-  private static final double r10 = 6.55;
-  private static final double r15 = 4.33;
-
-  // Допустимые значения ошибок для опеделения состоятельности классификатора.
-  private static final double errorLimit5 = 0.055;
-  private static final double errorLimit10 = 0.11;
-  private static final double errorLimit15 = 0.16;
+  private static Logger log = LoggerFactory.getLogger(ParzenClassifierTest.class);
 
   // Число повторений проверки для исключения влияния некорректных выборок
   private static final int repeats = 10;
-
-  // Объем обучающих выборок в точках на каждую размерность
-  private static final int trainPointsPerDimension = 100;
 
     // Объем контрольной выборки в  точках на каждую размерность
   private static final int controlPointsPerDimension = 1000;
 
 
-  private static final int DIM = 3;
-
-  private static final double SIGMA = 10.;
-
   // Задача из двух нормально распределенных классах
   @Test
   public void test_rawParzenClassify() throws Exception {
-
-    double [] mu = new double[DIM];
-    double [] sigma = new double[DIM];
-
-    for (int i = 0; i < DIM; i ++) {
-      mu[i] = 0;
-      sigma[i] = SIGMA;
-    }
-
-
     List<Double> errors = new ArrayList<Double>(repeats);
 
     for (int r = 0; r < repeats; r++) {
       long start = System.nanoTime();
 
-      ClassificationTask.Builder tb = new ClassificationTask.Builder();
-      Clazz.Builder cb0 = new Clazz.Builder(0);
-      Clazz.Builder cb1 = new Clazz.Builder(1);
-
-      // Два нормально распределенных класса с ошибкой классификации 5% 
-      mu[0] = 0.0;
-      NormalDistribution n0 = new NormalDistribution(mu, sigma);
-      mu[0] = Math.sqrt(r5) * SIGMA;
-      NormalDistribution n1 = new NormalDistribution(mu, sigma);
-
-      for (int i = 0; i < DIM * trainPointsPerDimension; i++ ) {
-        cb0.addPoint(Point.create(n0.next()));
-        cb1.addPoint(Point.create(n1.next()));
-      }
-      tb.addClass(cb0.createClass());
-      tb.addClass(cb1.createClass());
+      Model2Normals model = new Model2Normals();
+      ClassificationTask task = model.getTask();
 
       //ParzenClassifier classifier = ParzenClassifier.createClassifier(tb.createTask());
       //ParzenClassifier classifier = ParzenClassifier.createClassifier(HyperCubeOptimizer.optimizeTask(tb.createTask()));
-      Classifier classifier = Classifiers.createTreeClassifier(tb.createTask());
+      Classifier classifier = Classifiers.createClassifier(task);
 
       int errCount = 0;
-      int [] byClassDistribution = new int[] {0, 0};
-      for (int i = 0; i < DIM * controlPointsPerDimension; i++ ) {
-        int res = classifier.classify(Point.create(n0.next()));
-        byClassDistribution[res] ++;
-        if (0 != res) { errCount ++; }
-        res = classifier.classify(Point.create(n1.next()));
-        byClassDistribution[res] ++;
-        if (1 != res) { errCount ++; }
+      int [] byClassDistribution = new int[task.getClasses().size()];
+      int res;
+      for (int i = 0; i < model.getTask().getDimension() * controlPointsPerDimension; i++ ) {
+        for (int classId = 0 ; classId < task.getClasses().size() ; classId ++) {
+          res = classifier.classify(model.generatePoint(classId));
+          byClassDistribution[res] ++;
+          if (classId != res) { errCount ++; }
+        }
       }
-      double e = (double) errCount / (2.0 * DIM * controlPointsPerDimension);
-      System.out.println(" results = " + Arrays.toString(byClassDistribution) +
+      double e = (double) errCount / (1.0 * task.getDimension() * task.getClasses().size() * controlPointsPerDimension);
+      log.trace(" results = " + Arrays.toString(byClassDistribution) +
                          " time = " + TimeUnit.MILLISECONDS.convert(System.nanoTime() - start, TimeUnit.NANOSECONDS) +
                          " error = " + ( 100.0 * e ) + "%" );
       errors.add(e);
@@ -107,43 +66,63 @@ public class ParzenClassifierTest extends TestCase {
     }
     averageError /= errors.size();
 
-    System.out.println(" expected error 5% ; acceptable error " + ( 100.0 * errorLimit5 ) + "% ; actual error = " + ( 100.0 * averageError ) + "%");
-    assertTrue("Unacceptable classification error:  expected 5% ; acceptable " + ( 100.0 * errorLimit5 ) + "% ; actual " + ( 100.0 * averageError ) + "%",
-                averageError < errorLimit5);
+    double errorLimit = Model2Normals.getAcceptableError();
+
+    log.trace(" expected error " + (100.0 * Model2Normals.getExpectedError()) + "% ; acceptable error " + ( 100.0 * errorLimit ) + "% ; actual error = " + ( 100.0 * averageError ) + "%");
+    assertTrue("Unacceptable classification error:  expected 5% ; acceptable " + ( 100.0 * errorLimit ) + "% ; actual " + ( 100.0 * averageError ) + "%",
+                averageError < errorLimit);
   }
 
+// Задача из двух нормально распределенных классах
+  @Test
+  public void test_rawParzenClassify2() throws Exception {
 
-  public static void main(String [] argv) {
+    Model model = FixedModel2Normals.newInstance();
 
-    JFrame frame = new JFrame("Display image");
-    Panel panel = new Panel() {
-      public void paint(Graphics g) {
+    ClassificationTask task = model.getTask();
+    Classifier classifier = Classifiers.createClassifier(task);
 
-        double [] mu = new double[DIM];
-        double [] sigma = new double[DIM];
+    {
+      StringBuilder sb = new StringBuilder();
 
-        for (int i = 0; i < DIM; i ++) {
-          mu[i] = 0;
-          sigma[i] = SIGMA;
-        }
+      for (Clazz c : classifier.getTask().getClasses()) {
+        sb.append(c.getId()).append(" : ")
+          .append(c.getLegend())
+          .append(" (").append(c.getPoints().size()).append(")");
 
-        mu[0] = 0.0;
-        NormalDistribution n0 = new NormalDistribution(mu, sigma);
-        mu[0] = Math.sqrt(r5) * SIGMA;
-        NormalDistribution n1 = new NormalDistribution(mu, sigma);
-
-        for (int i = 0 ; i < 2000; i++) {
-          double [] point = n0.next();
-          g.drawLine(250 + (int)Math.round(point[0]), 250 + (int)Math.round(point[1]),
-                     250 + (int)Math.round(point[0]), 250 + (int)Math.round(point[1]));
-          point = n1.next();
-          g.drawLine(250 + (int)Math.round(point[0]), 250 + (int)Math.round(point[1]),
-                     250 + (int)Math.round(point[0]), 250 + (int)Math.round(point[1]));
-        }
+        sb.append("; ");
       }
-    };
-    frame.getContentPane().add(panel);
-    frame.setSize(500, 500);
-    frame.setVisible(true);
+      sb.append(" se = ").append(classifier.getSlidingExamError());
+
+      sb.append("\n");
+      log.trace(sb.toString());
+    }
+
+    long start = System.nanoTime();
+
+    int errCount = 0;
+    Map<Integer, Long> byClassDistribution = new HashMap<Integer, Long>(task.getClasses().size());
+    int res;
+    int pointsCount = 0;
+    for (Model.ControlPoint cp : model) {
+      res = classifier.classify(cp.p);
+      Long cnt = byClassDistribution.get(res);
+      byClassDistribution.put(res, cnt == null ? 1 : (cnt + 1));
+      if (cp.c.getId() != res) {
+        errCount ++;
+      }
+      pointsCount ++;
+    }
+
+    double e = (double) errCount / (1.0 * pointsCount);
+    log.trace(" results = " + byClassDistribution +
+            " time = " + TimeUnit.MILLISECONDS.convert(System.nanoTime() - start, TimeUnit.NANOSECONDS) +
+            " error = " + ( 100.0 * e ) + "%" );
+
+    String msg = " expected error " + (100.0 * model.getExpectedError() ) + "% ;" +
+                 " acceptable error " + (100.0 * model.getAcceptableError()) + "% ;" +
+                 " actual error " + ( 100.0 * e ) + "%";
+    log.trace(msg);
+    assertTrue(msg, e < model.getAcceptableError());
   }
 }

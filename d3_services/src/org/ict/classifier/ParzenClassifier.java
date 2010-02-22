@@ -30,7 +30,7 @@ class ParzenClassifier extends BayesClassifier {
     
     Random r = new Random();
     for ( int i = 0 ; i < attempts ; i++ ) {
-      h = Math.max(h + 10. * r.nextDouble() - 5., 5.);
+      h = Math.max(h + 10. * r.nextDouble() - 5., 2.5);
 
       int errorsCount = new ParzenClassifier(task, h).getSlidingExamError();
 

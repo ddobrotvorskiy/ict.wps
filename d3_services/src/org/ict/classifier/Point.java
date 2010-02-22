@@ -105,16 +105,16 @@ public final class Point {
 
     int dim = features.getColumnDimension();
     double [][] A = features.getArray();
-    double [] data = new double[dim];
+    double [] newData = new double[dim];
 
     for (int i = 0; i < dim; i++) {
       double val = 0.;
-      for (int j = 0; j < data.length ; j++)
+      for (int j = 0; j < this.data.length ; j++)
         val += this.data[j] * A[j][i];
-      data[i] = val;
+      newData[i] = val;
     }
 
-    return new Point(data, weight);
+    return new Point(newData, weight);
   }
 
   /**

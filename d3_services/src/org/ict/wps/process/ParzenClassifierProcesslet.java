@@ -37,7 +37,6 @@
 package org.ict.wps.process;
 
 import org.deegree.coverage.raster.AbstractRaster;
-import org.deegree.coverage.raster.data.RasterData;
 import org.deegree.coverage.raster.geom.RasterGeoReference;
 import org.deegree.coverage.raster.io.RasterIOOptions;
 import org.deegree.coverage.raster.utils.RasterFactory;
@@ -53,8 +52,6 @@ import org.ict.classifier.io.AsciiTaskReader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.activation.MimeType;
-import javax.activation.MimeTypeParseException;
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -64,7 +61,7 @@ import java.net.URL;
 
 public class ParzenClassifierProcesslet implements Processlet {
 
-  private static final Logger LOG = LoggerFactory.getLogger( ParzenClassifierProcesslet.class );
+  private static final Logger log = LoggerFactory.getLogger( ParzenClassifierProcesslet.class );
 
   /**
    *  Raster image to be classified
@@ -80,35 +77,34 @@ public class ParzenClassifierProcesslet implements Processlet {
   private static final String OUTPUT_RASTER = "OutputRaster";
 
 
-
   public void process( ProcessletInputs in, ProcessletOutputs out, ProcessletExecutionInfo info ) throws ProcessletException {
 
-    LOG.trace( "BEGIN ParzenClassifierProcesslet#execute(), context: " + OGCFrontController.getContext() );
+    log.trace( "BEGIN ParzenClassifierProcesslet#execute(), context: " + OGCFrontController.getContext() );
 
     info.setStartedMessage("Classification started");
     info.setPercentCompleted(0);
 
-    LOG.trace("parsing inputs");
+    log.trace("parsing inputs");
     InputBundle inputBundle = parseInputs(in);
 
-    LOG.trace("performing process logic");
+    log.trace("performing process logic");
     OutputBundle outputBundle = doProcess(inputBundle, info);
 
-    LOG.trace("sending results");
+    log.trace("sending results");
     sendOutput(outputBundle, out);
 
     info.setPercentCompleted(100);
     info.setSucceededMessage("Classification succeeded");
 
-    LOG.trace( "END ParzenClassifierProcesslet#execute()" );
+    log.trace( "END ParzenClassifierProcesslet#execute()" );
   }
 
   public void destroy() {
-    LOG.debug( "ParzenClassifierProcesslet#destroy() called" );
+    log.debug( "ParzenClassifierProcesslet#destroy() called" );
   }
 
   public void init() {
-    LOG.debug( "ParzenClassifierProcesslet#init() called" );
+    log.debug( "ParzenClassifierProcesslet#init() called" );
   }
 
 
@@ -119,10 +115,10 @@ public class ParzenClassifierProcesslet implements Processlet {
    */
   private OutputBundle doProcess(InputBundle inputBundle, ProcessletExecutionInfo info) {
 
-    LOG.trace("create tree classifier");
+    log.trace("create tree classifier");
     Classifier classifier = Classifiers.createTreeClassifier(inputBundle.task);
 
-    LOG.trace("start pixel processing");
+    log.trace("start pixel processing");
     Raster data = inputBundle.raster.getData();
 
     BufferedImage image = new BufferedImage(data.getWidth(), data.getHeight(), BufferedImage.TYPE_INT_RGB);
@@ -141,7 +137,7 @@ public class ParzenClassifierProcesslet implements Processlet {
         image.setRGB(x, y, color.getRGB());
       }
     }
-    LOG.trace("finish pixel processing");
+    log.trace("finish pixel processing");
 
     return new OutputBundle(image);
   }
@@ -153,10 +149,10 @@ public class ParzenClassifierProcesslet implements Processlet {
       ClassificationTask task;
       { //  getting classification task
         ComplexInput trainingSample = (ComplexInput) inputs.getParameter(INPUT_TRAINING_SAMPLE);
-        LOG.debug( "- trainingSample: " + trainingSample);
-        LOG.debug( "- trainingSample.mimeType : " + trainingSample.getMimeType());
-        LOG.debug( "- trainingSample.encoding : " + trainingSample.getEncoding());
-        LOG.debug( "- trainingSample.schema   : " + trainingSample.getSchema());
+        log.debug( "- trainingSample: " + trainingSample);
+        log.debug( "- trainingSample.mimeType : " + trainingSample.getMimeType());
+        log.debug( "- trainingSample.encoding : " + trainingSample.getEncoding());
+        log.debug( "- trainingSample.schema   : " + trainingSample.getSchema());
 
         AsciiTaskReader taskReader = new AsciiTaskReader(new BufferedReader(
                 new InputStreamReader(trainingSample.getValueAsBinaryStream())));
@@ -168,10 +164,10 @@ public class ParzenClassifierProcesslet implements Processlet {
       //AbstractRaster raster;
       { // getting input raster
         ComplexInput inputRaster = (ComplexInput) inputs.getParameter(INPUT_RASTER);
-        LOG.debug( "- inputRaster: " + inputRaster);
-        LOG.debug( "- inputRaster.mimeType : " + inputRaster.getMimeType());
-        LOG.debug( "- inputRaster.encoding : " + inputRaster.getEncoding());
-        LOG.debug( "- inputRaster.schema   : " + inputRaster.getSchema());
+        log.debug( "- inputRaster: " + inputRaster);
+        log.debug( "- inputRaster.mimeType : " + inputRaster.getMimeType());
+        log.debug( "- inputRaster.encoding : " + inputRaster.getEncoding());
+        log.debug( "- inputRaster.schema   : " + inputRaster.getSchema());
 
 //        RasterIOOptions opts = new RasterIOOptions(RasterGeoReference.OriginLocation.OUTER);
 //        opts.add(RasterIOOptions.READ_WLD_FILE, null);
@@ -186,10 +182,10 @@ public class ParzenClassifierProcesslet implements Processlet {
       return new InputBundle(task, raster);
 
 //    } catch (MimeTypeParseException e) {
-//      LOG.error(e.getMessage(), e);
+//      log.error(e.getMessage(), e);
 //      throw new ProcessletException(e.getMessage());
     } catch (IOException e) {
-      LOG.error("Raster load failed with i/o exception", e);
+      log.error("Raster load failed with i/o exception", e);
       throw new ProcessletException("Raster load failed with i/o exception");
     }
   }
@@ -197,20 +193,20 @@ public class ParzenClassifierProcesslet implements Processlet {
   private void sendOutput(OutputBundle outputBundle, ProcessletOutputs out) throws ProcessletException {
     try {
       ComplexOutput outputRaster = (ComplexOutput) out.getParameter(OUTPUT_RASTER);
-      LOG.debug( "Setting output raster (requested=" + outputRaster.isRequested() + ")" );
-      LOG.debug( "- outputRaster: " + outputRaster);
-      LOG.debug( "- outputRaster.mimeType : " + outputRaster.getRequestedMimeType());
-      LOG.debug( "- outputRaster.schema   : " + outputRaster.getRequestedSchema());
+      log.debug( "Setting output raster (requested=" + outputRaster.isRequested() + ")" );
+      log.debug( "- outputRaster: " + outputRaster);
+      log.debug( "- outputRaster.mimeType : " + outputRaster.getRequestedMimeType());
+      log.debug( "- outputRaster.schema   : " + outputRaster.getRequestedSchema());
 
       // for debug
-//      LOG.debug("storing result in file");
+//      log.debug("storing result in file");
 //      ImageIO.write(outputBundle.image,  "png", new File("/tmp/wps/result.png") );
 
-      LOG.debug("sending result to output stream");
+      log.debug("sending result to output stream");
       ImageIO.write(outputBundle.image,  "png", outputRaster.getBinaryOutputStream() );
 
     } catch (IOException e) {
-      LOG.error("Result raster transfer failed with i/o exception", e);
+      log.error("Result raster transfer failed with i/o exception", e);
       throw new ProcessletException("Result raster transfer failed with i/o exception");
     }
   }
@@ -257,28 +253,28 @@ public class ParzenClassifierProcesslet implements Processlet {
         opts.add(RasterIOOptions.READ_WLD_FILE, null);
         opts.add(RasterIOOptions.OPT_FORMAT, "jpg" );
         raster = RasterFactory.loadRasterFromStream(new BufferedInputStream(url.openStream()), opts);
-        LOG.debug("raster == " + (raster == null ? "null" : raster));
+        log.debug("raster == " + (raster == null ? "null" : raster));
       } catch (IOException e) {
-        LOG.error("Raster load failed with i/o exception", e);
+        log.error("Raster load failed with i/o exception", e);
         throw new ProcessletException("Raster load failed with i/o exception");
       }
 
       try {
         RasterIOOptions options = new RasterIOOptions();
         options.add( RasterIOOptions.OPT_FORMAT, "png" );
-        LOG.debug("storing result in file");
+        log.debug("storing result in file");
         RasterFactory.saveRasterToFile(raster.copy(), new File("/tmp/wps/result.png"), options);
 
-        LOG.debug("sending result to output stream");
+        log.debug("sending result to output stream");
         RasterFactory.saveRasterToStream(raster.copy(), new FileOutputStream("/tmp/wps/result-stream.png"), options);
       } catch (IOException e) {
-        LOG.error("Result raster transfer failed with i/o exception", e);
+        log.error("Result raster transfer failed with i/o exception", e);
         throw new ProcessletException("Result raster transfer failed with i/o exception");
       }
 
 
     } catch (ProcessletException e) {
-      LOG.error("Shit happened", e);
+      log.error("Shit happened", e);
     }
   }
 }

@@ -40,4 +40,9 @@ class TrivialClassifier implements Classifier {
   public Classifier recountInNewFeatures(Matrix features) {
     return new TrivialClassifier(task.recountInNewFeatures(features));
   }
+
+  @Override
+  public int getSlidingExamError() {
+    return 0;
+  }
 }
