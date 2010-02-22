@@ -17,8 +17,6 @@ public final class Classifiers {
   public static Classifier createSimpleClassifier(ClassificationTask task) {
     if (task.getClasses().size() == 1)
       return new TrivialClassifier(task);
-
-      //very useful comment
       
     ClassificationTask optimizedTask = HyperCubeOptimizer.optimizeTask(task);
 
