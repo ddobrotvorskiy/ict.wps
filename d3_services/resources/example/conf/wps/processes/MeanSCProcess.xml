@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProcessDefinition configVersion="0.3.0"
+	processVersion="1.0.0" statusSupported="false"
+	xmlns="http://www.deegree.org/services/wps" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.deegree.org/services/wps http://schemas.deegree.org/wps/0.3.0/process_definition.xsd">
+  <Identifier>MeanSCProcess</Identifier>
+  <JavaClass>org.ict.wps.process.MeanSCClusterizerProcesslet</JavaClass>
+  <Title>Mean shift clustering algorithm</Title>
+  <Abstract> </Abstract>
+  <InputParameters>
+    <ComplexInput>
+      <Identifier>InputRaster</Identifier>
+      <Title>Input raster image</Title>
+      <DefaultFormat mimeType="image/jpg"/>
+      <OtherFormats mimeType="image/png"/>
+      <OtherFormats mimeType="image/bmp"/>
+      <OtherFormats mimeType="image/tif"/>
+    </ComplexInput>
+    <LiteralInput>
+      <Identifier>H</Identifier>
+      <Title>Cell size</Title>
+      <DataType reference="http://www.w3.org/TR/xmlschema-2/#integer">integer</DataType>
+    </LiteralInput>
+    <LiteralInput>
+      <Identifier>N_MIN</Identifier>
+      <Title>Minimal points count</Title>
+      <DataType reference="http://www.w3.org/TR/xmlschema-2/#integer">integer</DataType>
+    </LiteralInput>
+    <LiteralInput>
+      <Identifier>T</Identifier>
+      <Title>Union threshold</Title>
+      <DataType reference="http://www.w3.org/TR/xmlschema-2/#double">double</DataType>
+    </LiteralInput>
+  </InputParameters>
+  <OutputParameters>
+    <ComplexOutput>
+      <Identifier>OutputRaster</Identifier>
+      <Title>Classificafion result</Title>
+      <DefaultFormat mimeType="image/png"/>
+    </ComplexOutput>
+  </OutputParameters>
+</ProcessDefinition>

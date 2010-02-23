@@ -13,9 +13,7 @@ import java.util.List;
 public interface Clusterizer {
 
   /**
-   * Returns clustering task (set of parameters)suitable for this algorithm.
-   * 
-   * @return expected clustering task
+   * Checks if the algorithm could process passed task.
    */
   public boolean canProcess(ClusteringTask task);
 

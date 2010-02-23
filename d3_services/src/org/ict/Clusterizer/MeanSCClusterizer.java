@@ -11,9 +11,9 @@ import java.util.Collection;
  * Time: 15:45:52
  */
 public class MeanSCClusterizer implements Clusterizer {
-  public static final String CELL_SIZE = "cell size";
-  public static final String N_MIN = "minimum points count";
-  public static final String THRESHOLD = "union threshold";
+  public static final String CELL_SIZE = "H";
+  public static final String N_MIN = "N_MIN";
+  public static final String THRESHOLD = "T";
 
   public MeanSCClusterizer(){
   }

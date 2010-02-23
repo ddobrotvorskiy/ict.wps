@@ -1,5 +1,6 @@
 package org.ict.wps.process;
 
+//import com.sun.xml.internal.messaging.saaj.packaging.mime.util.BASE64DecoderStream;
 import org.deegree.services.controller.OGCFrontController;
 import org.deegree.services.wps.*;
 import org.deegree.services.wps.input.ComplexInput;
@@ -14,9 +15,8 @@ import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.awt.image.Raster;
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.InputStream;
 import java.util.ArrayList;
 
 /**
@@ -24,7 +24,7 @@ import java.util.ArrayList;
  * Date: 22.02.2010
  * Time: 17:30:21
  */
-public class MeanSCClasterizerProcesslet implements Processlet {
+public class MeanSCClusterizerProcesslet implements Processlet {
 
   /**
    *  Raster image to be classified
@@ -35,7 +35,7 @@ public class MeanSCClasterizerProcesslet implements Processlet {
    */
   private static final String OUTPUT_RASTER = "OutputRaster";
 
-  private static final Logger LOG = LoggerFactory.getLogger( ParzenClassifierProcesslet.class );
+  private static final Logger LOG = LoggerFactory.getLogger( MeanSCClusterizerProcesslet.class );
 
   @Override
   public void process( ProcessletInputs in, ProcessletOutputs out, ProcessletExecutionInfo info ) throws ProcessletException {
@@ -62,12 +62,12 @@ public class MeanSCClasterizerProcesslet implements Processlet {
 
   @Override
   public void destroy() {
-    LOG.debug( "MeanSCClasterizerProcesslet#destroy() called" );
+    LOG.debug( "MeanSCClusterizerProcesslet#destroy() called" );
   }
 
   @Override
   public void init() {
-    LOG.debug( "MeanSCClasterizerProcesslet#init() called" );
+    LOG.debug( "MeanSCClusterizerProcesslet#init() called" );
   }
 
 
@@ -78,7 +78,7 @@ public class MeanSCClasterizerProcesslet implements Processlet {
    */
   private OutputBundle doProcess(InputBundle inputBundle, ProcessletExecutionInfo info) {
 
-    LOG.trace("create tree classifier");
+    LOG.trace("create MeanSC clusterizer");
     Clusterizer MeanSC = Clusterizers.createMeanSCClusterizer(inputBundle.task);
 
     LOG.trace("prepare input image");
@@ -110,7 +110,7 @@ public class MeanSCClasterizerProcesslet implements Processlet {
 
     LOG.trace("finish image processing");
 
-    return new OutputBundle(image);
+    return new OutputBundle(inputBundle.raster);
   }
 
   private InputBundle parseInputs(ProcessletInputs inputs) throws ProcessletException {
@@ -119,21 +119,20 @@ public class MeanSCClasterizerProcesslet implements Processlet {
       { //  getting clusterization task
         LiteralInput cellSize = (LiteralInput) inputs.getParameter(MeanSCClusterizer.CELL_SIZE);
         LOG.debug("Input : " + MeanSCClusterizer.CELL_SIZE + " = " + cellSize.getValue());
-        task.addParameter(new ClusteringParameter(MeanSCClusterizer.CELL_SIZE, Double.valueOf(cellSize.getValue())));
+        task.addParameter(new ClusteringParameter(MeanSCClusterizer.CELL_SIZE, Double.parseDouble(cellSize.getValue())));
 
         LiteralInput nMin = (LiteralInput) inputs.getParameter(MeanSCClusterizer.N_MIN);
         LOG.debug("Input : " + MeanSCClusterizer.N_MIN + " = " + nMin.getValue());
-        task.addParameter(new ClusteringParameter(MeanSCClusterizer.N_MIN, Double.valueOf(nMin.getValue())));
+        task.addParameter(new ClusteringParameter(MeanSCClusterizer.N_MIN, Double.parseDouble(nMin.getValue())));
 
         LiteralInput T = (LiteralInput) inputs.getParameter(MeanSCClusterizer.THRESHOLD);
         LOG.debug("Input : " + MeanSCClusterizer.THRESHOLD + " = " + T.getValue());
-        task.addParameter(new ClusteringParameter(MeanSCClusterizer.THRESHOLD, Double.valueOf(T.getValue())));
+        task.addParameter(new ClusteringParameter(MeanSCClusterizer.THRESHOLD, Double.parseDouble(T.getValue())));
       }
 
       BufferedImage raster;
       { // getting input raster
         ComplexInput inputRaster = (ComplexInput) inputs.getParameter(INPUT_RASTER);
-        LOG.debug( "- inputRaster: " + inputRaster);
         LOG.debug( "- inputRaster.mimeType : " + inputRaster.getMimeType());
         LOG.debug( "- inputRaster.encoding : " + inputRaster.getEncoding());
         LOG.debug( "- inputRaster.schema   : " + inputRaster.getSchema());
@@ -144,6 +143,13 @@ public class MeanSCClasterizerProcesslet implements Processlet {
 //        MimeType mimeType = new MimeType(inputRaster.getMimeType());
 //        opts.add(RasterIOOptions.OPT_FORMAT, mimeType.getSubType());
 
+//        InputStream in;
+//        if ("base64".equals(inputRaster.getEncoding())) {
+//          in = new BASE64DecoderStream(inputRaster.getValueAsBinaryStream());
+//        } else {
+//          in = inputRaster.getValueAsBinaryStream();
+//        }
+//
         raster = ImageIO.read(inputRaster.getValueAsBinaryStream());
         //raster = RasterFactory.loadRasterFromStream(inputRaster.getValueAsBinaryStream(), opts);
       }
