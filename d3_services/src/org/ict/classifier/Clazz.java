@@ -139,6 +139,15 @@ public final class Clazz {
       this(id, 100);
     }
 
+	public Builder(Clazz inst) {
+		id = inst.id;
+		points = new ArrayList<Point>(inst.points);
+		legend = inst.legend;
+		color = inst.color;
+		weight = inst.weight;
+		dimension = inst.dimension;
+	}
+
     public Clazz createClass() {
       if (points.isEmpty()) {
         throw new IllegalArgumentException("At least one point should be specified");
@@ -197,5 +206,7 @@ public final class Clazz {
       int delta = 0x16A56F4E; // Число от балды
       return new Color(0x00FFFFFF & (defaultColors[classId % defaultColors.length].getRGB() + (classId / defaultColors.length) * delta));      
     }
+
   }
+
 }
