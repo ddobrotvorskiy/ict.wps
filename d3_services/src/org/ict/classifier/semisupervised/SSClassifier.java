@@ -1,7 +1,5 @@
 package org.ict.classifier.semisupervised;
 
-//import Jama.Matrix;
-import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.awt.image.Raster;
 import org.ict.classifier.ClassificationTask;
