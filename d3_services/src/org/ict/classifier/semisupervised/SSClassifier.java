@@ -5,7 +5,7 @@ import java.awt.image.Raster;
 import org.ict.classifier.ClassificationTask;
 import org.ict.classifier.Classifier;
 import org.ict.classifier.Point;
-import org.ict.classifier.io.*;
+import org.ict.classifier.io.AsciiTaskReader;
 
 import java.io.File;
 import java.io.FileReader;
@@ -33,15 +33,18 @@ public class SSClassifier  {
 
 	public static void main(String[] args) {
 		try {
-			SSClassifier engine = null;
+			/*
+			AsciiTaskReader rd = new AsciiTaskReader(new FileReader("sparzen-ss.txt"));
+			SoftParzen cc = new SoftParzen("sparzen-ss.txt", "sparzen.txt");
+			cc.classify();
+			cc.dumpResult();
+			*/
 			
+			SSClassifier engine = null;
 			AsciiTaskReader rd = new AsciiTaskReader(new FileReader("samples.txt"));
 			ClassificationTask task = rd.readTask();
-			//System.out.println(task);
-
 			BufferedImage bim = javax.imageio.ImageIO.read( new File("image.bmp") );
-
-			engine = new SSClassifier(task, bim.getRaster() );
+			engine = new SSClassifier(task, bim.getData() );
 			engine.build();
 			engine.classify();
 
