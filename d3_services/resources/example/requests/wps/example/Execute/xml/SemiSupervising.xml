@@ -5,7 +5,7 @@
   xsi:schemaLocation="http://www.opengis.net/wps/1.0.0
 http://schemas.opengis.net/wps/1.0.0/wpsExecute_request.xsd">
   
-  <ows:Identifier>SSClassifierProcess</ows:Identifier>
+  <ows:Identifier>SemiSupervisedClassifierProcess</ows:Identifier>
   <wps:DataInputs>
     <wps:Input>
       <ows:Identifier>InputRaster</ows:Identifier>
@@ -13,7 +13,7 @@ http://schemas.opengis.net/wps/1.0.0/wpsExecute_request.xsd">
     </wps:Input>
     <wps:Input>
       <ows:Identifier>TrainingSample</ows:Identifier>
-      <wps:Reference xlink:href="file://localhost/E:/TMP/spot/ict.wps/request/academ_beach/academ_beach.txt"/>
+      <wps:Reference xlink:href="file://localhost/E:/TMP/spot/ict.wps/request/academ_beach/academ_beach_small.txt"/>
     </wps:Input>
   </wps:DataInputs>
 
