@@ -88,7 +88,13 @@ public class ParzenClassifierProcesslet implements Processlet {
     InputBundle inputBundle = parseInputs(in);
 
     log.trace("performing process logic");
-    OutputBundle outputBundle = doProcess(inputBundle, info);
+    OutputBundle outputBundle = null;
+    try {
+      outputBundle = doProcess(inputBundle, info);
+    } catch (Exception e) {
+      log.error("Error while processing request", e);
+      throw new ProcessletException(e.getMessage());
+    }
 
     log.trace("sending results");
     sendOutput(outputBundle, out);
@@ -116,7 +122,11 @@ public class ParzenClassifierProcesslet implements Processlet {
   private OutputBundle doProcess(InputBundle inputBundle, ProcessletExecutionInfo info) {
 
     log.trace("create tree classifier");
-    Classifier classifier = Classifiers.createTreeClassifier(inputBundle.task);
+
+    //TODO Return tree classifier after debug
+    //Classifier classifier = Classifiers.createTreeClassifier(inputBundle.task);
+    Classifier classifier = Classifiers.createClassifier(inputBundle.task);
+
 
     log.trace("start pixel processing");
     Raster data = inputBundle.raster.getData();
