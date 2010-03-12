@@ -2,7 +2,7 @@ package org.ict.clusterizer;
 
 import java.awt.*;
 import java.util.Collections;
-import java.util.List;
+import java.util.LinkedList;
 import java.util.ArrayList;
 
 
@@ -15,39 +15,28 @@ public class Cluster {
 
   private static final Color[] defaultColors = {Color.blue, Color.green, Color.red, Color.yellow, Color.cyan, Color.DARK_GRAY, Color.magenta};
 
-  private int id;
-  private List<Point> points;
-  private Color color;
+  private LinkedList<Point> points;
 
   private int weight;
   private int dimension;
 
-  public Cluster(int id){
-    this.id = id;
-    points = new ArrayList<Point>(100);
+  private Point delegate;
+  private double delegateDensity;
+
+  public Cluster(){
+    points = new LinkedList<Point>();
     weight = 0;
     dimension = -1;
+    delegate = null;
+    delegateDensity = 0.0d;
   }
 
-  public Cluster(int id, Iterable<Point> points){
-    this(id);
+  public Cluster(Iterable<Point> points){
     addPoints(points);
   }
 
-  public int getId() {
-    return id;
-  }
-
-  public void setId(int id) {
-    this.id = id;
-  }
-
-  public List<Point> getPoints() {
-    return Collections.unmodifiableList(points);
-  }
-
-  public Color getColor() {
-    return color;
+  public LinkedList<Point> getPoints() {
+    return points;
   }
 
   public int getWeight() {
@@ -58,11 +47,37 @@ public class Cluster {
     return dimension;
   }
 
-  public void addPoints(Iterable<Point> points) {
-    if (points == null)
+  public Point getDelegate() {
+    return delegate;
+  }
+
+  public double getDelegateDensity() {
+    return delegateDensity;
+  }
+
+  public void setDelegate(Point delegate, double density) {
+    this.delegate = delegate;
+    this.delegateDensity = density;
+  }
+
+  public void clear() {
+    points.clear();
+    delegate = null;
+    delegateDensity = 0.0d;
+  }
+
+  public void merge(Cluster from) {
+    addPoints(from.getPoints());
+    if (getDelegateDensity() < from.getDelegateDensity())
+      setDelegate(from.getDelegate(), from.getDelegateDensity());
+    from.clear();
+  }
+
+  public void addPoints(Iterable<Point> pts) {
+    if (pts == null)
       throw new IllegalArgumentException("Null argument not allowed");
 
-    for (Point p : points) {
+    for (Point p : pts) {
       addPoint(p);
     }
   }
@@ -99,46 +114,28 @@ public class Cluster {
     if (point == null)
       throw new IllegalArgumentException("Null argument not allowed");
 
-    points.remove(point);
+    if (points != null && points.contains(point)) {
+      weight -= point.getWeight();
+      points.remove(point);
+    }
   }
 
-  public void setColor(Color color) {
-    this.color = color;
-  }
-
-  public boolean deepEquals(Object o) {
-    if (!equals(o))
-      return false;
-
-    Cluster c = (Cluster) o;
-
-    return id == c.id &&
-           weight == c.weight &&
-           dimension == c.dimension &&
-           (color == null ? c.color == null : color.equals(c.color)) &&
-           points.equals(c.points);
-  }
-
-  @Override
-  public int hashCode() {
-    return id;
-  }
- 
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;
     if (o == null || ! (o instanceof Cluster)) return false;
 
-    Cluster cluster = (Cluster) o;
+    Cluster c = (Cluster) o;
 
-    return id == cluster.id;
+    return weight == c.weight &&
+           dimension == c.dimension &&
+           points.equals(c.points);
   }
 
   @Override
   public String toString() {
     StringBuilder builder = new StringBuilder();
-    builder.append("Cluster { ").append("id=").append(id).append('\'')
-            .append(", color=").append(color);
+    builder.append("Cluster { ").append('\'');
     builder.append(", points= [");
     for (Point p : points) {
       builder.append('\n').append(p);

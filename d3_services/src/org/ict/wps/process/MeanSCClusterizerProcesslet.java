@@ -103,7 +103,7 @@ public class MeanSCClusterizerProcesslet implements Processlet {
     BufferedImage image = new BufferedImage(data.getWidth(), data.getHeight(), BufferedImage.TYPE_INT_RGB);
 
     for (Cluster cl : clusters) {
-      Color color = Cluster.getDefaultColor(cl.getId());
+      Color color = Cluster.getDefaultColor(clusters.indexOf(cl));
       for (Point p : cl.getPoints())
         image.setRGB(p.getXPos(), p.getYPos(), color.getRGB());
     }

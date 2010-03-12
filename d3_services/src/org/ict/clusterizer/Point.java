@@ -14,6 +14,10 @@ public class Point {
 
   private final double[] data;
   private final int weight;
+
+  private double delegateDistance;
+  private double delegateDensity;
+
   private final int xPos;
   private final int yPos;
 
@@ -25,6 +29,8 @@ public class Point {
     this.data = data;
     this.xPos = xPos;
     this.yPos = yPos;
+    this.delegateDistance = Double.MAX_VALUE;
+    this.delegateDensity = 0.0d;
   }
 
   public static Point create(double [] data) {
@@ -63,6 +69,22 @@ public class Point {
 
   public int getYPos(){
     return yPos;
+  }
+
+  public double getDelegateDistance() {
+    return delegateDistance;
+  }
+
+  public double getDelegateDensity() {
+    return delegateDensity;
+  }
+
+  public void setDelegateDistance(double distance) {
+    this.delegateDistance = distance;
+  }
+
+  public void setDelegateDensity(double density) {
+    this.delegateDensity = density;
   }
 
   @Override
