@@ -18,6 +18,7 @@ import java.awt.image.Raster;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 /**
  * User: Yorik
@@ -98,7 +99,7 @@ public class MeanSCClusterizerProcesslet implements Processlet {
     if(!MeanSC.canProcess(inputBundle.task))
       throw new IllegalArgumentException("unexpected parameters for MeanSC algorithm");
 
-    ArrayList<Cluster> clusters = MeanSC.apply(points, inputBundle.task);
+    LinkedList<Cluster> clusters = MeanSC.apply(points, inputBundle.task);
 
     BufferedImage image = new BufferedImage(data.getWidth(), data.getHeight(), BufferedImage.TYPE_INT_RGB);
 

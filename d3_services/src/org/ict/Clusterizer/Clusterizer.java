@@ -1,7 +1,7 @@
 package org.ict.clusterizer;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.LinkedList;
 
 /**
  * Interface for unsupervized clustering algorithms (for numerical data).
@@ -22,8 +22,8 @@ public interface Clusterizer {
    *
    * @param points - set of points to be clusterized
    * @param task - clustering task (algorithm parameters)
-   * @return discovered clusters
+   * @return clusters discovered (the last cluster contains all noisy points)
    */
-  public ArrayList<Cluster> apply(ArrayList<Point> points, ClusteringTask task);
+  public LinkedList<Cluster> apply(ArrayList<Point> points, ClusteringTask task);
 
 }

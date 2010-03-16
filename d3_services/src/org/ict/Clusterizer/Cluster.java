@@ -1,9 +1,8 @@
 package org.ict.clusterizer;
 
-import java.awt.*;
-import java.util.Collections;
+import java.awt.Color;
+import java.util.List;
 import java.util.LinkedList;
-import java.util.ArrayList;
 
 
 /**
@@ -31,7 +30,8 @@ public class Cluster {
     delegateDensity = 0.0d;
   }
 
-  public Cluster(Iterable<Point> points){
+  public Cluster(List<Point> points){
+    this();
     addPoints(points);
   }
 
@@ -55,9 +55,17 @@ public class Cluster {
     return delegateDensity;
   }
 
-  public void setDelegate(Point delegate, double density) {
-    this.delegate = delegate;
+  public void setDelegate(Point delegate) {
+    this.delegate = Point.create(delegate.getArray(), delegate.getWeight(), delegate.getXPos(), delegate.getYPos());
+  }
+
+  public void setDelegateDensity(double density) {
     this.delegateDensity = density;
+  }
+
+  public void setDelegate(Point delegate, double density) {
+    setDelegate(delegate);
+    setDelegateDensity(density);
   }
 
   public void clear() {
@@ -86,7 +94,6 @@ public class Cluster {
     if (point == null)
       throw new IllegalArgumentException("Null argument not allowed");
 
-    points.add(point);
     if (dimension == -1) {
       dimension = point.getDim();
     } else {
@@ -94,6 +101,9 @@ public class Cluster {
         throw new IllegalArgumentException("All points should have the same dimension");
     }
     weight += point.getWeight();
+    point.setDelegateDensity(delegateDensity);
+    point.setCluster(this);
+    points.add(point);
   }
 
   /**
@@ -124,12 +134,7 @@ public class Cluster {
   public boolean equals(Object o) {
     if (this == o) return true;
     if (o == null || ! (o instanceof Cluster)) return false;
-
-    Cluster c = (Cluster) o;
-
-    return weight == c.weight &&
-           dimension == c.dimension &&
-           points.equals(c.points);
+    return delegate.equals(((Cluster) o).getDelegate());
   }
 
   @Override

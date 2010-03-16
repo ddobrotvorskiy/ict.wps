@@ -15,22 +15,23 @@ public class Point {
   private final double[] data;
   private final int weight;
 
-  private double delegateDistance;
   private double delegateDensity;
 
   private final int xPos;
   private final int yPos;
 
+  private Cluster cluster;
+
   private Point(double [] data, int weight, int xPos, int yPos) {
-    if (data == null || weight < 1 || xPos < 0 || yPos < 0)
+    if (data == null || weight < 1)
       throw new IllegalArgumentException();
 
     this.weight = weight;
     this.data = data;
     this.xPos = xPos;
     this.yPos = yPos;
-    this.delegateDistance = Double.MAX_VALUE;
     this.delegateDensity = 0.0d;
+    this.cluster = null;
   }
 
   public static Point create(double [] data) {
@@ -71,16 +72,16 @@ public class Point {
     return yPos;
   }
 
-  public double getDelegateDistance() {
-    return delegateDistance;
+  public Cluster getCluster() {
+    return cluster;
+  }
+
+  public void setCluster(Cluster cl) {
+    this.cluster = cl;
   }
 
   public double getDelegateDensity() {
     return delegateDensity;
-  }
-
-  public void setDelegateDistance(double distance) {
-    this.delegateDistance = distance;
   }
 
   public void setDelegateDensity(double density) {
@@ -157,7 +158,7 @@ public class Point {
       return points.get(0);
 
     int dim = points.get(0).getDim();
-    int weight = 0;
+//    int weight = 0;
     double [] data = new double[dim];
 
     for (int i = 0; i< dim; i++)
@@ -167,7 +168,7 @@ public class Point {
       if (p.getDim() != dim)
         throw new IllegalArgumentException("All points should have equal dimension");
 
-      weight += p.weight;
+//      weight += p.weight;
       for (int i = 0; i< dim; i++)
         data[i] += p.data[i];
     }
@@ -175,7 +176,7 @@ public class Point {
     for (int i = 0; i< dim; i++)
       data[i] /= (double) points.size();
 
-    return new Point(data, weight, -1, -1);
+    return new Point(data, 1, -1, -1);
   }
 
 }
