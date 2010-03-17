@@ -70,8 +70,7 @@ public class Cluster {
 
   public void clear() {
     points.clear();
-    delegate = null;
-    delegateDensity = 0.0d;
+    weight = 0;
   }
 
   public void merge(Cluster from) {

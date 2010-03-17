@@ -66,9 +66,7 @@ public class MeanSCClusterizer implements Clusterizer {
     /*
     Applying mean shift procedure
      */
-
     LinkedList<Cluster> clusters = grid.applyMeanShiftProcedure(nMin);
-
 
     /*
     Collecting noise into one cluster

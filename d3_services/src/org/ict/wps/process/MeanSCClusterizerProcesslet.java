@@ -1,6 +1,7 @@
 package org.ict.wps.process;
 
-//import com.sun.xml.internal.messaging.saaj.packaging.mime.util.BASE64DecoderStream;
+import org.deegree.coverage.raster.geom.RasterGeoReference;
+import org.deegree.coverage.raster.io.RasterIOOptions;
 import org.deegree.services.controller.OGCFrontController;
 import org.deegree.services.wps.*;
 import org.deegree.services.wps.input.ComplexInput;
@@ -19,6 +20,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.LinkedList;
+
+import org.apache.commons.codec.binary.Base64InputStream;
+import org.apache.commons.codec.binary.Base64OutputStream;
 
 /**
  * User: Yorik
@@ -140,19 +144,18 @@ public class MeanSCClusterizerProcesslet implements Processlet {
 
 //        RasterIOOptions opts = new RasterIOOptions(RasterGeoReference.OriginLocation.OUTER);
 //        opts.add(RasterIOOptions.READ_WLD_FILE, null);
-//
+
 //        MimeType mimeType = new MimeType(inputRaster.getMimeType());
 //        opts.add(RasterIOOptions.OPT_FORMAT, mimeType.getSubType());
 
-//        InputStream in;
-//        if ("base64".equals(inputRaster.getEncoding())) {
-//          in = new BASE64DecoderStream(inputRaster.getValueAsBinaryStream());
-//        } else {
-//          in = inputRaster.getValueAsBinaryStream();
-//        }
-//
-        raster = ImageIO.read(inputRaster.getValueAsBinaryStream());
-        //raster = RasterFactory.loadRasterFromStream(inputRaster.getValueAsBinaryStream(), opts);
+        InputStream in;
+        if ("base64".equals(inputRaster.getEncoding())) {
+          in = new Base64InputStream(inputRaster.getValueAsBinaryStream());
+        } else {
+          in = inputRaster.getValueAsBinaryStream();
+        }
+
+        raster = ImageIO.read(in);
       }
 
       return new InputBundle(task, raster);
@@ -179,7 +182,7 @@ public class MeanSCClusterizerProcesslet implements Processlet {
 //      ImageIO.write(outputBundle.image,  "png", new File("/tmp/wps/result.png") );
 
       LOG.debug("sending result to output stream");
-      ImageIO.write(outputBundle.image,  "png", outputRaster.getBinaryOutputStream() );
+      ImageIO.write(outputBundle.image,  "png", new Base64OutputStream(outputRaster.getBinaryOutputStream()) );
 
     } catch (IOException e) {
       LOG.error("Result raster transfer failed with i/o exception", e);

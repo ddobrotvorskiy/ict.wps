@@ -33,10 +33,10 @@ Responsible: schneider
 License: ?
 Origin of files: https://cds.sun.com/is-bin/INTERSHOP.enfinity/WFS/CDS-CDS_JCP-Site/en_US/-/USD/ViewProductDetail-Start?ProductRef=servlet-2.5-mrel-eval-oth-JSpec@CDS-CDS_JCP
 
-=== commons/apache/org/commons-codec-1.3.jar ===
-Files: commons-codec-1.3.jar
+=== commons/apache/org/commons-codec-1.4.jar ===
+Files: commons-codec-1.4.jar
 URL: http://jakarta.apache.org/commons/codec/
-Version: 1.3
+Version: 1.4
 Description: Commons Codec provides implementations of common encoders and decoders such as Base64, Hex, Phonetic and URLs.  
 Used for: org.deegree.services.controller, handling multipart requests
 Responsible: bezema

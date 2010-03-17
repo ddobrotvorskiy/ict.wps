@@ -164,19 +164,32 @@ public class FixedGrid {
       }
     }
 
-    // Removing empty and connecting close clusters
+    // Connecting close clusters
     for (Cluster cl : clusters) {
-      if (cl.getWeight() == 0)
-        clusters.remove(cl);
+      if (cl.getWeight() == 0) continue;
       for (Cluster cl1 : clusters) {
-        if (cl1.getWeight() > 0 && Point.distance(cl.getDelegate(), cl1.getDelegate()) <= influenceDistance) {
-          if (cl1.getDelegateDensity() > cl.getDelegateDensity()) cl1.merge(cl);
-          else cl.merge(cl1);
+        if (cl1.getWeight() == 0) continue;
+        if (!cl.equals(cl1) && Point.distance(cl.getDelegate(), cl1.getDelegate()) <= influenceDistance) {
+          if (cl1.getDelegateDensity() > cl.getDelegateDensity()) {
+            cl1.merge(cl);
+          }
+          else {
+            cl.merge(cl1);
+          }
         }
       }
     }
 
+    // Removing empty clusters
+    for (int i = clusters.size() - 1; i >= 0; i--) {
+      if (clusters.get(i).getWeight() == 0)
+        clusters.remove(i);
+    }
+
     return clusters;
+  }
+
+  void connectClusters () {
   }
 
 
