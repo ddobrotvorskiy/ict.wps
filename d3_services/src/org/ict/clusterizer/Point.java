@@ -88,6 +88,34 @@ public class Point {
     this.delegateDensity = density;
   }
 
+  public static Point move (Point point, Point shift) {
+    if (shift == null) return point;
+    if (point == null) return shift;
+
+    if (point.getDim() != shift.getDim())
+      throw new IllegalArgumentException("Point and shift should have the same dimension");
+
+    double[] values = point.getArray();
+    for (int i = 0; i < point.getDim(); i++)
+      values[i] += shift.get(i);
+
+    return Point.create(values, point.getWeight(), point.getXPos(), point.getYPos());
+  }
+
+  public static Point getDirection (Point from, Point to, double step) {
+    if (from == null || to == null)
+      throw new IllegalArgumentException("Null arguments not allowed");
+    if (from.getDim() != to.getDim())
+      throw new IllegalArgumentException("Both points should have the same dimension");
+
+    double dist = distance(from, to);
+    double[] values = new double[to.getDim()];
+    for (int i = 0; i < to.getDim(); i++)
+      values[i] = (to.get(i) - from.get(i)) * step / dist;
+
+    return Point.create(values, from.getWeight(), -1, -1);
+  }
+
   @Override
   public String toString() {
     StringBuilder s = new StringBuilder();
@@ -97,6 +125,13 @@ public class Point {
     s.append("; weight = ").append(weight).append(']');
     s.append("; position = (").append(xPos).append(" ").append(yPos).append(")]");
     return s.toString();
+  }
+
+  @Override
+  public int hashCode() {
+    int result = data != null ? Arrays.hashCode(data) : 0;
+    result = 31 * result + weight;
+    return result;
   }
 
   @Override

@@ -75,6 +75,8 @@ public class Cluster {
 
   public void merge(Cluster from) {
     addPoints(from.getPoints());
+    for (Point p : from.getPoints())
+      p.setCluster(this);
     if (getDelegateDensity() < from.getDelegateDensity())
       setDelegate(from.getDelegate(), from.getDelegateDensity());
     from.clear();
@@ -139,7 +141,7 @@ public class Cluster {
   @Override
   public String toString() {
     StringBuilder builder = new StringBuilder();
-    builder.append("Cluster { ").append('\'');
+    builder.append("Cluster { Weight = ").append(weight).append(" ").append('\'');
     builder.append(", points= [");
     for (Point p : points) {
       builder.append('\n').append(p);

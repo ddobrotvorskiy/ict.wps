@@ -1,7 +1,9 @@
 package org.ict.clusterizer;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.HashSet;
 
 /**
  * User: Yorik
@@ -189,7 +191,77 @@ public class FixedGrid {
     return clusters;
   }
 
-  void connectClusters () {
+  /*
+  If neighboring cells (or one cell) contain different clusters these clusters should be checked for connectivity
+   */
+  public void connectClusters (double unionThreshold) {
+    HashSet<ClusterPare> pares = new HashSet<ClusterPare>();
+    HashSet<Cluster> met = new HashSet<Cluster>();
+
+    // Searching for neighboring clusters
+    for (Cell center : cells){
+      if (center.isEmpty()) continue;
+      met.clear();
+      for (Cell neighbor : center.getNeighboringCells()) {
+        for (Point p : neighbor.getPoints()) {
+          if (p.getDelegateDensity() == 0.0d) continue;
+          met.add(p.getCluster());
+        }
+      }
+      // Less then two clusters met in neighboring cells => nothing to check for connectivity
+      if (met.size() < 2) continue;
+      for (Cluster cl : met) {
+        for (Cluster cl1 : met) {
+          if (cl == cl1) continue;
+          pares.add(new ClusterPare(cl, cl1));
+        }
+      }
+    }
+
+    // Checking found cluster pares for connectivity
+    Cluster from;
+    Cluster to;
+    double maxWayDensity;
+    Point shift;
+    Point current;
+    int iterationCount;
+    boolean isHole;
+
+    for (ClusterPare cp : pares) {
+
+      // TODO: !!!some clusters are already connected to others and have NULL delegate!!!
+
+      // Getting moving direction (from lower to higher density)
+      if (cp.getOne().getDelegateDensity() <= cp.getTwo().getDelegateDensity()) {
+        from = cp.getOne();
+        to = cp.getTwo();
+      } else {
+        to = cp.getOne();
+        from = cp.getTwo();
+      }
+
+      // Checking for dense way from one cluster to another
+      isHole = false;
+      maxWayDensity = from.getDelegateDensity();
+      iterationCount = (int)Math.ceil(Point.distance(from.getDelegate(), to.getDelegate()) / influenceDistance);
+      shift = Point.getDirection(from.getDelegate(), to.getDelegate(), influenceDistance);
+      current = from.getDelegate();
+      for (int i = 1; i < iterationCount && !isHole; i++) {
+        // Moving along the line connecting cluster centers
+        current = Point.move(current, shift);
+        // Estimating density in current point
+        current.setDelegateDensity(estimateDensity(current));
+        // Searching maximum density along the way
+        if (maxWayDensity < current.getDelegateDensity()) {
+          maxWayDensity = current.getDelegateDensity();
+          continue;
+        }
+        // Checking for density hole
+        isHole = (maxWayDensity > unionThreshold * current.getDelegateDensity());
+      }
+      // No hole found => connecting clusters
+      if (!isHole) to.merge(from);
+    }
   }
 
 
@@ -289,6 +361,50 @@ public class FixedGrid {
       if (!(o instanceof Cell)) return false;
 
       return points.equals(((Cell) o).getPoints());
+    }
+  }
+
+
+  private class ClusterPare {
+    private Cluster one;
+    private Cluster two;
+
+    public ClusterPare(Cluster one, Cluster two) {
+      this.one = one;
+      this.two = two;
+    }
+
+    public Cluster getOne() {
+      return one;
+    }
+
+    public void setOne(Cluster one) {
+      this.one = one;
+    }
+
+    public Cluster getTwo() {
+      return two;
+    }
+
+    public void setTwo(Cluster two) {
+      this.two = two;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+      if (this == o) return true;
+      if (!(o instanceof ClusterPare)) return false;
+
+      ClusterPare cp = (ClusterPare) o;
+      if (getOne().equals(cp.getOne()) && getTwo().equals(cp.getTwo())) return true;
+      if (getTwo().equals(cp.getOne()) && getOne().equals(cp.getTwo())) return true;
+
+      return false;
+    }
+
+    @Override
+    public int hashCode() {
+      return getOne().getDelegate().hashCode() + getTwo().getDelegate().hashCode();
     }
   }
 }

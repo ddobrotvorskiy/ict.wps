@@ -69,6 +69,11 @@ public class MeanSCClusterizer implements Clusterizer {
     LinkedList<Cluster> clusters = grid.applyMeanShiftProcedure(nMin);
 
     /*
+    Connecting clusters through areas with high density
+     */
+    grid.connectClusters(unionThreshold);
+
+    /*
     Collecting noise into one cluster
      */
     Cluster cl = new Cluster();
