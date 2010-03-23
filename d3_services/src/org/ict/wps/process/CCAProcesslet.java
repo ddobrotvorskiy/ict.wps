@@ -36,6 +36,7 @@
 
 package org.ict.wps.process;
 
+import org.apache.commons.codec.binary.Base64InputStream;
 import org.deegree.coverage.raster.AbstractRaster;
 import org.deegree.coverage.raster.data.RasterData;
 import org.deegree.coverage.raster.geom.RasterGeoReference;
@@ -223,7 +224,15 @@ public class CCAProcesslet implements Processlet {
 //        MimeType mimeType = new MimeType(inputRaster.getMimeType());
 //        opts.add(RasterIOOptions.OPT_FORMAT, mimeType.getSubType());
 
-        raster = ImageIO.read(inputRaster.getValueAsBinaryStream());
+        InputStream in;
+        if ("base64".equals(inputRaster.getEncoding())) {
+          in = new Base64InputStream(inputRaster.getValueAsBinaryStream());
+        } else {
+          in = inputRaster.getValueAsBinaryStream();
+        }
+
+        raster = ImageIO.read(in);
+//        raster = ImageIO.read(inputRaster.getValueAsBinaryStream());
         //raster = RasterFactory.loadRasterFromStream(inputRaster.getValueAsBinaryStream(), opts);
       }
 

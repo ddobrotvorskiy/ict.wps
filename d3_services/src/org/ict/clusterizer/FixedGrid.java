@@ -78,6 +78,7 @@ public class FixedGrid {
     TODO: Density core should be selected HERE and nowhere else! <DensityEstimates> is just a core collection.
      */
     ArrayList<Point> nearestPoints = getContainingCell(point).getNearestPoints(point);
+    if (nearestPoints == null) return 0.0d;
     double density = 0.0d;
     for (Point p : nearestPoints)
       density += DensityEstimates.MultiplicableTriangleCore(p, point, influenceDistance);
@@ -129,14 +130,14 @@ public class FixedGrid {
 
     // Reassigning points to close enough weight center with highest density
     for (Cell c : cells) {
-      if (c.isEmpty()) continue;
+      if (c.isEmpty() || !c.isFilled(minWeight)) continue;
 
       for (Cell neighbor : c.getNeighboringCells()) {
         if (neighbor == c) continue;
         for (Point p : neighbor.getPoints()) {
           if (p.getDelegateDensity() < c.getDescendant().getDelegateDensity() && Point.distance(p, c.getDescendant().getDelegate()) <= influenceDistance) {
             c.getDescendant().addPoint(p);
-            neighbor.getDescendant().removePoint(p);
+            if(p.getCluster()!= null) p.getCluster().removePoint(p);
           }
         }
       }
@@ -156,7 +157,8 @@ public class FixedGrid {
         for (Point p : getContainingCell(nextStep).getNearestPoints(nextStep)) {
           if (p.getDelegateDensity() < nextStepDensity) {
             p.setDelegateDensity(nextStepDensity);
-            p.getCluster().removePoint(p);
+            if (cl == p.getCluster()) continue;
+            if (p.getCluster() != null) p.getCluster().removePoint(p);
             cl.addPoint(p);
           }
         }
@@ -194,7 +196,7 @@ public class FixedGrid {
   /*
   If neighboring cells (or one cell) contain different clusters these clusters should be checked for connectivity
    */
-  public void connectClusters (double unionThreshold) {
+  public void connectClusters (LinkedList<Cluster> clusters, double unionThreshold) {
     HashSet<ClusterPare> pares = new HashSet<ClusterPare>();
     HashSet<Cluster> met = new HashSet<Cluster>();
 
@@ -260,7 +262,23 @@ public class FixedGrid {
         isHole = (maxWayDensity > unionThreshold * current.getDelegateDensity());
       }
       // No hole found => connecting clusters
-      if (!isHole) to.merge(from);
+      if (!isHole)
+        from.connectTo(to);
+    }
+
+    // Connecting clusters
+    for (Cluster cl : clusters) {
+      if (cl.getNext() == null) continue;
+      to = cl.getNext();
+      while (to.getNext() != null)
+        to = to.getNext();
+      to.merge(cl);
+    }
+
+    // Removing empty clusters
+    for (int i = clusters.size() - 1; i >= 0; i--) {
+      if (clusters.get(i).getNext() != null)
+        clusters.remove(i);
     }
   }
 
@@ -334,6 +352,8 @@ public class FixedGrid {
     }
 
     public ArrayList<Point> getNearestPoints(Point point) {
+      if (neighbors == null) return null;
+      
       ArrayList<Point> result = new ArrayList<Point>(100);
 
       for (Cell c : neighbors) {

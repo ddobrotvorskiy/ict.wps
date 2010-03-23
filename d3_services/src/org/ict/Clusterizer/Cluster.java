@@ -22,12 +22,15 @@ public class Cluster {
   private Point delegate;
   private double delegateDensity;
 
+  private Cluster connectTo;
+
   public Cluster(){
     points = new LinkedList<Point>();
     weight = 0;
     dimension = -1;
     delegate = null;
     delegateDensity = 0.0d;
+    connectTo = null;
   }
 
   public Cluster(List<Point> points){
@@ -45,6 +48,14 @@ public class Cluster {
 
   public int getDimension() {
     return dimension;
+  }
+
+  public void connectTo(Cluster connectTo) {
+    this.connectTo = connectTo;
+  }
+
+  public Cluster getNext() {
+    return connectTo;
   }
 
   public Point getDelegate() {
@@ -80,6 +91,7 @@ public class Cluster {
     if (getDelegateDensity() < from.getDelegateDensity())
       setDelegate(from.getDelegate(), from.getDelegateDensity());
     from.clear();
+    from.connectTo(this);
   }
 
   public void addPoints(Iterable<Point> pts) {
@@ -125,10 +137,8 @@ public class Cluster {
     if (point == null)
       throw new IllegalArgumentException("Null argument not allowed");
 
-    if (points != null && points.contains(point)) {
+    if (points != null && points.remove(point))
       weight -= point.getWeight();
-      points.remove(point);
-    }
   }
 
   @Override

@@ -16,7 +16,7 @@
 ;
 ; ROI name: dark_forest
 ; ROI rgb value: {0, 139, 0}
-; ROI 423npts: 190
+; ROI 423 npts: 190
 ;   B1   B2   B3
      1   17   92
     16   32  106

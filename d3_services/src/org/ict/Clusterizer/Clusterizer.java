@@ -1,5 +1,7 @@
 package org.ict.clusterizer;
 
+import org.slf4j.Logger;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 
@@ -24,6 +26,6 @@ public interface Clusterizer {
    * @param task - clustering task (algorithm parameters)
    * @return clusters discovered (the last cluster contains all noisy points)
    */
-  public LinkedList<Cluster> apply(ArrayList<Point> points, ClusteringTask task);
+  public LinkedList<Cluster> apply(ArrayList<Point> points, ClusteringTask task, Logger LOG);
 
 }

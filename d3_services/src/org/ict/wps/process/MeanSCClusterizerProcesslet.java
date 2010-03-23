@@ -1,7 +1,5 @@
 package org.ict.wps.process;
 
-import org.deegree.coverage.raster.geom.RasterGeoReference;
-import org.deegree.coverage.raster.io.RasterIOOptions;
 import org.deegree.services.controller.OGCFrontController;
 import org.deegree.services.wps.*;
 import org.deegree.services.wps.input.ComplexInput;
@@ -84,6 +82,7 @@ public class MeanSCClusterizerProcesslet implements Processlet {
   private OutputBundle doProcess(InputBundle inputBundle, ProcessletExecutionInfo info) {
 
     LOG.trace("create MeanSC clusterizer");
+    LOG.trace(inputBundle.raster.getData().toString());
     Clusterizer MeanSC = Clusterizers.createMeanSCClusterizer(inputBundle.task);
 
     LOG.trace("prepare input image");
@@ -93,6 +92,7 @@ public class MeanSCClusterizerProcesslet implements Processlet {
     double [] pixel = new double[data.getNumBands()];
 
     for (int x = 0; x < data.getWidth(); x ++) {
+//      LOG.trace("image line " + x + " of " + data.getWidth() + "\n");
       for (int y = 0; y < data.getHeight(); y ++) {
         double[] p = data.getPixel(data.getMinX() + x, data.getMinY() + y, pixel);
         points.add(Point.create(p, 1, x, y));
@@ -103,8 +103,14 @@ public class MeanSCClusterizerProcesslet implements Processlet {
     if(!MeanSC.canProcess(inputBundle.task))
       throw new IllegalArgumentException("unexpected parameters for MeanSC algorithm");
 
-    LinkedList<Cluster> clusters = MeanSC.apply(points, inputBundle.task);
+    LinkedList<Cluster> clusters = MeanSC.apply(points, inputBundle.task, LOG);
 
+    LOG.trace(String.valueOf(clusters.size()) + " clusters found:");
+    int i = 0;
+    for (Cluster cl : clusters) {
+      LOG.trace("\\ cluster " + String.valueOf(i) + " = " + (cl == null ? "null" : String.valueOf(cl.getWeight())));
+      i++;
+    }
     BufferedImage image = new BufferedImage(data.getWidth(), data.getHeight(), BufferedImage.TYPE_INT_RGB);
 
     for (Cluster cl : clusters) {
@@ -136,28 +142,27 @@ public class MeanSCClusterizerProcesslet implements Processlet {
       }
 
       BufferedImage raster;
-      { // getting input raster
-        ComplexInput inputRaster = (ComplexInput) inputs.getParameter(INPUT_RASTER);
-        LOG.debug( "- inputRaster.mimeType : " + inputRaster.getMimeType());
-        LOG.debug( "- inputRaster.encoding : " + inputRaster.getEncoding());
-        LOG.debug( "- inputRaster.schema   : " + inputRaster.getSchema());
+      // getting input raster
+      ComplexInput inputRaster = (ComplexInput) inputs.getParameter(INPUT_RASTER);
+      LOG.debug( "- inputRaster.mimeType : " + inputRaster.getMimeType());
+      LOG.debug( "- inputRaster.encoding : " + inputRaster.getEncoding());
+      LOG.debug( "- inputRaster.schema   : " + inputRaster.getSchema());
 
-//        RasterIOOptions opts = new RasterIOOptions(RasterGeoReference.OriginLocation.OUTER);
-//        opts.add(RasterIOOptions.READ_WLD_FILE, null);
+//      RasterIOOptions opts = new RasterIOOptions(RasterGeoReference.OriginLocation.OUTER);
+//      opts.add(RasterIOOptions.READ_WLD_FILE, null);
 
-//        MimeType mimeType = new MimeType(inputRaster.getMimeType());
-//        opts.add(RasterIOOptions.OPT_FORMAT, mimeType.getSubType());
+//      MimeType mimeType = new MimeType(inputRaster.getMimeType());
+//      opts.add(RasterIOOptions.OPT_FORMAT, mimeType.getSubType());
 
-        InputStream in;
-        if ("base64".equals(inputRaster.getEncoding())) {
-          in = new Base64InputStream(inputRaster.getValueAsBinaryStream());
-        } else {
-          in = inputRaster.getValueAsBinaryStream();
-        }
-
-        raster = ImageIO.read(in);
+      InputStream in;
+      if ("base64".equals(inputRaster.getEncoding())) {
+        in = new Base64InputStream(inputRaster.getValueAsBinaryStream());
+      } else {
+        in = inputRaster.getValueAsBinaryStream();
       }
 
+      raster = ImageIO.read(in);
+      
       return new InputBundle(task, raster);
 
 //    } catch (MimeTypeParseException e) {

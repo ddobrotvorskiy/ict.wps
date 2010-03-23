@@ -1,5 +1,7 @@
 package org.ict.clusterizer;
 
+import org.slf4j.Logger;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.LinkedList;
@@ -42,7 +44,7 @@ public class MeanSCClusterizer implements Clusterizer {
   }
 
   @Override
-  public LinkedList<Cluster> apply(ArrayList<Point> points,  ClusteringTask task){
+  public LinkedList<Cluster> apply(ArrayList<Point> points,  ClusteringTask task, Logger LOG){
     if (points == null || task == null)
       throw new IllegalArgumentException("Null argument not allowed");
     if (points.isEmpty())
@@ -61,21 +63,25 @@ public class MeanSCClusterizer implements Clusterizer {
     /*
     Creating grid
      */
+    LOG.trace("creating grid...");
     grid = new FixedGrid(points, cellSize);
 
     /*
     Applying mean shift procedure
      */
+    LOG.trace("applying mean shift procedure...");
     LinkedList<Cluster> clusters = grid.applyMeanShiftProcedure(nMin);
 
     /*
     Connecting clusters through areas with high density
      */
-    grid.connectClusters(unionThreshold);
+    LOG.trace("connecting clusters...");
+    grid.connectClusters(clusters, unionThreshold);
 
     /*
     Collecting noise into one cluster
      */
+    LOG.trace("collecting noise...");
     Cluster cl = new Cluster();
     for (Point p : points) {
       if (p.getDelegateDensity() == 0.0d)

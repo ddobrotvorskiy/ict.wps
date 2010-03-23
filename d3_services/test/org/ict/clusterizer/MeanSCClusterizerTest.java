@@ -1,8 +1,16 @@
 package org.ict.clusterizer;
 
 import junit.framework.TestCase;
+import org.apache.commons.codec.binary.Base64InputStream;
 import org.junit.Test;
 
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.awt.image.Raster;
+import java.io.ByteArrayInputStream;
+import java.io.File;
+import java.io.FileInputStream;
 import java.util.ArrayList;
 
 /**
@@ -15,12 +23,7 @@ import java.util.ArrayList;
 public class MeanSCClusterizerTest extends TestCase {
 
   @Test
-  public void test_apply() throws Exception {
-    ClusteringTask task = new ClusteringTask(3);
-    task.addParameter(new ClusteringParameter(MeanSCClusterizer.CELL_SIZE, 25.0d));
-    task.addParameter(new ClusteringParameter(MeanSCClusterizer.N_MIN, 1.0d));
-    task.addParameter(new ClusteringParameter(MeanSCClusterizer.THRESHOLD, 1.5d));
-
+  public void test_apply_model() throws Exception {
     // 2D model data (200 points)
     ArrayList<Point> points = new ArrayList<Point>(200);
     points.add(Point.create(new double[]{88.0, 89.0}, 1, 0, 0));
@@ -223,6 +226,35 @@ public class MeanSCClusterizerTest extends TestCase {
     points.add(Point.create(new double[]{43.0, 58.0}, 1, 0, 0));
     points.add(Point.create(new double[]{23.0, 70.0}, 1, 0, 0));
     points.add(Point.create(new double[]{72.0, 123.0}, 1, 0, 0));
+
+    ClusteringTask task = new ClusteringTask(3);
+    task.addParameter(new ClusteringParameter(MeanSCClusterizer.CELL_SIZE, 25.0d));
+    task.addParameter(new ClusteringParameter(MeanSCClusterizer.N_MIN, 3.0d));
+    task.addParameter(new ClusteringParameter(MeanSCClusterizer.THRESHOLD, 1.5d));
+
+    MeanSCClusterizer meanSC = new MeanSCClusterizer();
+    meanSC.apply(points, task);
+  }
+
+  @Test
+  public void test_apply_image() throws Exception {
+    BufferedImage raster = ImageIO.read(new FileInputStream(new File("H:/Work/WPS/ict.wps/request/academ_beach/academ_beach.png")));
+    Raster data = raster.getData();
+
+    ArrayList<Point> points = new ArrayList<Point>(data.getWidth() * data.getHeight());
+    double [] pixel = new double[data.getNumBands()];
+
+    for (int x = 0; x < data.getWidth(); x ++) {
+      for (int y = 0; y < data.getHeight(); y ++) {
+        double[] p = data.getPixel(data.getMinX() + x, data.getMinY() + y, pixel);
+        points.add(Point.create(p, 1, x, y));
+      }
+    }
+
+    ClusteringTask task = new ClusteringTask(3);
+    task.addParameter(new ClusteringParameter(MeanSCClusterizer.CELL_SIZE, 25.0d));
+    task.addParameter(new ClusteringParameter(MeanSCClusterizer.N_MIN, 3.0d));
+    task.addParameter(new ClusteringParameter(MeanSCClusterizer.THRESHOLD, 1.5d));
 
     MeanSCClusterizer meanSC = new MeanSCClusterizer();
     meanSC.apply(points, task);
