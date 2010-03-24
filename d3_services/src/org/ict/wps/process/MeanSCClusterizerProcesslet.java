@@ -14,6 +14,7 @@ import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.awt.image.Raster;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -82,7 +83,6 @@ public class MeanSCClusterizerProcesslet implements Processlet {
   private OutputBundle doProcess(InputBundle inputBundle, ProcessletExecutionInfo info) {
 
     LOG.trace("create MeanSC clusterizer");
-    LOG.trace(inputBundle.raster.getData().toString());
     Clusterizer MeanSC = Clusterizers.createMeanSCClusterizer(inputBundle.task);
 
     LOG.trace("prepare input image");
@@ -92,7 +92,6 @@ public class MeanSCClusterizerProcesslet implements Processlet {
     double [] pixel = new double[data.getNumBands()];
 
     for (int x = 0; x < data.getWidth(); x ++) {
-//      LOG.trace("image line " + x + " of " + data.getWidth() + "\n");
       for (int y = 0; y < data.getHeight(); y ++) {
         double[] p = data.getPixel(data.getMinX() + x, data.getMinY() + y, pixel);
         points.add(Point.create(p, 1, x, y));
@@ -105,7 +104,11 @@ public class MeanSCClusterizerProcesslet implements Processlet {
 
     LinkedList<Cluster> clusters = MeanSC.apply(points, inputBundle.task, LOG);
 
-    LOG.trace(String.valueOf(clusters.size()) + " clusters found:");
+    if (clusters.getLast().getWeight() != 0)
+      LOG.trace(String.valueOf(clusters.size() - 1) + " clusters and noise found.");
+    else
+      LOG.trace(String.valueOf(clusters.size() - 1) + " clusters found.");
+
     BufferedImage image = new BufferedImage(data.getWidth(), data.getHeight(), BufferedImage.TYPE_INT_RGB);
 
     for (int i = 0; i < clusters.size(); i++) {
@@ -116,7 +119,7 @@ public class MeanSCClusterizerProcesslet implements Processlet {
 
     LOG.trace("finish image processing");
 
-    return new OutputBundle(inputBundle.raster);
+    return new OutputBundle(image);
   }
 
   private InputBundle parseInputs(ProcessletInputs inputs) throws ProcessletException {
@@ -143,26 +146,10 @@ public class MeanSCClusterizerProcesslet implements Processlet {
       LOG.debug( "- inputRaster.encoding : " + inputRaster.getEncoding());
       LOG.debug( "- inputRaster.schema   : " + inputRaster.getSchema());
 
-//      RasterIOOptions opts = new RasterIOOptions(RasterGeoReference.OriginLocation.OUTER);
-//      opts.add(RasterIOOptions.READ_WLD_FILE, null);
-
-//      MimeType mimeType = new MimeType(inputRaster.getMimeType());
-//      opts.add(RasterIOOptions.OPT_FORMAT, mimeType.getSubType());
-
-      InputStream in;
-      if ("base64".equals(inputRaster.getEncoding())) {
-        in = new Base64InputStream(inputRaster.getValueAsBinaryStream());
-      } else {
-        in = inputRaster.getValueAsBinaryStream();
-      }
-
-      raster = ImageIO.read(in);
+      raster = ImageIO.read(inputRaster.getValueAsBinaryStream());
       
       return new InputBundle(task, raster);
 
-//    } catch (MimeTypeParseException e) {
-//      LOG.error(e.getMessage(), e);
-//      throw new ProcessletException(e.getMessage());
     } catch (IOException e) {
       LOG.error("Raster load failed with i/o exception", e);
       throw new ProcessletException("Raster load failed with i/o exception");
@@ -178,11 +165,11 @@ public class MeanSCClusterizerProcesslet implements Processlet {
       LOG.debug( "- outputRaster.schema   : " + outputRaster.getRequestedSchema());
 
       // for debug
-//      LOG.debug("storing result in file");
-//      ImageIO.write(outputBundle.image,  "png", new File("/tmp/wps/result.png") );
+//      LOG.debug("storing result to file");
+//      ImageIO.write(outputBundle.image,  "png", new File("H:/Work/WPS/ict.wps/result.png"));
 
       LOG.debug("sending result to output stream");
-      ImageIO.write(outputBundle.image,  "png", new Base64OutputStream(outputRaster.getBinaryOutputStream()) );
+      ImageIO.write(outputBundle.image, "png", outputRaster.getBinaryOutputStream());
 
     } catch (IOException e) {
       LOG.error("Result raster transfer failed with i/o exception", e);

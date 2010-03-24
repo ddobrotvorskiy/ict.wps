@@ -145,6 +145,7 @@ public class Cluster {
   public boolean equals(Object o) {
     if (this == o) return true;
     if (o == null || ! (o instanceof Cluster)) return false;
+    if (delegate == null) return (((Cluster) o).getDelegate() == null);
     return delegate.equals(((Cluster) o).getDelegate());
   }
 
