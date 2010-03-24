@@ -60,6 +60,8 @@ public class MeanSCClusterizer implements Clusterizer {
       if (THRESHOLD.equals(p.getName())) unionThreshold = p.getValue();
     }
 
+    // TODO: !!!!! OPTIMIZE !!!!! It works incredibly slow :(
+
     /*
     Creating grid
      */

@@ -231,8 +231,6 @@ public class FixedGrid {
 
     for (ClusterPare cp : pares) {
 
-      // TODO: !!!some clusters are already connected to others and have NULL delegate!!!
-
       // Getting moving direction (from lower to higher density)
       if (cp.getOne().getDelegateDensity() <= cp.getTwo().getDelegateDensity()) {
         from = cp.getOne();
